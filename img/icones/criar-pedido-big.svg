@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="129px" height="129px" viewBox="0 0 129 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SejaCriativa/Landing-Page-Pós-Login/Desktop-Home" transform="translate(-984.000000, -1315.000000)">
+            <g id="Group" transform="translate(988.000000, 1268.000000)">
+                <text id="+" font-family="DINRoundPro, DIN Round Pro" font-size="144" font-weight="normal" letter-spacing="0.045" fill="#E14559">
+                    <tspan x="22.3935" y="150">+</tspan>
+                </text>
+                <circle id="Oval-3" stroke="#E14559" stroke-width="8" cx="60.5" cy="111.5" r="60.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
