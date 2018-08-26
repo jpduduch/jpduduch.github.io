@@ -2,374 +2,73 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Sua festa do seu jeito!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#e14559">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#e14559">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#e14559">
-    <meta name="mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="stylesheets/screen.css">
+	<title>The Amazing Random Inspiration Machine</title>
+	<style>
+		h1, h2, h3, h4, h5, h6, p, a{
+			font-family: Helvetica, Arial, Verdana, Tahoma, Sans-serif;
+			line-height: 1.25em;
+		}
+		h1{
+			text-transform: uppercase;
+		}
+
+		h1, .resultado-sorteio{
+			font-weight: 900 !important;
+		}
+
+		header, section{
+			margin: 0 auto;
+			max-width: 960px;
+		}
+
+		#resultado-sorteio{
+			font-size: 32px;
+			font-weight: bolder;
+			text-transform: uppercase;
+			margin-top: 0;
+		}
+
+		button{
+			padding: 10px 12px;
+			background-color: black;
+			color: white;
+			font-size: 16px;
+		}
+		p{
+			height: 72px;
+		}
+	</style>
 </head>
 <body>
-	<header id="landing-page">
-		
-		<div class="card-container">
-
-			<div class="logo-container">
-				<img src="img/logo.svg" alt="SejaCriativa.com" class="responsive-img">
-			</div>
-
-			<div id="card-inicial">
-
-				<h1>Fazer a sua festa nunca foi tão fácil!</h1>
-				<a id="call-to-action">Entrar</a>
-				<a id="secondary">Criar uma conta</a>
-				<p><span>~</span>ou<span>~</span></p>
-				<a class="facebook">Entrar com Facebook <i><img src="img/icones/redes-sociais/facebook.svg" alt=""></i></a>
-				<a href="#funcionalidades-chave"><h2>Saiba mais!</h2></a>
-			</div>
-		</div>
-
-		<div class="card-container">
-			<div id="card-login">
-				<a href="" class="voltar-inicio"><i><img src="img/icones/voltar-pequeno.svg" alt=""></i></a>
-				<h2>Olá, seja bem vinda novamente!</h2>
-				<form action="">
-					<label for="login" class="obrigatorio">Login</label>
-					<input type="email" name="login" placeholder="Insira o seu e-mail de cadastro"><span class="obrigatorio"></span>
-
-					<label for="senha" class="obrigatorio">Senha</label>
-					<input type="password" name="senha" placeholder="Insira sua senha"><span class="obrigatorio"></span>
-
-					<input type="submit" name="Entrar" value="Entrar">
-				</form>
-			</div>
-		</div>
-		<div class="card-container">
-			<div id="nova-usuaria">
-				<a href="" class="voltar-inicio"><i><img src="img/icones/voltar-pequeno.svg" alt=""></i></a>
-				<form action="">
-					<legend>Nova por aqui? Registre-se!</legend>
-
-					<label class="obrigatorio" for="Nome">Nome</label>
-					<input type="text" name="Nome" placeholder="Diga-nos o seu nome"><span class="obrigatorio"></span>
-
-					<label class="obrigatorio" for="e-mail">E-mail</label>
-					<input type="email" name="e-mail" placeholder="Qual vai ser o seu e-mail?"><span class="obrigatorio"></span>
-
-					<label class="obrigatorio" for="confirmar-email">Confirme o seu e-mail</label>
-					<input type="email" name="confirmar-email" placeholder="Insira o e-mail acima novamente"><span class="obrigatorio"></span>
-
-					<label class="obrigatorio" for="senha">Senha</label>
-					<input type="password" name="senha" placeholder="Insira sua senha"><span class="obrigatorio"></span>
-
-					<input type="submit" name="Cadastrar" value="Criar conta">
-				</form>
-			</div>
-		</div>
-	</header>
-	<main class="home">
-		<section id="funcionalidades-chave" class="row">
-				
-			<div class="container">
-				
-
-				<!-- funcionalidade principal -->
-				<div class="funcionalidade-principal row">
-					<figure class="col s16 l6 offset-l2">
-						<img src="img/TEMP_como-funciona.png" alt="">
-					</figure>
-					<figcaption class="col l6">
-						<h2>Como funciona?</h2>
-						<p>Personalizar a sua festa é muito fácil e rápido. O primeiro passo é se cadastrar no nosso site, na seção de Registro. A partir daí, você terá acesso às nossas coleções, formadas por padrões de fundo e outros elementos totalmente personalizáveis, que você aplica da forma que quiser nas peças escolhidas por você. Para entender melhor, clique em Modelo e acompanhe o passo a passo do exemplo.
-</p>
-						<a href="">Criar uma conta</a>
-					</figcaption>
-				</div>
-				<!-- fim funcionalidade principal -->
-
-				<!-- funcionalidades secundárias -->
-				<div class="funcionalidades-secundarias-container row">
-					<div class="funcionalidade-secundaria col s16 l4 offset-l2">
-						<figure><img src="img/TEMP_Suafesta-seujeito.png" alt=""></figure>
-						<figcaption>
-							<h3>Sua festa, do seu jeito</h3>
-							<p>A gente te mostra algumas ideias e você mistura tudo como achar melhor. Sua imaginação é quem comanda essa festa! Você só vai ter o trabalho de combinar os elementos, decidir se quer com mensagem de texto ou sem e escolher as peças em que vai aplicar o padrão que você mesma criou. O resto é com a gente: imprimimos e entregamos na sua casa ou no endereço que você desejar. </p>
-						</figcaption>
-					</div>
-					<div class="funcionalidade-secundaria col s16 l4 offset-l2">
-						<figure><img src="img/TEMP_transparencia-pontaaponta.png" alt=""></figure>
-						<figcaption>
-							<h3>Transparência de ponta-a-ponta</h3>
-							<p>Conforme você vai criando mais peças e colocando no carrinho de compras do site, já pode ir acompanhando o valor total da compra. Quem controla quanto quer gastar é você. Afinal, surpresa é algo ótimo, mas não na hora de pagar!</p>
-						</figcaption>
-					</div>
-					<div class="funcionalidade-secundaria col s16 l4 offset-l2">
-						<figure><img src="img/TEMP_Opc-qualquer-ocasiao.png" alt=""></figure>
-						<figcaption>
-							<h3>Opções para qualquer ocasião</h3>
-							<p>Reuniãozinha entre amigas, encontro de família, batizado, bodas, aniversário de qualquer idade e muito mais. Dá para transformar qualquer data comemorativa em festinha, festão, festaça. Com o SejaCriativa.com, você pode festejar o que quiser, e fazer a comemoração do tamanho que bem entender.</p>
-						</figcaption>
-					</div>
-				</div>
-
-				<!-- fim funcionalidades secundárias -->
-			</div>
-
+	<main>
+		<header>
+			<!-- <h1>The Amazing Random Inspiration Machine</h1> -->
+		</header>
+		<section>
+			<p>Que tal desenhar <span>um</span></p>
+			<p id="resultado-sorteio"></p>
+			<button onclick="sorteio()">Que coisa tosca, manda outra aew</button>
 		</section>
-
-
-
-		<section id="storytelling" class="row">
-			<div class="container">
-
-				<div id="video-section" class="row">
-					<!-- <img src="img/TEMP_padraoVideo.png" class="col s16 m16 l6 offset-l2"> -->
-					<div class="video-container col s16 m16 l6 offset-l2">
-						<video>
-							<source src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div id="video-caption" class="col s16 m16 l5 offset-l1">
-						<h2>Interface amigável e intuitiva</h2>
-						<p>Um site com interface intuitiva é aquele que pode ser usado de forma natural, sem precisar pensar para descobrir como funciona. E é isso que o SejaCriativa.com é. As informações estão disponíveis de forma clara, para que você possa aprender rápido e de um jeito fácil como trabalhar aqui. Para simplificar ainda mais, desenvolvemos um tutorial em vídeo para você.</p>
-						<a href="">Veja o vídeo!</a>
-					</div>
-				</div>
-			</div>
-			<div id="mockups" class="row">
-				<div class="img-container-mockup">
-					<img src="img/TEMP_Mockup.png" alt="">
-				</div>
-				<div class="container">
-					<div class="mockup-caption col s16 l4 offset-l1">
-						<h2>A tua festa completa!</h2>
-						<p>Acreditamos que uma comemoração só é completa se ela traduz a personalidade de quem está festejando. Para nós, os sonhos devem ser perseguidos e as ideias exploradas ao máximo, com a criatividade solta. Assim, nossa missão é dar a qualquer pessoa, em qualquer lugar, as ferramentas para montar sua festa do jeito que sempre imaginou. E que o resultado seja único. </p>
-					</div>
-				</div>
-			</div>
-
-			<div id="depoimentos" class="row">
-				<div class="depoimentos-caption-container row">
-					<h2 class="col s16 l8 offset-l4">Faça parte do exército das criativas!</h2>
-					<p class="col s16 l8 offset-l4">Muita gente já se rendeu à maneira SejaCriativa.com de fazer festas. Tem uma mais apaixonante que a outra! Navegue pela nossa galeria, clicando nas imagens abaixo, para se inspirar e começar a criar sua própria festa, à sua maneira. Se você quiser, depois pode compartilhar sua criação com a gente também. </p>
-				</div>
-
-				<div class="usuarias-instagram-container row">
-
-					<!-- card de usuária de instagram -->
-					<div class="usuarias-instagram col s16 m8 l4 xl4">
-						<a href="http://www.instagram.com" target="_blank">
-							<figure>
-								<img src="http://lorempixel.com/500/700/cats/1" alt="Instagram" class="imagem-quadrada">
-								<span class="nome-user-instagram">@SonCortina</span>
-							</figure>
-							<figcaption>
-								<p>I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.</p>
-							</figcaption>
-						</a>
-					</div>
-					<!-- fim card de usuária de instagram -->
-
-					<div class="usuarias-instagram col s16 m8 l4 xl4">
-						<a href="http://www.instagram.com" target="_blank">
-							<figure>
-								<img src="http://lorempixel.com/500/700/cats/2" alt="Instagram" class="imagem-quadrada">
-								<span class="nome-user-instagram">@BarbieWissing</span>
-							</figure>
-							<figcaption>
-								<p>If you want to keep a secret from an enemy, tell it not to a friend.</p>
-							</figcaption>
-						</a>
-					</div>
-					<div class="usuarias-instagram col s16 m8 l4 xl4">
-						<a href="http://www.instagram.com" target="_blank">
-							<figure>
-								<img src="http://lorempixel.com/500/700/cats/3" alt="Instagram" class="imagem-quadrada">
-								<span class="nome-user-instagram">@KatharynCutshaw</span>
-							</figure>
-							<figcaption>
-								<p>Everything has its wonders, even darkness and silence, and I learn, whatever state I may be in, therein to be content.</p>
-							</figcaption>
-						</a>
-					</div>
-					<div class="usuarias-instagram col s16 m8 l4 xl4">
-						<a href="http://www.instagram.com" target="_blank">
-							<figure>
-								<img src="http://lorempixel.com/500/700/cats/4" alt="Instagram" class="imagem-quadrada">
-								<span class="nome-user-instagram">@LorettaRummel</span>
-							</figure>
-							<figcaption>
-								<p>The two most precious things this side of the grave are our reputation and our life. But it is to be lamented that the most contemptible whisper may deprive us of the one, and the weakest weapon of the other. A wise man, therefore, will be more anxious to deserve a fair name than to possess it, and this will teach him so to live as not to be afraid to die.</p>
-							</figcaption>
-						</a>
-					</div>
-					<div class="usuarias-instagram col s16 m8 l4 xl4">
-						<a href="http://www.instagram.com" target="_blank">
-							<figure>
-								<img src="http://lorempixel.com/500/700/cats/5" alt="Instagram" class="imagem-quadrada">
-								<span class="nome-user-instagram">@TitusHuppert</span>
-							</figure>
-							<figcaption>
-								<p>The field is a halfway house, halfway between the detail of those intimately known places and the ignorance of a landscape view ... The essence of a field is that the cultural accommodates the natural there. The human being makes room for and makes use of those organisms that are not him. In that way the field is a poem to symbiosis, and a human contract with the natural.</p>
-							</figcaption>
-						</a>
-					</div>
-					<div class="usuarias-instagram col s16 m8 l4 xl4">
-						<a href="http://www.instagram.com" target="_blank">
-							<figure>
-								<img src="http://lorempixel.com/500/700/cats/6" alt="Instagram" class="imagem-quadrada">
-								<span class="nome-user-instagram">@LaverneLapierre</span>
-							</figure>
-							<figcaption>
-								<p>The saddest thing about ephemerals was that their little lives rarely held time enough for love.</p>
-							</figcaption>
-						</a>
-					</div>
-					<div class="usuarias-instagram col s16 m8 l4 xl4">
-						<a href="http://www.instagram.com" target="_blank">
-							<figure>
-								<img src="http://lorempixel.com/500/700/cats/7" alt="Instagram" class="imagem-quadrada">
-								<span class="nome-user-instagram">@LaveniaKass</span>
-							</figure>
-							<figcaption>
-								<p>A Code of Honor: Never approach a friend's girlfriend or wife with mischief as your goal. There are just too many women in the world to justify that sort of dishonorable behavior ... Unless she's really attractive.</p>
-							</figcaption>
-						</a>
-					</div>
-					<div class="usuarias-instagram col s16 m8 l4 xl4">
-						<a href="http://www.instagram.com" target="_blank">
-							<figure>
-								<img src="http://lorempixel.com/500/700/cats/8" alt="Instagram" class="imagem-quadrada">
-								<span class="nome-user-instagram">@EusebioPloof</span>
-							</figure>
-							<figcaption>
-								<p>Make use of life while you have it. Whether you have lived enough depends upon yourself, not on the number of your years.</p>
-							</figcaption>
-						</a>
-					</div>
-				</div>
-				
-			</div>
-		</section>
-
-		<section id="conversao">
-			<div class="container row">
-				<figure class="img-container col l9 offset-l1 s16">
-					<img src="img/junte-se_agora.svg" alt="">
-				</figure>
-				<div class="col s16 l5 conversao-caption">
-					<h3>Junte-se agora!</h3>
-					<p>Atendemos a todas as cidades brasileiras onde haja entrega dos Correios. Ou seja: o SejaCriativa.com é para você! Junte-se à mais nova ferramenta de criação de festas e personalize a sua comemoração de maneira fácil, rápida e inspiradora. Depois é só esperar chegar sua encomenda e arrasar nos detalhes.</p>
-					<form action="">
-						<label for="E-mail" class="amarelo-sc">E-mail</label>
-						<input type="email" name="E-mail" placeholder="Cadastre-se já!" class="fundo-colorido">
-						<span class="pontilhado-amarelo-sc"></span>
-						<input type="submit" value="Comece agora!">
-					</form>
-					<a href="" class="facebook">Entrar com Facebook  <i><img src="img/icones/redes-sociais/facebook.svg" alt=""></i></a>
-				</div>
-			</div>
-
-		</section>
-
 	</main>
-
-	<footer>
-		<div class="container">
-
-			<div class="row">			
-				<div class="logo-container-footer col s8 l3 offset-s4 offset-l2">
-					<img src="img/logo.svg" alt="SejaCriativa.com" class="responsive-img">
-				</div>
-			</div>
-			
-			<div class="row">
-				
-				<form action="" class="newsletter col s16 l6 offset-l2">
-					<legend>Assine nossa newsletter</legend>
-					<input type="email" name="newsletter" placeholder="E-mail" class="fundo-colorido">
-					<span class="pontilhado-amarelo-sc"></span>
-					<input type="submit" value="Assinar newsletter">
-				</form>
-				<div id="links-uteis" class="col s16 l5 offset-l2">
-					<h6>Links úteis</h6>
-					<div class="coluna-footer col s8">
-						<a href="help.html">Fazendo o Pagamento</a>
-						<a href="help.html">Opções de Entrega</a>
-						<a href="help.html">Proteção ao Consumidor</a>
-						<a href="help.html">Guia do Comprador Novato</a>
-					</div>
-					<div class="coluna-footer">
-						<a href="help.html">Ajuda</a>
-						<a href="help.html">FAQ</a>
-						<a href="help.html">Termos de Serviço</a>
-						<a href="help.html">Política de privacidade</a>
-					</div>
-				</div>
-			</div>
-			<h6>Siga-nos nas redes sociais</h6>
-			<div id="redes-sociais">
-				<a href=""><i><img src="img/icones/redes-sociais/facebook.svg" alt="Facebook"></i></a>
-				<a href=""><i><img src="img/icones/redes-sociais/twitter.svg" alt="Twitter"></i></a>
-				<a href=""><i><img src="img/icones/redes-sociais/instagram.svg" alt="Instagram"></i></a>
-				<a href=""><i><img src="img/icones/redes-sociais/youtube.svg" alt="Youtube"></i></a>
-			</div>
-
-			<p>© 2017 SejaCriativa.com | Todos os direitos reservados.</p>
-		</div>
-	</footer>
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/_main.js"></script>
-
-	<script>
-		function redimensiona_thumbnailInstagram(){
-			var largura_imagem = $('.imagem-quadrada').outerWidth();
-			$('.imagem-quadrada').css('height', largura_imagem + 'px');
-		}
-
-		redimensiona_thumbnailInstagram();
-		window.onresize = redimensiona_thumbnailInstagram;
-	</script>
-
-	<script>
-		$('#call-to-action').click(function(event) {
-			/* Act on the event */
-			$(this).parents('.card-container').css('transform', 'translate(-100vw, -50%)');
-			cardsSecundarios(1);
-		});
-
-		$('#secondary').click(function(event) {
-			/* Act on the event */
-			$(this).parents('.card-container').css('transform', 'translate(-100vw, -50%)');
-			cardsSecundarios(2);
-		});
-
-		$('.voltar-inicio').click(function(event) {
-			/* Act on the event */
-			event.preventDefault();
-			$(this).parents('.card-container').css('transform', 'translate(100vw, -50%)');
-			$('.card-container').eq(0).css('transform', 'translate(0vw, -50%)');
-		});
-
-		function cardsSecundarios(n_card){
-			$('.card-container').eq(n_card).css('transform', 'translate(0vw, -50%)');
-		}
-
-		$('input[type="submit"]').on('click', function(event) {
-			event.preventDefault();
-			/* Act on the event */
-			window.location = "dashboard.html";
-		});
-	</script>
-
-<!-- 	<script>
-		$("input:not([type=submit])").after().html('<span class="teste"></span>');
-	</script> -->
-
 </body>
+
+<script>
+	// alert("Vinissius o layout não vai ser esse, é só pra marcar tá ok");
+
+
+	function sorteio(){
+		var substantivos = ['Porco', 'Lasanha', 'Abajour', 'Lapiseira', 'Lamparina', 'Gato', 'Cachorro', 'Pelicano', 'Sapo', 'Caneca', 'Meia', 'Baleia', 'Esqueleto', 'Ganso', 'Pato', 'Moço', 'Menino', 'Velho', 'Homem', 'Idoso', 'Camelo', 'Rato', 'Espada', 'Barco', 'Caravela', 'Faca', 'Arma', 'Cadáver', 'Chave', 'Caixa', 'Cajado', 'Carro', 'Automóvel', 'Avião', 'Computador'];
+
+		var adjetivos = ['Viking', 'Pirata', 'Assassino', 'Encanador', 'Ilusionista', 'Mago', 'Bruxo', 'Motoboy', 'Youtuber', 'Entregador de Pizza', 'Ator', 'Cantor', 'Alienígena', 'Morador de rua', 'Vendedor ambulante', 'Cirurgião', 'Designer', 'Desenhista', 'Auxiliar de limpeza', 'Prostituto', 'Cozinheiro', 'Construtor', 'Paladino', 'Anão', 'Elfo', 'Orc', 'Duende', 'Telefonista'];
+		
+		selecionaSubst = Math.floor((Math.random() * substantivos.length-1) + 1);
+		selecionaAdj = Math.floor((Math.random() * adjetivos.length-1) + 1);
+
+		var fraseRandom = substantivos[selecionaSubst] + ' ' + adjetivos[selecionaAdj];
+		
+		document.getElementById('resultado-sorteio').innerHTML = fraseRandom;
+	}
+	
+</script>
 </html>
