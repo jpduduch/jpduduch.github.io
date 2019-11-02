@@ -2,73 +2,21 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The Amazing Random Inspiration Machine</title>
-	<style>
-		h1, h2, h3, h4, h5, h6, p, a{
-			font-family: Helvetica, Arial, Verdana, Tahoma, Sans-serif;
-			line-height: 1.25em;
-		}
-		h1{
-			text-transform: uppercase;
-		}
+	<title>Encore BR – Consultoria e representação no setor de energia</title>
+	<meta name="description" value="Consultoria e representação no setor de energia">
 
-		h1, .resultado-sorteio{
-			font-weight: 900 !important;
-		}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		header, section{
-			margin: 0 auto;
-			max-width: 960px;
-		}
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:url" content="http://www.encore-br.com/">
+	<meta property="og:title" content="Encore BR">
+	<meta property="og:site_name" content="Encore BR">
+	<meta property="og:description" content="Consultoria e Representação no setor de Energia">
+	<meta property="og:type" content="website">
 
-		#resultado-sorteio{
-			font-size: 32px;
-			font-weight: bolder;
-			text-transform: uppercase;
-			margin-top: 0;
-		}
-
-		button{
-			padding: 10px 12px;
-			background-color: black;
-			color: white;
-			font-size: 16px;
-		}
-		p{
-			height: 72px;
-		}
-	</style>
+	<meta property="og:image" itemprop="image" content="img/logo.png">
 </head>
 <body>
-	<main>
-		<header>
-			<!-- <h1>The Amazing Random Inspiration Machine</h1> -->
-		</header>
-		<section>
-			<p>Que tal desenhar <span>um</span></p>
-			<p id="resultado-sorteio"></p>
-			<button onclick="sorteio()">Que coisa tosca, manda outra aew</button>
-		</section>
-	</main>
-</body>
-
-<script>
-	// alert("Vinissius o layout não vai ser esse, é só pra marcar tá ok");
-
-
-	function sorteio(){
-		var substantivos = ['Porco', 'Lasanha', 'Abajour', 'Lapiseira', 'Lamparina', 'Gato', 'Cachorro', 'Pelicano', 'Sapo', 'Caneca', 'Meia', 'Baleia', 'Esqueleto', 'Ganso', 'Pato', 'Moço', 'Menino', 'Velho', 'Homem', 'Idoso', 'Camelo', 'Rato', 'Espada', 'Barco', 'Caravela', 'Faca', 'Arma', 'Cadáver', 'Chave', 'Caixa', 'Cajado', 'Carro', 'Automóvel', 'Avião', 'Computador'];
-
-		var adjetivos = ['Viking', 'Pirata', 'Assassino', 'Encanador', 'Ilusionista', 'Mago', 'Bruxo', 'Motoboy', 'Youtuber', 'Entregador de Pizza', 'Ator', 'Cantor', 'Alienígena', 'Morador de rua', 'Vendedor ambulante', 'Cirurgião', 'Designer', 'Desenhista', 'Auxiliar de limpeza', 'Prostituto', 'Cozinheiro', 'Construtor', 'Paladino', 'Anão', 'Elfo', 'Orc', 'Duende', 'Telefonista'];
-		
-		selecionaSubst = Math.floor((Math.random() * substantivos.length-1) + 1);
-		selecionaAdj = Math.floor((Math.random() * adjetivos.length-1) + 1);
-
-		var fraseRandom = substantivos[selecionaSubst] + ' ' + adjetivos[selecionaAdj];
-		
-		document.getElementById('resultado-sorteio').innerHTML = fraseRandom;
-	}
 	
-</script>
+</body>
 </html>
