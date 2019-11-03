@@ -1,0 +1,19 @@
+@charset "UTF-8"; 
+@import "compass/reset";
+@import "compass/css3";
+
+@import "custom/variables";
+
+@import "custom/fonts";
+@import "custom/general";
+
+// ajustes principais
+// *, body, html{
+// 	transition: .1s;
+// }
+
+html {
+ box-sizing: border-box;
+ font-size: 16px;
+ line-height: 1.5rem;
+}

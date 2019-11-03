@@ -1,0 +1,58 @@
+// Images
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+%left {
+  float: left !important;
+}
+%right {
+  float: right !important;
+}
+
+// Text Align
+%left-align {
+  text-align: left;
+}
+%right-align {
+  text-align: right
+}
+%center, %center-align {
+  text-align: center;
+}
+
+// criar divs circulares (só funciona com divs quadradas)
+%circle {
+  border-radius: 50%;
+}
+
+%no-padding {
+  padding: 0 !important;
+}
+
+// deixa a área de determinado elemento sendo a da tela completa
+%full-page{
+	width: 100%;
+	height: 100vh;
+}
+
+// centraliza elementos com largura pre-definida
+%centraliza-horizontal{
+  display: block;
+  margin: 0 auto;
+}
+
+// centraliza elementos verticalmente
+%centraliza-vertical{
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%exibir-pseudo-elemento{
+  content: '';
+  display: block;
+}
