@@ -1,0 +1,42 @@
+header{
+	@extend %valign-wrapper;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba($white, 0.8);
+	overflow: auto;
+
+	#logo{
+		display: flex;
+		width: auto;
+		height: auto;
+		margin: 1rem;
+		img{
+			width: auto;
+			height: 1.5rem;
+		}
+	}
+
+	#menu{
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		display: flex;
+		cursor: pointer;
+		width: 56px;
+		height: 56px;
+
+		img{
+			margin: ((56-24)/2)*1px;
+		}
+	}
+
+	nav{
+
+
+		#navegacao, #idioma{
+			display: none;
+		}
+	}
+}

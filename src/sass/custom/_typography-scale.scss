@@ -1,0 +1,26 @@
+*, html, body{
+	font-family: Raleway;
+	font-weight: $Light;
+	text-align: center;
+}
+
+h1{
+	font-size: (24rem/$rem-default)*1;
+	line-height: (32rem/$rem-default)*1;;
+	font-weight: $Regular;
+	text-align: center;
+}
+
+h2{
+	@extend h1;
+	&:after{
+		@extend %exibir-pseudo-elemento;
+		content: '~';
+		color: $orange;
+		font-weight: $Bold;
+	}
+}
+h3{
+	font-weight: $Bold;
+	font-size: 1.25rem;
+}

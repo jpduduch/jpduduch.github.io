@@ -1,3 +1,9 @@
+//icons
+i{
+	display: inline-block;
+}
+
+
 // Images
 img,
 video {
@@ -55,4 +61,11 @@ video {
 %exibir-pseudo-elemento{
   content: '';
   display: block;
+}
+
+// alinhamento de conteúdo vertical. nem sempre funciona
+
+%valign-wrapper {
+  display: flex;
+  align-items: center;
 }

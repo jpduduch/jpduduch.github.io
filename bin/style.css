@@ -1,6 +1,7 @@
 /* line 5, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+h2, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -63,16 +64,167 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+@font-face {
+  font-family: Raleway;
+  src: url("../src/fonts//Raleway/Raleway-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../src/fonts//Raleway/Raleway-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../src/fonts//Raleway/Raleway-Bold.ttf");
+  font-weight: 700;
+}
 /* line 2, ../src/sass/custom/_general.scss */
+i {
+  display: inline-block;
+}
+
+/* line 8, ../src/sass/custom/_general.scss */
 img,
 video {
   max-width: 100%;
   height: auto;
 }
 
-/* line 15, ../src/sass/style.scss */
+/* line 54, ../src/sass/custom/_general.scss */
+#header .container {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 61, ../src/sass/custom/_general.scss */
+h2:after, #header:after {
+  content: '';
+  display: block;
+}
+
+/* line 68, ../src/sass/custom/_general.scss */
+header {
+  display: flex;
+  align-items: center;
+}
+
+/* line 1, ../src/sass/custom/_typography-scale.scss */
+*, html, body {
+  font-family: Raleway;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* line 7, ../src/sass/custom/_typography-scale.scss */
+h1, h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 16, ../src/sass/custom/_typography-scale.scss */
+h2:after {
+  content: '~';
+  color: #f89925;
+  font-weight: 700;
+}
+
+/* line 23, ../src/sass/custom/_typography-scale.scss */
+h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* line 1, ../src/sass/custom/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: auto;
+}
+/* line 10, ../src/sass/custom/_header.scss */
+header #logo {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+}
+/* line 15, ../src/sass/custom/_header.scss */
+header #logo img {
+  width: auto;
+  height: 1.5rem;
+}
+/* line 21, ../src/sass/custom/_header.scss */
+header #menu {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  display: flex;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+}
+/* line 30, ../src/sass/custom/_header.scss */
+header #menu img {
+  margin: 16px;
+}
+/* line 38, ../src/sass/custom/_header.scss */
+header nav #navegacao, header nav #idioma {
+  display: none;
+}
+
+/* line 1, ../src/sass/custom/_section-header.scss */
+#header {
+  background-image: url("../src/img/hero.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100vh - 128px);
+  position: relative;
+  z-index: -1;
+}
+/* line 12, ../src/sass/custom/_section-header.scss */
+#header .container {
+  margin-left: 25%;
+  margin-top: 1.5rem;
+  width: 50%;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 21, ../src/sass/custom/_section-header.scss */
+#header #scroll-down {
+  position: absolute;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  left: 50%;
+}
+/* line 28, ../src/sass/custom/_section-header.scss */
+#header:after {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -2;
+}
+
+/* line 1, ../src/sass/custom/_consultoria.scss */
+#consultoria {
+  margin: 3rem 1rem;
+}
+
+/* line 21, ../src/sass/style.scss */
 html {
   box-sizing: border-box;
   font-size: 16px;
   line-height: 1.5rem;
 }
+
+/*# sourceMappingURL=style.css.map */

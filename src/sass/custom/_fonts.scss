@@ -1,0 +1,22 @@
+// Pesos de fontes
+$Light: 300;
+$Regular: 400;
+$Bold: 700;
+
+@font-face {
+	font-family: Raleway;
+    src: url('#{$font-path}/Raleway/Raleway-Light.ttf');
+    font-weight: $Light;
+}
+
+@font-face {
+	font-family: Raleway;
+    src: url('#{$font-path}/Raleway/Raleway-Regular.ttf');
+    font-weight: $Regular;
+}
+
+@font-face {
+	font-family: Raleway;
+    src: url('#{$font-path}/Raleway/Raleway-Bold.ttf');
+    font-weight: $Bold;
+}

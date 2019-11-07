@@ -3,9 +3,15 @@
 @import "compass/css3";
 
 @import "custom/variables";
+@import "custom/colors";
 
 @import "custom/fonts";
 @import "custom/general";
+@import "custom/typography-scale";
+
+@import "custom/header";
+@import "custom/section-header";
+@import "custom/consultoria";
 
 // ajustes principais
 // *, body, html{
@@ -17,3 +23,7 @@ html {
  font-size: 16px;
  line-height: 1.5rem;
 }
+
+// body{
+// 	padding-top: (56/16)*1rem;
+// }
