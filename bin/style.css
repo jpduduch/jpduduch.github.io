@@ -1,7 +1,7 @@
 /* line 5, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1,
-h2, h2, h3, h4, h5, h6, p, blockquote, pre,
+h2, h2, h3, h4, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -79,33 +79,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../src/fonts//Raleway/Raleway-Bold.ttf");
   font-weight: 700;
 }
-/* line 2, ../src/sass/custom/_general.scss */
+/* line 1, ../src/sass/custom/_general.scss */
+section div {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* line 6, ../src/sass/custom/_general.scss */
 i {
   display: inline-block;
 }
 
-/* line 8, ../src/sass/custom/_general.scss */
+/* line 12, ../src/sass/custom/_general.scss */
 img,
 video {
   max-width: 100%;
   height: auto;
 }
 
-/* line 54, ../src/sass/custom/_general.scss */
-#header .container {
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* line 61, ../src/sass/custom/_general.scss */
+/* line 65, ../src/sass/custom/_general.scss */
 h2:after, #header:after {
   content: '';
   display: block;
 }
 
-/* line 68, ../src/sass/custom/_general.scss */
+/* line 72, ../src/sass/custom/_general.scss */
 header {
   display: flex;
   align-items: center;
@@ -120,8 +118,8 @@ header {
 
 /* line 7, ../src/sass/custom/_typography-scale.scss */
 h1, h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   font-weight: 400;
   text-align: center;
 }
@@ -131,12 +129,39 @@ h2:after {
   content: '~';
   color: #f89925;
   font-weight: 700;
+  margin: 1rem 0;
 }
 
-/* line 23, ../src/sass/custom/_typography-scale.scss */
-h3 {
+/* line 25, ../src/sass/custom/_typography-scale.scss */
+h3, h4 {
   font-weight: 700;
   font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* line 32, ../src/sass/custom/_typography-scale.scss */
+h4 {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* line 39, ../src/sass/custom/_typography-scale.scss */
+h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* line 44, ../src/sass/custom/_typography-scale.scss */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 49, ../src/sass/custom/_typography-scale.scss */
+p {
+  margin: 0 1rem;
 }
 
 /* line 1, ../src/sass/custom/_header.scss */
@@ -192,20 +217,22 @@ header nav #navegacao, header nav #idioma {
 }
 /* line 12, ../src/sass/custom/_section-header.scss */
 #header .container {
-  margin-left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
   margin-top: 1.5rem;
-  width: 50%;
   text-align: center;
   color: #ffffff;
 }
-/* line 21, ../src/sass/custom/_section-header.scss */
+/* line 24, ../src/sass/custom/_section-header.scss */
 #header #scroll-down {
   position: absolute;
   bottom: 1rem;
   transform: translateX(-50%);
   left: 50%;
 }
-/* line 28, ../src/sass/custom/_section-header.scss */
+/* line 31, ../src/sass/custom/_section-header.scss */
 #header:after {
   position: absolute;
   pointer-events: none;
@@ -216,14 +243,145 @@ header nav #navegacao, header nav #idioma {
 }
 
 /* line 1, ../src/sass/custom/_consultoria.scss */
-#consultoria {
-  margin: 3rem 1rem;
+#consultoria, #parcerias, #contato {
+  padding: 3rem 1.618rem;
+}
+/* line 4, ../src/sass/custom/_consultoria.scss */
+#consultoria li, #parcerias li, #contato li {
+  margin-top: 2rem;
+}
+/* line 7, ../src/sass/custom/_consultoria.scss */
+#consultoria li div, #parcerias li div, #contato li div {
+  background-color: #f89925;
+  padding: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: visible;
+  margin-top: 3rem;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+}
+/* line 20, ../src/sass/custom/_consultoria.scss */
+#consultoria li div img, #parcerias li div img, #contato li div img {
+  display: flex;
 }
 
-/* line 21, ../src/sass/style.scss */
+/* line 1, ../src/sass/custom/_sobre.scss */
+#sobre {
+  background-image: url("../src/img/sobre.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+  z-index: -1;
+}
+/* line 11, ../src/sass/custom/_sobre.scss */
+#sobre .container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem 1rem;
+}
+
+/* line 1, ../src/sass/custom/_atuacao.scss */
+#atuacao {
+  background-color: #f89925;
+  padding: 2rem;
+}
+/* line 5, ../src/sass/custom/_atuacao.scss */
+#atuacao .container {
+  padding: 1rem;
+  padding-bottom: 3rem;
+  margin-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* line 11, ../src/sass/custom/_atuacao.scss */
+#atuacao .container .texto-container {
+  margin-top: -4.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #f89925;
+}
+/* line 15, ../src/sass/custom/_atuacao.scss */
+#atuacao .container .texto-container h2 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+/* line 22, ../src/sass/custom/_atuacao.scss */
+#atuacao .container .texto-container h2:after {
+  display: none;
+}
+/* line 26, ../src/sass/custom/_atuacao.scss */
+#atuacao .container .texto-container p {
+  color: #ffffff;
+  line-height: 1.5rem;
+}
+/* line 33, ../src/sass/custom/_atuacao.scss */
+#atuacao .container .energia h4, #atuacao .container .industria h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+/* line 42, ../src/sass/custom/_atuacao.scss */
+#atuacao .container figure {
+  width: 23%;
+  display: inline-block;
+  margin: 0 4.5%;
+  margin-top: 1.5rem;
+}
+/* line 47, ../src/sass/custom/_atuacao.scss */
+#atuacao .container figure:last-of-type {
+  transform: translateY(1.11111rem);
+}
+/* line 51, ../src/sass/custom/_atuacao.scss */
+#atuacao .container figure figcaption {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  line-height: 1rem;
+  text-align: center;
+}
+/* line 63, ../src/sass/custom/_atuacao.scss */
+#atuacao .container .industria figure:nth-child(3) {
+  transform: translateY(1rem);
+}
+/* line 66, ../src/sass/custom/_atuacao.scss */
+#atuacao .container .industria figure:nth-child(5), #atuacao .container .industria figure:nth-child(6) {
+  width: 28%;
+}
+
+/* line 1, ../src/sass/custom/_parcerias.scss */
+#parcerias {
+  background-color: #fafafa;
+  padding-bottom: 4rem;
+}
+/* line 6, ../src/sass/custom/_parcerias.scss */
+#parcerias figure {
+  margin: 0 4rem;
+  margin-top: 6rem;
+}
+
+/* line 4, ../src/sass/custom/_contato.scss */
+#contato .linkedin {
+  margin: 2rem 0;
+  margin-bottom: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* line 25, ../src/sass/style.scss */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5rem;
 }
 
