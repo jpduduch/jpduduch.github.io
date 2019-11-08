@@ -1,3 +1,25 @@
 #consultoria{
-	margin: 3rem 1rem;
+	padding: 3rem 1.618rem;
+
+	li{
+		margin-top: 2rem;
+
+		div{
+			background-color: $orange;
+			padding: 2rem;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			overflow: visible;
+			margin-top: 3rem;
+			width: 4rem;
+			height: 4rem;
+			display: inline-block;
+
+			img{
+				display: flex;
+			}
+		}
+	}
 }

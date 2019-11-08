@@ -1,0 +1,10 @@
+#contato{
+	@extend #consultoria;
+	
+	.linkedin{
+		margin: 2rem 0;
+		margin-bottom: 0;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}

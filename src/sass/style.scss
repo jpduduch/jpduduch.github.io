@@ -12,6 +12,10 @@
 @import "custom/header";
 @import "custom/section-header";
 @import "custom/consultoria";
+@import "custom/sobre";
+@import "custom/atuacao";
+@import "custom/parcerias";
+@import "custom/contato";
 
 // ajustes principais
 // *, body, html{
@@ -20,10 +24,6 @@
 
 html {
  box-sizing: border-box;
- font-size: 16px;
+ font-size: 14px;
  line-height: 1.5rem;
 }
-
-// body{
-// 	padding-top: (56/16)*1rem;
-// }

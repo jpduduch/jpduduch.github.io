@@ -1,0 +1,15 @@
+#sobre{
+	background-image: url('../src/img/sobre.png');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	position: relative;
+	padding: 2rem 1.5rem;
+	overflow: hidden;
+	z-index: -1;
+
+	.container{
+		background-color: rgba($white, 0.9);
+		padding: 2rem 1rem;
+	}
+}

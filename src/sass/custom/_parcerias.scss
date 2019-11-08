@@ -1,0 +1,10 @@
+#parcerias{
+	@extend #consultoria;
+	background-color: $light-gray;
+	padding-bottom: 4rem;
+
+	figure{
+		margin: 0 4rem;
+		margin-top: 6rem;
+	}
+}

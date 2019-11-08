@@ -10,10 +10,13 @@
 	z-index: -1;
 	
 	.container{
-		@extend %centraliza-vertical;
-		margin-left: 25%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		// margin-left: 25%;
 		margin-top: 1.5rem;
-		width: 50%;
+		// width: 50%;
 		text-align: center;
 		color: $white;
 

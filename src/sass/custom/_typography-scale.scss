@@ -5,8 +5,8 @@
 }
 
 h1{
-	font-size: (24rem/$rem-default)*1;
-	line-height: (32rem/$rem-default)*1;;
+	font-size: (32rem/$rem-default)*1;
+	line-height: (40rem/$rem-default)*1;;
 	font-weight: $Regular;
 	text-align: center;
 }
@@ -18,9 +18,34 @@ h2{
 		content: '~';
 		color: $orange;
 		font-weight: $Bold;
+		margin: 1rem 0;
 	}
 }
+
 h3{
 	font-weight: $Bold;
 	font-size: 1.25rem;
+	line-height: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+h4{
+	@extend h3;
+	font-weight: $Regular;
+	margin-bottom: 0.5rem;
+	margin-top: 2rem;
+}
+
+h5{
+	font-weight: $Bold;
+	font-size: 1.25rem;
+}
+
+a{
+	color: $black;
+	text-decoration: none;
+}
+
+p{
+	margin: 0 1rem;
 }
