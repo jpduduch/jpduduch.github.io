@@ -17,11 +17,11 @@ i#hamburger-menu{
 		width: 1.75rem;
 		height: 2px;
 		margin-top: 3px;
-		-webkit-transition: 0.2s;
-		-moz-transition: 0.2s;
-		-ms-transition: 0.2s;
-		-o-transition: 0.2s;
-		transition: 0.2s;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
 	}
 
 	&:after{
@@ -66,11 +66,11 @@ i#hamburger-menu{
 
 
 		li{
-			-webkit-transform: translateY(-1rem);
-			   -moz-transform: translateY(-1rem);
-			    -ms-transform: translateY(-1rem);
-			     -o-transform: translateY(-1rem);
-			        transform: translateY(-1rem);
+			-webkit-transform: translateY(-2rem);
+			   -moz-transform: translateY(-2rem);
+			    -ms-transform: translateY(-2rem);
+			     -o-transform: translateY(-2rem);
+			        transform: translateY(-2rem);
 
 			        opacity: 1;
 		}
@@ -91,11 +91,11 @@ i#hamburger-menu{
 			padding: 1rem;
 			margin-top: 1rem;
 			opacity: 0;
-			-webkit-transition: 0.2s;
-			-moz-transition: 0.2s;
-			-ms-transition: 0.2s;
-			-o-transition: 0.2s;
-			transition: 0.2s;
+			-webkit-transition: 0.3s;
+			-moz-transition: 0.3s;
+			-ms-transition: 0.3s;
+			-o-transition: 0.3s;
+			transition: 0.3s;
 
 			a{ 
 				color: $white; 
