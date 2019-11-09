@@ -2,6 +2,7 @@
 	font-family: Raleway;
 	font-weight: $Light;
 	text-align: center;
+	color: $black;
 }
 
 h1{
@@ -9,10 +10,12 @@ h1{
 	line-height: (40rem/$rem-default)*1;;
 	font-weight: $Regular;
 	text-align: center;
+	color: $white;
 }
 
 h2{
 	@extend h1;
+	color: $black;
 	&:after{
 		@extend %exibir-pseudo-elemento;
 		content: '~';

@@ -18,25 +18,21 @@ header{
 		}
 	}
 
-	#menu{
-		display: inline-block;
-		position: absolute;
-		right: 0;
-		display: flex;
-		cursor: pointer;
-		width: 56px;
-		height: 56px;
+	// #menu{
+	// 	display: inline-block;
+	// 	position: absolute;
+	// 	right: 0;
+	// 	display: flex;
+	// 	cursor: pointer;
+	// 	width: 56px;
+	// 	height: 56px;
 
-		img{
-			margin: ((56-24)/2)*1px;
-		}
-	}
+	// 	img{
+	// 		margin: ((56-24)/2)*1px;
+	// 	}
+	// }
 
-	nav{
-
-
-		#navegacao, #idioma{
-			display: none;
-		}
-	}
 }
+// nav{
+// 	display: none;
+// }

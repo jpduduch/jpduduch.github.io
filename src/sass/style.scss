@@ -10,6 +10,7 @@
 @import "custom/typography-scale";
 
 @import "custom/header";
+@import "custom/menu";
 @import "custom/section-header";
 @import "custom/consultoria";
 @import "custom/sobre";
@@ -23,7 +24,7 @@
 // }
 
 html {
- box-sizing: border-box;
- font-size: 14px;
- line-height: 1.5rem;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 1.5rem;
 }
