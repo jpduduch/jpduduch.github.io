@@ -2,6 +2,14 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+
+	<meta name="theme-color" content="#f89925">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#f89925">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#f89925">
+
 	<title>Encore BR – Consultoria e representação no setor de energia</title>
 	<meta name="description" value="Consultoria e representação no setor de energia">
 
@@ -43,35 +51,49 @@
 	<meta name="msapplication-TileImage" content="src/img/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+	<link rel="prefetch" href="src/img/hero.png">
+	<link rel="prefetch" href="src/img/sobre.png">
+
 
 	<link rel="stylesheet" href="bin/style.css">
 </head>
 <body>
 	<header>
-		<a href="#" id="logo"><img src="src/img/logo.png" alt="Encore BR"></a>
-		<i id="hamburger-menu"><span class="menu-bar"></span></i>
-		<nav id="navegacao">
-			<ul>
-				<li><a href="#">Serviços</a></li>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Parcerias</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
-			<!-- <ul id="idioma">
-				<li><a href=""><i class="BR">Português</i></a></li>
-				<li><a href=""><i class="EN">Inglês</i></a></li>
-			</ul> -->
-		</nav>
+		<div class="container">
+			<a href="#servicos" id="logo"><img src="src/img/logo.png" alt="Encore BR"></a>
+			<i id="hamburger-menu"><span class="menu-bar"></span></i>
+			<nav id="navegacao">
+				<ul>
+					<li class="firefox-fix-menu"><a href="#consultoria" class="consultoria">Serviços</a></li>
+					<li class="firefox-fix-menu"><a href="#sobre" class="sobre">Sobre</a></li>
+					<li class="firefox-fix-menu"><a href="#parcerias" class="parcerias">Parcerias</a></li>
+					<li class="firefox-fix-menu"><a href="#contato" class="contato">Contato</a></li>
+					<li class="firefox-fix-menu" id="idioma">
+						<a href="#" class="active">
+							<i>
+								<img src="src/icons/brazil.svg" type="">
+							</i>
+							<span>Português</span>
+						</a>
+						<span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; </span>
+						<a href="/en">
+							<i>
+								<img src="src/icons/united-states.svg" type="">
+							</i>
+							<span>English</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main>
-		<section id="header">
+		<section id="servicos">
 			<div class="container">
 				<h1>Consultoria e representação no setor de Energia</h1>
+				<a href="#consultoria" id="scroll-down">Saiba mais</a>	
 			</div>
-				<a href=""id=scroll-down>
-					Saiba mais
-				</a>
 		</section>
 		<section id="consultoria">
 			<div>
@@ -81,30 +103,30 @@
 
 				<ul>
 					<li>
-						<div>
-							<img src="src/img/estudos_mercado.svg">
-						</div>
+						<figure>
+							<embed src="src/img/estudos_mercado.svg">
+						</figure>
 						<h4>Estudos de Mercado</h4>
 						<p>Base para estruturar o Plano Estratégico de Negócios e identificação de aquisições.</p>
 					</li>
 					<li>
-						<div>
-							<img src="src/img/plano_negocios.svg">
-						</div>
+						<figure>
+							<embed src="src/img/plano_negocios.svg">
+						</figure>
 						<h4>Plano de Negócios</h4>
 						<p>Fundamentado em estudos de mercado, elaboramos um plano de negócios para futuros projetos de empresa.</p>
 					</li>
 					<li>
-						<div>
-							<img src="src/img/representacao_comercial.svg">
-						</div>
+						<figure>
+							<embed src="src/img/representacao_comercial.svg">
+						</figure>
 						<h4>Representação Comercial</h4>
 						<p>Representação dos interesses de empresas estrangeiras na comercialização de seus produtos e serviços no Brasil, incluindo apoio logístico.</p>
 					</li>
 					<li>
-						<div>
-							<img src="src/img/suporte_vendas.svg">
-						</div>
+						<figure>
+							<embed src="src/img/suporte_vendas.svg">
+						</figure>
 						<h4>Suporte à Vendas</h4>
 						<p>Viabilizamos o processo de vendas para os nossos representados através de um rede de contatos.</p>
 					</li>
@@ -192,13 +214,17 @@
 
 			<ul>
 				<li>
+					<i><embed src="src/icons/contact.svg" type=""></i>
 					<h5>Contato</h5>
 					<a href="mailto:jaf@encore-br.com">jaf@encore-br.com</a><br>
-					<a href="tel:1136813191">Tel: +55 11 3681 3191</a>
+					<a href="tel:+551136813191">Tel: +55 11 3681 3191</a>
 				</li>
 				<li>
-					<h5>Endereço</h5>
-					<a href="https://www.google.com/maps/place/Av.+Dr.+Martin+Luther+King,+1999+-+Cidade+S%C3%A3o+Francisco,+Osasco+-+SP,+05576-100/@-23.5562453,-46.7618802,19z/data=!4m6!1m3!3m2!1s0x94ce55f689d83757:0xf9e15cf518808015!2sAv.+Dr.+Martin+Luther+King,+1999+-+Cidade+S%C3%A3o+Francisco,+Osasco+-+SP,+05576-100!3m1!1s0x94ce55f689d83757:0xf9e15cf518808015" target="_blank">Av. Dr. Martin Luther King, 1999<br>Osasco, SP - Brasil</a>
+					<a href="https://www.google.com/maps/place/Av.+Dr.+Martin+Luther+King,+1999+-+Cidade+S%C3%A3o+Francisco,+Osasco+-+SP,+05576-100/@-23.5562453,-46.7618802,19z/data=!4m6!1m3!3m2!1s0x94ce55f689d83757:0xf9e15cf518808015!2sAv.+Dr.+Martin+Luther+King,+1999+-+Cidade+S%C3%A3o+Francisco,+Osasco+-+SP,+05576-100!3m1!1s0x94ce55f689d83757:0xf9e15cf518808015" target="_blank">
+					<i><embed src="src/icons/map-pin.svg" type=""></i>
+						<h5>Endereço</h5>
+						Av. Dr. Martin Luther King, 1999<br>Osasco, SP - Brasil
+					</a>
 				</li>
 			</ul>
 			<div class="social-media">
@@ -206,6 +232,7 @@
 			</div>
 		</footer>
 	</main>
+	<script src="src/js/jquery.min.js"></script>
 	<script src="src/js/script.js"></script>
 </body>
 </html>

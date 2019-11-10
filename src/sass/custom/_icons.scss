@@ -1,0 +1,10 @@
+i{
+	display: inline-block;
+	width: 1.5rem;
+	padding: 0.3125rem;
+
+	embed{
+		@extend img;
+	}
+
+}

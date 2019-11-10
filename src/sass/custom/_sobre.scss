@@ -1,7 +1,8 @@
 #sobre{
-	background-image: url('../src/img/sobre.png');
+	background-image: url('../src/img/sobre.jpg');
 	background-size: cover;
 	background-position: center;
+	// background-attachment: fixed;
 	overflow: hidden;
 	position: relative;
 	padding: 2rem 1.5rem;
@@ -11,5 +12,12 @@
 	.container{
 		background-color: rgba($white, 0.9);
 		padding: 2rem 1rem;
+		@media #{$medium-and-up} {
+			padding-bottom: 4rem;
+		}
+
+		@media #{$large-and-up} {
+			max-width: 768px;
+		}
 	}
 }

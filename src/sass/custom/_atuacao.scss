@@ -1,15 +1,35 @@
 #atuacao{
 	background-color: $orange;
-	padding: 2rem;
+	padding: 1rem;
 
 	.container{
 		padding: 1rem;
+		
+		@media #{$medium-and-up}{
+			padding: 4rem;
+			margin-top: 0;
+		}
+
+		@media #{$large-and-up} {
+			max-width: 1200px;
+		}
+
 		padding-bottom: 3rem;
 		margin-top: 4rem;
 		background-color: rgba($white, 0.1);
 
 		.texto-container{
 			margin-top: -4.5rem;
+			@media #{$medium-and-up} {
+				margin-top: -7.5rem;
+			}
+
+			@media #{$large-and-up} {
+				max-width: 25rem;
+				padding-left: 4rem;
+				padding-right: 4rem;
+			}
+
 			padding-bottom: 1.5rem;
 			background-color: $orange;
 			h2{
@@ -36,16 +56,29 @@
 				line-height: 2rem;
 				margin-top: 3rem;
 				text-transform: uppercase;
+				@media #{$large-and-up} {
+					text-align: left;
+					padding-left: 12rem;
+				}
 			}
 		}
 		
 		figure{
 			width: 23%;
-			display: inline-block;
+			display: inline-grid;
 			margin: 0 4.5%;
 			margin-top: 1.5rem;
-			&:last-of-type{
-				transform: translateY(1.111111rem);
+			// &:last-of-type{
+			// 	transform: translateY(1.111111rem);
+			// 	transform: -webkit-translateY(1.111111rem);
+			// 	transform: -moz-translateY(1.111111rem);
+			// 	transform: -o-translateY(1.111111rem);
+			// 	transform: -ms-translateY(1.111111rem);
+			// }
+
+			@media #{$large-and-up} {
+				width: 6.66667%;
+				margin: 0 2%;
 			}
 
 			figcaption{
@@ -58,13 +91,33 @@
 			}
 		}
 
+		.energia{
+			@media #{$medium-only} {
+				// figure:last-of-type{
+				// 	transform: translateY(0);
+				// 	-webkit-transform: translateY(0);
+				// 	-moz-transform: translateY(0);
+				// 	-o-transform: translateY(0);
+				// 	-ms-transform: translateY(0);
+				// }
+			}
+		}
+
 		.industria{
 			figure{
-				&:nth-child(3){
-					transform: translateY(1rem);
-				}
-				&:nth-child(5), &:nth-child(6){
-					width: 28%;
+				// &:nth-child(3){
+				// 	transform: translateY(1rem);
+				// 	-webkit-transform: translateY(1rem);
+				// 	-moz-transform: translateY(1rem);
+				// 	-o-transform: translateY(1rem);
+				// 	-ms-transform: translateY(1rem);
+				// }
+				// &:nth-child(5), &:nth-child(6){
+				// 	width: 28%;
+				// }
+				@media #{$large-and-up} {
+					width: 7% !important;
+					margin: 0 3%;
 				}
 			}
 		}

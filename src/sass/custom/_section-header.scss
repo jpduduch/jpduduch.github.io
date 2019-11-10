@@ -1,13 +1,14 @@
-#header{
+#servicos{
 
-	background-image: url('../src/img/hero.png');
+	background-image: url('../src/img/hero.jpg');
 	background-size: cover;
 	background-position: center;
+	// background-attachment: fixed;
 	overflow: hidden;
 	width: 100%;
 	height: calc(100vh - 128px);
 	position: relative;
-	z-index: -1;
+	z-index: 0;
 	
 	.container{
 		top: 50%;
@@ -20,12 +21,26 @@
 		text-align: center;
 		color: $white;
 
-	}
-	#scroll-down{
-		position: absolute;
-		bottom: 1rem;
-		transform: translateX(-50%);
-		left: 50%;
+		#scroll-down{
+			text-align: center;
+			color: $white;
+			font-weight: $Regular;
+			font-size: 1rem;
+			margin-top: 2.5rem;
+			padding: 0.5rem 2rem;
+			background-color: $orange;
+			display: inline-block;
+		}
+
+		@media #{$large-and-up} {
+			text-align: left;
+			left: 71%;
+
+			h1{
+				text-align: left;
+			}
+		}
+
 	}
 
 	&:after{

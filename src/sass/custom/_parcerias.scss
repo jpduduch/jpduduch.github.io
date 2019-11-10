@@ -1,10 +1,26 @@
 #parcerias{
 	@extend #consultoria;
+	@media #{$medium-and-up} {
+		padding-bottom: 3rem !important;
+	}
 	background-color: $light-gray;
-	padding-bottom: 4rem;
+	h2{
+		margin-bottom: 2rem;
+	}
 
 	figure{
 		margin: 0 4rem;
-		margin-top: 6rem;
+		margin-bottom: 4rem;
+		@media #{$medium-and-up} {
+			display: inline-block;
+			margin: 0 10rem;
+			margin-bottom: 5rem;
+		}
+		@media #{$large-and-up}{
+			width: 25%;
+			margin: 0;
+			padding: 0 3rem;
+			margin-bottom: 5rem;
+		}
 	}
 }

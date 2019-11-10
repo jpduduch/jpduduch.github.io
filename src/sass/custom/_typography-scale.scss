@@ -11,6 +11,10 @@ h1{
 	font-weight: $Regular;
 	text-align: center;
 	color: $white;
+	@media #{$medium-and-up}{
+		font-size: (40rem/$rem-default)*1;
+		line-height: (58rem/$rem-default)*1;;
+	}
 }
 
 h2{
@@ -42,6 +46,7 @@ h4{
 h5{
 	font-weight: $Bold;
 	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
 }
 
 a{

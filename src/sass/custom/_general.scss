@@ -1,7 +1,13 @@
 section div{
-	max-width: 320px;
 	margin: 0 auto;
 }
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+
 //icons
 i{
 	display: inline-block;
@@ -72,4 +78,12 @@ video {
 %valign-wrapper {
   display: flex;
   align-items: center;
+}
+
+// classe para evitar o bug de posicionamento após elemento
+
+.normalizar-responsividade{
+		content: "";
+		display: table;
+		clear: both;
 }

@@ -1,0 +1,49 @@
+// @import "custom/variables";
+
+// #atuacao{
+// 	.container{
+// 		.industria{
+// 			.oleo-gas{
+// 				@media #{$large-and-up} {
+// 					transform: translateY(1rem);
+// 					-webkit-transform: translateY(1rem);
+// 					-moz-transform: translateY(1rem);
+// 					-o-transform: translateY(1rem);
+// 					-ms-transform: translateY(1rem);
+// 				}
+// 			}
+
+// 			.celulose{
+// 				transform: translateY(1rem) !important;
+// 				-webkit-transform: translateY(1rem) !important;
+// 				-moz-transform: translateY(1rem) !important;
+// 				-o-transform: translateY(1rem) !important;
+// 				-ms-transform: translateY(1rem) !important;
+// 			}
+// 			.mineracao{
+// 				transform: translateY(-1rem);
+// 				-webkit-transform: translateY(-1rem);
+// 				-moz-transform: translateY(-1rem);
+// 				-o-transform: translateY(-1rem);
+// 				-ms-transform: translateY(-1rem);
+// 				@media #{$medium-and-up} {
+// 					transform: translateY(0rem);
+// 					-webkit-transform: translateY(0rem);
+// 					-moz-transform: translateY(0rem);
+// 					-o-transform: translateY(0rem);
+// 					-ms-transform: translateY(0rem);
+// 				}
+// 			}
+
+// 			.saneamento{
+// 				@media #{$medium-only} {
+// 					transform: translateY(0rem);
+// 					-webkit-transform: translateY(0rem);
+// 					-moz-transform: translateY(0rem);
+// 					-o-transform: translateY(0rem);
+// 					-ms-transform: translateY(0rem);
+// 				}
+// 			}
+// 		}
+// 	}
+// }
