@@ -1,22 +1,25 @@
-@media #{$medium-and-up}{
-	section div{
-		max-width: 560px;
-	}	
+*, body, html {
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 2rem;
 }
 
-@media #{$large-and-up} {
-	section div{
-		max-width: 1200px;
-	}
-}
-#consultoria, #sobre, #atuacao{
-  @media #{$medium-and-up} {
-    padding: 6rem 0;
-  }
+body{
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 2rem;
 }
 
-#atuacao{
-	@media #{$large-and-up} {
-		padding-bottom: 0;
-	}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+ul, blockquote{
+	margin: 2rem 3rem;
+}
+
+code{
+	display: block;
 }

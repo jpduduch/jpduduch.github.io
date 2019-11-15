@@ -1,0 +1,23 @@
+*, body, html {
+	font-family: 'Lora', serif;
+}
+
+em{
+	font-weight: light;
+}
+
+a{
+	color: black;
+	font-weight: black;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-top: 3rem;
+}
+
+blockquote{
+	p, a, strong, em{
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+	}
+}
