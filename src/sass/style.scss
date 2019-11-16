@@ -1,14 +1,20 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @charset "UTF-8"; 
-// @import "compass/reset";
+@import "compass/reset";
 @import "compass/css3";
 
-@import "custom/normalize";
-@import "custom/grid";
-@import "custom/fonts";
-@import "custom/typography";
+*, body, html {
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.5rem;
+	user-select: none;
+	overflow: hidden;
+    background-color: #262621;
+}
 
+@import "custom/normalize";
+@import "custom/vars";
+@import "custom/colors";
+
+@import "custom/fonts";
+@import "custom/typography-scale";
+// @import "custom/general";
