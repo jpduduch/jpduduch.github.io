@@ -7,8 +7,9 @@
 	font-size: 16px;
 	line-height: 1.5rem;
 	user-select: none;
-	overflow: hidden;
-    background-color: #262621;
+}
+body{
+	background-color: #262621;
 }
 
 @import "custom/normalize";
@@ -17,4 +18,4 @@
 
 @import "custom/fonts";
 @import "custom/typography-scale";
-// @import "custom/general";
+@import "custom/main";

@@ -4,3 +4,26 @@
 	text-align: left;
 	color: $white;
 }
+
+h1{
+	font-size: 2.5rem;
+	font-weight: $regular;
+	margin: 0;
+}
+
+h2{
+	font-size: 1.25rem;
+	line-height: 2.25rem;
+	font-weight: $bold;
+}
+
+.caption{
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+	font-weight: $light;
+}
+
+p{
+	font-size: 14px;
+	font-weight: $light;
+}

@@ -1,0 +1,30 @@
+main{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.social-networks{
+	display: none;
+}
+
+footer{
+	p, i.down{
+		display: none;
+	}
+}
+
+footer{
+
+	ul.contato {
+		width: 100vh;
+		display: flex;
+		flex-wrap: wrap;
+		
+		li{
+			vertical-align: top;
+			flex: 1;
+		}
+	}
+
+}

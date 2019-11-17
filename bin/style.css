@@ -69,7 +69,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 16px;
   line-height: 1.5rem;
   user-select: none;
-  overflow: hidden;
+}
+
+/* line 11, ../src/sass/style.scss */
+body {
   background-color: #262621;
 }
 
@@ -539,6 +542,62 @@ th {
   font-weight: 100;
   text-align: left;
   color: #fbfbfb;
+}
+
+/* line 8, ../src/sass/custom/_typography-scale.scss */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* line 14, ../src/sass/custom/_typography-scale.scss */
+h2 {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+/* line 20, ../src/sass/custom/_typography-scale.scss */
+.caption {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 200;
+}
+
+/* line 26, ../src/sass/custom/_typography-scale.scss */
+p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* line 1, ../src/sass/custom/_main.scss */
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 7, ../src/sass/custom/_main.scss */
+.social-networks {
+  display: none;
+}
+
+/* line 12, ../src/sass/custom/_main.scss */
+footer p, footer i.down {
+  display: none;
+}
+
+/* line 19, ../src/sass/custom/_main.scss */
+footer ul.contato {
+  width: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 24, ../src/sass/custom/_main.scss */
+footer ul.contato li {
+  vertical-align: top;
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
