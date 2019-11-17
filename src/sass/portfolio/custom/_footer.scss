@@ -1,0 +1,28 @@
+footer{
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	ul{
+		li{
+			margin-top: 0.5rem;
+			font-size: 14px;
+		}
+
+		&.social-networks{
+			margin-top: 3rem;
+			li{
+				display: inline-block;
+				a{
+					width: 1.5rem;
+					height: 1.5rem;
+				}
+			}
+		}
+	}
+}

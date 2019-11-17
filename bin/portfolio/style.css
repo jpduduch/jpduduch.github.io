@@ -1,0 +1,283 @@
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../../src/sass/portfolio/style.scss */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+/* line 2, ../../src/sass/portfolio/custom/_fluid.scss */
+* {
+  user-select: none;
+}
+
+/* line 11, ../../src/sass/portfolio/custom/_fluid.scss */
+body {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, ../../src/sass/portfolio/custom/_fluid.scss */
+canvas {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 27, ../../src/sass/portfolio/custom/_fluid.scss */
+.dg {
+  opacity: 0.9;
+}
+
+/* line 31, ../../src/sass/portfolio/custom/_fluid.scss */
+.dg .property-name {
+  overflow: visible;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.ttf") format("truetype");
+}
+/* line 40, ../../src/sass/portfolio/custom/_fluid.scss */
+.bigFont {
+  font-size: 150%;
+  color: #8C8C8C;
+}
+
+/* line 45, ../../src/sass/portfolio/custom/_fluid.scss */
+.cr.function.appBigFont {
+  font-size: 150%;
+  line-height: 27px;
+  color: #A5F8D3;
+  background-color: #023C40;
+}
+
+/* line 52, ../../src/sass/portfolio/custom/_fluid.scss */
+.cr.function.appBigFont .property-name {
+  float: none;
+}
+
+/* line 56, ../../src/sass/portfolio/custom/_fluid.scss */
+.cr.function.appBigFont .icon {
+  position: sticky;
+  bottom: 27px;
+}
+
+/* line 61, ../../src/sass/portfolio/custom/_fluid.scss */
+.icon {
+  font-family: 'iconfont';
+  font-size: 130%;
+  float: right;
+}
+
+/* line 67, ../../src/sass/portfolio/custom/_fluid.scss */
+.twitter:before {
+  content: 'a';
+}
+
+/* line 71, ../../src/sass/portfolio/custom/_fluid.scss */
+.github:before {
+  content: 'b';
+}
+
+/* line 75, ../../src/sass/portfolio/custom/_fluid.scss */
+.app:before {
+  content: 'c';
+}
+
+/* line 79, ../../src/sass/portfolio/custom/_fluid.scss */
+.discord:before {
+  content: 'd';
+}
+
+@font-face {
+  font-family: League Gothic;
+  src: url("../../src/fonts/LeagueGothic-Italic.otf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Roboto Mono;
+  src: url("../../src/fonts/RobotoMono-Bold.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../src/fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+/* line 20, ../../src/sass/portfolio/custom/_typography.scss */
+*, body, html {
+  font-family: Roboto Mono;
+  text-align: center;
+}
+
+/* line 25, ../../src/sass/portfolio/custom/_typography.scss */
+h1, h2, h3, h4, h5, h6, p, a, small, span, div {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+/* line 33, ../../src/sass/portfolio/custom/_typography.scss */
+h1 {
+  font-family: League Gothic;
+  font-size: 6.5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+/* line 34, ../../src/sass/portfolio/custom/_typography.scss */
+h1:before {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+}
+
+/* line 46, ../../src/sass/portfolio/custom/_typography.scss */
+p {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+/* line 51, ../../src/sass/portfolio/custom/_typography.scss */
+a {
+  color: #000000;
+}
+
+/* line 2, ../../src/sass/portfolio/custom/_header.scss */
+header h1 {
+  margin-left: -1.25rem;
+  margin-top: 20vw;
+}
+/* line 7, ../../src/sass/portfolio/custom/_header.scss */
+header ul {
+  margin-top: 1rem;
+}
+/* line 10, ../../src/sass/portfolio/custom/_header.scss */
+header ul li {
+  display: inline-block;
+  font-family: Lato;
+  text-transform: uppercase;
+  font-size: 0.825rem;
+  line-height: 1.25rem;
+  margin: 0 0.5rem;
+}
+
+/* line 21, ../../src/sass/portfolio/custom/_header.scss */
+section {
+  position: absolute;
+  -webkit-transform: translate(-50%, -33%);
+  -moz-transform: translate(-50%, -33%);
+  -o-transform: translate(-50%, -33%);
+  -ms-transform: translate(-50%, -33%);
+  transform: translate(-50%, -33%);
+  top: 60%;
+  left: 50%;
+  width: 100%;
+}
+
+/* line 33, ../../src/sass/portfolio/custom/_header.scss */
+header, section {
+  pointer-events: none;
+}
+
+/* line 1, ../../src/sass/portfolio/custom/_footer.scss */
+footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 12, ../../src/sass/portfolio/custom/_footer.scss */
+footer ul li {
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+/* line 17, ../../src/sass/portfolio/custom/_footer.scss */
+footer ul.social-networks {
+  margin-top: 3rem;
+}
+/* line 19, ../../src/sass/portfolio/custom/_footer.scss */
+footer ul.social-networks li {
+  display: inline-block;
+}
+/* line 21, ../../src/sass/portfolio/custom/_footer.scss */
+footer ul.social-networks li a {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

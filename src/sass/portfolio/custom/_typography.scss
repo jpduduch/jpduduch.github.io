@@ -1,0 +1,53 @@
+@font-face {
+	font-family: League Gothic;
+	src: url('#{$font-path}LeagueGothic-Italic.otf') format('truetype');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: Roboto Mono;
+	src: url('#{$font-path}RobotoMono-Bold.ttf') format('truetype');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url('#{$font-path}Lato-Black.ttf') format('truetype');
+	font-weight: 900;
+}
+
+
+*, body, html{
+	font-family: Roboto Mono;
+	text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6, p, a, small, span, div {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: geometricPrecision;
+}
+
+// estilos de texto
+
+h1{
+	&:before{
+		content: '';
+		display: inline-block;
+		width: 2rem;
+		height: 1rem;
+	}
+	font-family: League Gothic;
+	font-size: 6.5rem;
+	line-height: 5rem;
+	text-transform: uppercase;
+}
+
+p{
+	font-size: 1rem;
+	letter-spacing: 0.5rem;
+}
+
+a{
+	color: $black;
+}

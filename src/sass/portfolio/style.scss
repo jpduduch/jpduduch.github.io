@@ -1,0 +1,16 @@
+@charset "UTF-8"; 
+// @import "custom/normalize";
+@import "compass/reset";
+@import "compass/css3";
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.5rem;
+}
+@import "custom/fluid";
+
+@import "custom/vars";
+@import "custom/typography";
+@import "custom/header";
+@import "custom/footer";
