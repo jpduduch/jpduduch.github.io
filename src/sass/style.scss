@@ -1,4 +1,5 @@
 @charset "UTF-8"; 
+// @import "custom/normalize";
 @import "compass/reset";
 @import "compass/css3";
 
@@ -9,13 +10,17 @@
 	user-select: none;
 }
 body{
-	background-color: #262621;
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 
-@import "custom/normalize";
 @import "custom/vars";
 @import "custom/colors";
+@import "custom/fluid";
 
 @import "custom/fonts";
 @import "custom/typography-scale";
 @import "custom/main";
+@import "custom/footer";
