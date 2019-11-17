@@ -96,14 +96,15 @@ body {
 canvas {
   width: 100%;
   height: 100%;
+  z-index: 10;
 }
 
-/* line 23, ../src/sass/custom/_fluid.scss */
+/* line 24, ../src/sass/custom/_fluid.scss */
 .dg {
   opacity: 0.9;
 }
 
-/* line 27, ../src/sass/custom/_fluid.scss */
+/* line 28, ../src/sass/custom/_fluid.scss */
 .dg .property-name {
   overflow: visible;
 }
@@ -112,13 +113,13 @@ canvas {
   font-family: 'iconfont';
   src: url("iconfont.ttf") format("truetype");
 }
-/* line 36, ../src/sass/custom/_fluid.scss */
+/* line 37, ../src/sass/custom/_fluid.scss */
 .bigFont {
   font-size: 150%;
   color: #8C8C8C;
 }
 
-/* line 41, ../src/sass/custom/_fluid.scss */
+/* line 42, ../src/sass/custom/_fluid.scss */
 .cr.function.appBigFont {
   font-size: 150%;
   line-height: 27px;
@@ -126,40 +127,40 @@ canvas {
   background-color: #023C40;
 }
 
-/* line 48, ../src/sass/custom/_fluid.scss */
+/* line 49, ../src/sass/custom/_fluid.scss */
 .cr.function.appBigFont .property-name {
   float: none;
 }
 
-/* line 52, ../src/sass/custom/_fluid.scss */
+/* line 53, ../src/sass/custom/_fluid.scss */
 .cr.function.appBigFont .icon {
   position: sticky;
   bottom: 27px;
 }
 
-/* line 57, ../src/sass/custom/_fluid.scss */
+/* line 58, ../src/sass/custom/_fluid.scss */
 .icon {
   font-family: 'iconfont';
   font-size: 130%;
   float: right;
 }
 
-/* line 63, ../src/sass/custom/_fluid.scss */
+/* line 64, ../src/sass/custom/_fluid.scss */
 .twitter:before {
   content: 'a';
 }
 
-/* line 67, ../src/sass/custom/_fluid.scss */
+/* line 68, ../src/sass/custom/_fluid.scss */
 .github:before {
   content: 'b';
 }
 
-/* line 71, ../src/sass/custom/_fluid.scss */
+/* line 72, ../src/sass/custom/_fluid.scss */
 .app:before {
   content: 'c';
 }
 
-/* line 75, ../src/sass/custom/_fluid.scss */
+/* line 76, ../src/sass/custom/_fluid.scss */
 .discord:before {
   content: 'd';
 }
@@ -229,9 +230,9 @@ p {
   padding: 2rem;
   position: absolute;
   top: 0;
-  pointer-events: none;
   width: 100%;
   height: 100vh;
+  pointer-events: none;
 }
 /* line 9, ../src/sass/custom/_main.scss */
 .container section {
