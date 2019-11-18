@@ -10,5 +10,7 @@ $(document).ready(function(){
 });
 
 $(window).resize(function() {
-	$('body').css('height', '');
+	if (!detectmob()){
+		$('body').css('height', '');
+	}
 });
