@@ -213,16 +213,30 @@ a {
   color: #000000;
 }
 
-/* line 2, ../../src/sass/portfolio/custom/_header.scss */
+/* line 1, ../../src/sass/portfolio/custom/_header.scss */
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-itens: center;
+  align-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  height: calc(100vh - 8rem);
+}
+
+/* line 17, ../../src/sass/portfolio/custom/_header.scss */
 header h1 {
   margin-left: -1.25rem;
-  margin-top: 20vw;
 }
-/* line 7, ../../src/sass/portfolio/custom/_header.scss */
+/* line 22, ../../src/sass/portfolio/custom/_header.scss */
 header ul {
   margin-top: 1rem;
 }
-/* line 10, ../../src/sass/portfolio/custom/_header.scss */
+/* line 25, ../../src/sass/portfolio/custom/_header.scss */
 header ul li {
   display: inline-block;
   font-family: Lato;
@@ -232,49 +246,52 @@ header ul li {
   margin: 0 0.5rem;
 }
 
-/* line 21, ../../src/sass/portfolio/custom/_header.scss */
+/* line 36, ../../src/sass/portfolio/custom/_header.scss */
 section {
+  position: relative;
+  width: 100%;
+}
+/* line 39, ../../src/sass/portfolio/custom/_header.scss */
+section p {
   position: absolute;
-  -webkit-transform: translate(-50%, -33%);
-  -moz-transform: translate(-50%, -33%);
-  -o-transform: translate(-50%, -33%);
-  -ms-transform: translate(-50%, -33%);
-  transform: translate(-50%, -33%);
-  top: 60%;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   width: 100%;
 }
 
-/* line 33, ../../src/sass/portfolio/custom/_header.scss */
+/* line 52, ../../src/sass/portfolio/custom/_header.scss */
 header, section {
   pointer-events: none;
+  flex: 1;
+  align-self: center;
 }
 
 /* line 1, ../../src/sass/portfolio/custom/_footer.scss */
 footer {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  flex: 1;
+  align-self: center;
+  margin: auto;
+  flex-grow: 0;
 }
-/* line 12, ../../src/sass/portfolio/custom/_footer.scss */
+/* line 16, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul li {
   margin-top: 0.5rem;
   font-size: 14px;
 }
-/* line 17, ../../src/sass/portfolio/custom/_footer.scss */
+/* line 21, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul.social-networks {
   margin-top: 3rem;
 }
-/* line 19, ../../src/sass/portfolio/custom/_footer.scss */
+/* line 23, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul.social-networks li {
   display: inline-block;
 }
-/* line 21, ../../src/sass/portfolio/custom/_footer.scss */
+/* line 25, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul.social-networks li a {
   width: 1.5rem;
   height: 1.5rem;

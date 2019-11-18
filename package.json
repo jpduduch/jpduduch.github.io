@@ -1,0 +1,25 @@
+{
+  "name": "jpduduch.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "bin": {
+    "jpduduch.github.io": "script-min.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpduduch/jpduduch.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpduduch/jpduduch.github.io/issues"
+  },
+  "homepage": "https://github.com/jpduduch/jpduduch.github.io#readme",
+  "devDependencies": {
+    "jquery": "^3.4.1"
+  }
+}
