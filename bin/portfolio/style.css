@@ -252,10 +252,11 @@ header ul li {
 
 /* line 37, ../../src/sass/portfolio/custom/_header.scss */
 section {
+  flex: 1;
   position: relative;
   width: 100%;
 }
-/* line 40, ../../src/sass/portfolio/custom/_header.scss */
+/* line 41, ../../src/sass/portfolio/custom/_header.scss */
 section p {
   position: absolute;
   top: 50%;
@@ -268,10 +269,9 @@ section p {
   width: 100%;
 }
 
-/* line 53, ../../src/sass/portfolio/custom/_header.scss */
+/* line 54, ../../src/sass/portfolio/custom/_header.scss */
 header, section {
   pointer-events: none;
-  flex: 1;
   align-self: center;
 }
 
