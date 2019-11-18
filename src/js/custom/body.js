@@ -13,4 +13,9 @@ $(window).resize(function() {
 	if (!detectmob()){
 		$('body').css('height', '');
 	}
+	else{
+		var $alturaPagina = $(window).height() - $1rem * 8;
+		
+		$('body').css('height', $alturaPagina + 'px');
+	}
 });
