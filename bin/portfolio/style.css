@@ -228,15 +228,19 @@ body {
   height: calc(100vh - 8rem);
 }
 
-/* line 17, ../../src/sass/portfolio/custom/_header.scss */
+/* line 16, ../../src/sass/portfolio/custom/_header.scss */
+header {
+  flex: 0;
+}
+/* line 18, ../../src/sass/portfolio/custom/_header.scss */
 header h1 {
   margin-left: -1.25rem;
 }
-/* line 22, ../../src/sass/portfolio/custom/_header.scss */
+/* line 23, ../../src/sass/portfolio/custom/_header.scss */
 header ul {
   margin-top: 1rem;
 }
-/* line 25, ../../src/sass/portfolio/custom/_header.scss */
+/* line 26, ../../src/sass/portfolio/custom/_header.scss */
 header ul li {
   display: inline-block;
   font-family: Lato;
@@ -246,12 +250,12 @@ header ul li {
   margin: 0 0.5rem;
 }
 
-/* line 36, ../../src/sass/portfolio/custom/_header.scss */
+/* line 37, ../../src/sass/portfolio/custom/_header.scss */
 section {
   position: relative;
   width: 100%;
 }
-/* line 39, ../../src/sass/portfolio/custom/_header.scss */
+/* line 40, ../../src/sass/portfolio/custom/_header.scss */
 section p {
   position: absolute;
   top: 50%;
@@ -264,7 +268,7 @@ section p {
   width: 100%;
 }
 
-/* line 52, ../../src/sass/portfolio/custom/_header.scss */
+/* line 53, ../../src/sass/portfolio/custom/_header.scss */
 header, section {
   pointer-events: none;
   flex: 1;
