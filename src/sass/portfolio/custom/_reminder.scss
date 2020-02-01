@@ -1,0 +1,31 @@
+#reminder{
+	pointer-events: none;
+	position: absolute;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: .7s;
+
+	@media #{$large-and-up} {
+		font-size: 1.5rem;
+	}
+
+	&.active{
+		transition-delay: 5s;
+		opacity: 1;
+	}
+
+	.mobile{
+		@media #{$large-and-up}{
+			display: none;
+		}
+	}
+
+	.desktop{
+		@media #{$medium-and-down} {
+			display: none;
+		}
+	}
+}

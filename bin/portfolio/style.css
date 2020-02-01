@@ -275,6 +275,41 @@ header, section {
   align-self: center;
 }
 
+/* line 1, ../../src/sass/portfolio/custom/_reminder.scss */
+#reminder {
+  pointer-events: none;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .7s;
+}
+@media only screen and (min-width: 993px) {
+  /* line 1, ../../src/sass/portfolio/custom/_reminder.scss */
+  #reminder {
+    font-size: 1.5rem;
+  }
+}
+/* line 15, ../../src/sass/portfolio/custom/_reminder.scss */
+#reminder.active {
+  transition-delay: 5s;
+  opacity: 1;
+}
+@media only screen and (min-width: 993px) {
+  /* line 20, ../../src/sass/portfolio/custom/_reminder.scss */
+  #reminder .mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 26, ../../src/sass/portfolio/custom/_reminder.scss */
+  #reminder .desktop {
+    display: none;
+  }
+}
+
 /* line 1, ../../src/sass/portfolio/custom/_footer.scss */
 footer {
   flex: 1;

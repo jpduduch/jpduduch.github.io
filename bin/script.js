@@ -1700,7 +1700,7 @@ $('a[href*="#"]')
       }
     }
   });
-$1rem = 16;
+var $1rem = 16;
 //regular a altura do navegador para não cortar info (bugfix para dispositivos móveis)
 
 $(document).ready(function(){
@@ -1716,4 +1716,37 @@ $(window).resize(function() {
 	if (!detectmob()){
 		$('body').css('height', '');
 	}
+	else{
+		var $alturaPagina = $(window).height() - $1rem * 8;
+		
+		$('body').css('height', $alturaPagina + 'px');
+	}
 });
+$(document).ready(function(){
+	$('#reminder').addClass('active');
+});
+
+
+if (!detectmob()) {
+	$(window).mouseup(function() {
+		$('#reminder').addClass('active');
+	});
+
+	$(window).mousedown(function() {
+		$('#reminder').removeClass('active');
+	});
+
+} else {
+	$(window).on('touchstart', function(){
+		$('#reminder').removeClass('active');
+	});
+
+	$(window).on('touchend', function(){
+		$('#reminder').addClass('active');
+	});
+}
+
+
+
+
+	
