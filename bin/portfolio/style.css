@@ -317,20 +317,20 @@ footer {
   margin: auto;
   flex-grow: 0;
 }
-/* line 16, ../../src/sass/portfolio/custom/_footer.scss */
+/* line 8, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul li {
   margin-top: 0.5rem;
   font-size: 14px;
 }
-/* line 21, ../../src/sass/portfolio/custom/_footer.scss */
+/* line 13, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul.social-networks {
   margin-top: 3rem;
 }
-/* line 23, ../../src/sass/portfolio/custom/_footer.scss */
+/* line 15, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul.social-networks li {
   display: inline-block;
 }
-/* line 25, ../../src/sass/portfolio/custom/_footer.scss */
+/* line 17, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul.social-networks li a {
   width: 1.5rem;
   height: 1.5rem;
