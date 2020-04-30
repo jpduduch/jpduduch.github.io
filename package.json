@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/jpduduch/jpduduch.github.io#readme",
   "devDependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
