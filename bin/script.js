@@ -96,7 +96,7 @@ let config = {
     // SUNRAYS_RESOLUTION: 196,
     // SUNRAYS_WEIGHT: 1.0,
 
-    BACK_COLOR: {r: 0, g: 0, b: 0},
+    BACK_COLOR: {r: 0, g: 50, b: 255},
     BLOOM: true,
     BLOOM_INTENSITY: 1.813352785883007,
     BLOOM_ITERATIONS: 8,

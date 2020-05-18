@@ -205,12 +205,17 @@ h1:before {
 /* line 46, ../../src/sass/portfolio/custom/_typography.scss */
 p {
   font-size: 1rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.125rem;
 }
 
 /* line 51, ../../src/sass/portfolio/custom/_typography.scss */
 a {
   color: #000000;
+}
+
+/* line 58, ../../src/sass/portfolio/custom/_typography.scss */
+.underline {
+  text-decoration: underline;
 }
 
 /* line 1, ../../src/sass/portfolio/custom/_header.scss */
@@ -267,9 +272,10 @@ section p {
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   width: 100%;
+  padding: 0 4rem;
 }
 
-/* line 54, ../../src/sass/portfolio/custom/_header.scss */
+/* line 55, ../../src/sass/portfolio/custom/_header.scss */
 header, section {
   pointer-events: none;
   align-self: center;

@@ -45,9 +45,16 @@ h1{
 
 p{
 	font-size: 1rem;
-	letter-spacing: 0.5rem;
+	letter-spacing: 0.125rem;
 }
 
 a{
 	color: $black;
+}
+
+
+// text styles
+
+.underline{
+	text-decoration: underline;
 }

@@ -20,6 +20,15 @@
   },
   "homepage": "https://github.com/jpduduch/jpduduch.github.io#readme",
   "devDependencies": {
-    "jquery": "^3.4.1"
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^3.5.1",
+    "jshint": "^2.11.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0"
   }
 }
