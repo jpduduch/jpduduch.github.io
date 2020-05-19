@@ -1,24 +1,28 @@
 $(document).ready(function(){
-	$('#reminder').addClass('active');
+	$('.reminder').eq(1).addClass('active');
 });
 
 
 if (!detectmob()) {
 	$(window).mouseup(function() {
-		$('#reminder').addClass('active');
+		$('.reminder').eq(0).addClass('active');
+		$('.reminder').eq(1).removeClass('active');
 	});
 
 	$(window).mousedown(function() {
-		$('#reminder').removeClass('active');
+		$('.reminder').eq(0).removeClass('active');
+		$('.reminder').eq(1).removeClass('active');
 	});
 
 } else {
 	$(window).on('touchstart', function(){
-		$('#reminder').removeClass('active');
+		$('.reminder').eq(0).addClass('active');
+		$('.reminder').eq(1).removeClass('active');
 	});
 
 	$(window).on('touchend', function(){
-		$('#reminder').addClass('active');
+		$('.reminder').eq(0).addClass('active');
+		$('.reminder').eq(1).removeClass('active');
 	});
 }
 

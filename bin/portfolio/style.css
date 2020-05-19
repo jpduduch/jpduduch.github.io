@@ -181,20 +181,26 @@ canvas {
 }
 
 /* line 25, ../../src/sass/portfolio/custom/_typography.scss */
-h1, h2, h3, h4, h5, h6, p, a, small, span, div {
+h1, h2, h3, h4, h5, h6, p, a, small, div, li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: geometricPrecision;
+  backdrop-filter: blur(2);
 }
 
 /* line 33, ../../src/sass/portfolio/custom/_typography.scss */
+header {
+  color: #000000;
+}
+
+/* line 37, ../../src/sass/portfolio/custom/_typography.scss */
 h1 {
   font-family: League Gothic;
   font-size: 6.5rem;
   line-height: 5rem;
   text-transform: uppercase;
 }
-/* line 34, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 38, ../../src/sass/portfolio/custom/_typography.scss */
 h1:before {
   content: '';
   display: inline-block;
@@ -202,18 +208,19 @@ h1:before {
   height: 1rem;
 }
 
-/* line 46, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 50, ../../src/sass/portfolio/custom/_typography.scss */
 p {
   font-size: 1rem;
   letter-spacing: 0.125rem;
+  color: #000000;
 }
 
-/* line 51, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 56, ../../src/sass/portfolio/custom/_typography.scss */
 a {
   color: #000000;
 }
 
-/* line 58, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 60, ../../src/sass/portfolio/custom/_typography.scss */
 .underline {
   text-decoration: underline;
 }
@@ -282,36 +289,24 @@ header, section {
 }
 
 /* line 1, ../../src/sass/portfolio/custom/_reminder.scss */
-#reminder {
-  pointer-events: none;
-  position: absolute;
-  color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.reminder {
   opacity: 0;
   transition: .7s;
 }
-@media only screen and (min-width: 993px) {
-  /* line 1, ../../src/sass/portfolio/custom/_reminder.scss */
-  #reminder {
-    font-size: 1.5rem;
-  }
-}
 /* line 15, ../../src/sass/portfolio/custom/_reminder.scss */
-#reminder.active {
-  transition-delay: 5s;
+.reminder.active {
+  transition-delay: 1s;
   opacity: 1;
 }
 @media only screen and (min-width: 993px) {
   /* line 20, ../../src/sass/portfolio/custom/_reminder.scss */
-  #reminder .mobile {
+  .reminder .mobile {
     display: none;
   }
 }
 @media only screen and (max-width: 992px) {
   /* line 26, ../../src/sass/portfolio/custom/_reminder.scss */
-  #reminder .desktop {
+  .reminder .desktop {
     display: none;
   }
 }

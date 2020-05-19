@@ -44,31 +44,31 @@ const canvas = document.getElementsByTagName('canvas')[0];
 resizeCanvas();
 
 let config = {
-    // SIM_RESOLUTION: 128,
-    // DYE_RESOLUTION: 1024,
-    // CAPTURE_RESOLUTION: 512,
-    // DENSITY_DISSIPATION: 0.6,
-    // VELOCITY_DISSIPATION: 4,
-    // PRESSURE: 0.8,
-    // PRESSURE_ITERATIONS: 20,
-    // CURL: 0,
-    // SPLAT_RADIUS: 0.5,
-    // SPLAT_FORCE: 8000,
-    // SHADING: true,
-    // COLORFUL: true,
-    // COLOR_UPDATE_SPEED: 10,
-    // PAUSED: false,
-    // BACK_COLOR: { r: 0, g: 0, b: 0 },
-    // TRANSPARENT: false,
-    // BLOOM: true,
-    // BLOOM_ITERATIONS: 8,
-    // BLOOM_RESOLUTION: 256,
-    // BLOOM_INTENSITY: 0.8,
-    // BLOOM_THRESHOLD: 0.6,
-    // BLOOM_SOFT_KNEE: 0.7,
-    // SUNRAYS: true,
-    // SUNRAYS_RESOLUTION: 196,
-    // SUNRAYS_WEIGHT: 1.0,
+    SIM_RESOLUTION: 128,
+    DYE_RESOLUTION: 1024,
+    CAPTURE_RESOLUTION: 512,
+    DENSITY_DISSIPATION: 0.6,
+    VELOCITY_DISSIPATION: 1,
+    PRESSURE: 0.8,
+    PRESSURE_ITERATIONS: 20,
+    CURL: 0,
+    SPLAT_RADIUS: 6,
+    SPLAT_FORCE: 8000,
+    SHADING: true,
+    COLORFUL: true,
+    COLOR_UPDATE_SPEED: 10,
+    PAUSED: false,
+    BACK_COLOR: { r: 0, g: 0, b: 0 },
+    TRANSPARENT: false,
+    BLOOM: true,
+    BLOOM_ITERATIONS: 8,
+    BLOOM_RESOLUTION: 256,
+    BLOOM_INTENSITY: 0.8,
+    BLOOM_THRESHOLD: 0.6,
+    BLOOM_SOFT_KNEE: 0.7,
+    SUNRAYS: true,
+    SUNRAYS_RESOLUTION: 196,
+    SUNRAYS_WEIGHT: 1.0,
 
     // SIM_RESOLUTION: 128,
     // DYE_RESOLUTION: 1024,
@@ -96,7 +96,10 @@ let config = {
     // SUNRAYS_RESOLUTION: 196,
     // SUNRAYS_WEIGHT: 1.0,
 
-    BACK_COLOR: {r: 0, g: 50, b: 255},
+    // BACK_COLOR: {r: 0, g: 50, b: 128},
+    // BACK_COLOR: {r: 255, g: 213, b: 0},
+    BACK_COLOR: {r: 255, g: 255, b: 255},
+    // BACK_COLOR: {r: 0, g: 0, b: 0},
     BLOOM: true,
     BLOOM_INTENSITY: 1.813352785883007,
     BLOOM_ITERATIONS: 8,
@@ -115,7 +118,7 @@ let config = {
     SHADING: true,
     SIM_RESOLUTION: "128",
     SPLAT_FORCE: 6000,
-    SPLAT_RADIUS: 3,
+    SPLAT_RADIUS: 0.5,
     SUNRAYS: true,
     SUNRAYS_RESOLUTION: 196,
     SUNRAYS_WEIGHT: 1,
@@ -144,6 +147,7 @@ const { gl, ext } = getWebGLContext(canvas);
 
 if (isMobile()) {
     config.DYE_RESOLUTION = 512;
+    // config.SPLAT_RADIUS = 3;
 }
 if (!ext.supportLinearFiltering) {
     config.DYE_RESOLUTION = 512;
@@ -323,19 +327,19 @@ function isMobile () {
     return /Mobi|Android/i.test(navigator.userAgent);
 }
 
-function captureScreenshot () {
-    let res = getResolution(config.CAPTURE_RESOLUTION);
-    let target = createFBO(res.width, res.height, ext.formatRGBA.internalFormat, ext.formatRGBA.format, ext.halfFloatTexType, gl.NEAREST);
-    render(target);
+// function captureScreenshot () {
+//     let res = getResolution(config.CAPTURE_RESOLUTION);
+//     let target = createFBO(res.width, res.height, ext.formatRGBA.internalFormat, ext.formatRGBA.format, ext.halfFloatTexType, gl.NEAREST);
+//     render(target);
 
-    let texture = framebufferToTexture(target);
-    texture = normalizeTexture(texture, target.width, target.height);
+//     let texture = framebufferToTexture(target);
+//     texture = normalizeTexture(texture, target.width, target.height);
 
-    let captureCanvas = textureToCanvas(texture, target.width, target.height);
-    let datauri = captureCanvas.toDataURL();
-    downloadURI('fluid.png', datauri);
-    URL.revokeObjectURL(datauri);
-}
+//     let captureCanvas = textureToCanvas(texture, target.width, target.height);
+//     let datauri = captureCanvas.toDataURL();
+//     downloadURI('fluid.png', datauri);
+//     URL.revokeObjectURL(datauri);
+// }
 
 function framebufferToTexture (target) {
     gl.bindFramebuffer(gl.FRAMEBUFFER, target.fbo);
@@ -1549,6 +1553,10 @@ window.addEventListener('keydown', e => {
         splatStack.push(parseInt(Math.random() * 20) + 5);
 });
 
+setInterval( function(){splatStack.push(parseInt(Math.random() * 1) + 5) }, 4000);
+
+
+
 function updatePointerDownData (pointer, id, posX, posY) {
     pointer.id = id;
     pointer.down = true;
@@ -1723,26 +1731,30 @@ $(window).resize(function() {
 	}
 });
 $(document).ready(function(){
-	$('#reminder').addClass('active');
+	$('.reminder').eq(1).addClass('active');
 });
 
 
 if (!detectmob()) {
 	$(window).mouseup(function() {
-		$('#reminder').addClass('active');
+		$('.reminder').eq(0).addClass('active');
+		$('.reminder').eq(1).removeClass('active');
 	});
 
 	$(window).mousedown(function() {
-		$('#reminder').removeClass('active');
+		$('.reminder').eq(0).removeClass('active');
+		$('.reminder').eq(1).removeClass('active');
 	});
 
 } else {
 	$(window).on('touchstart', function(){
-		$('#reminder').removeClass('active');
+		$('.reminder').eq(0).addClass('active');
+		$('.reminder').eq(1).removeClass('active');
 	});
 
 	$(window).on('touchend', function(){
-		$('#reminder').addClass('active');
+		$('.reminder').eq(0).addClass('active');
+		$('.reminder').eq(1).removeClass('active');
 	});
 }
 

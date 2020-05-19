@@ -1,19 +1,19 @@
-#reminder{
-	pointer-events: none;
-	position: absolute;
-	color: white;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.reminder{
+	// pointer-events: none;
+	// position: absolute;
+	// color: white;
+	// top: 50%;
+	// left: 50%;
+	// transform: translate(-50%, -50%);
 	opacity: 0;
 	transition: .7s;
 
 	@media #{$large-and-up} {
-		font-size: 1.5rem;
+		// font-size: 1.5rem;
 	}
 
 	&.active{
-		transition-delay: 5s;
+		transition-delay: 1s;
 		opacity: 1;
 	}
 

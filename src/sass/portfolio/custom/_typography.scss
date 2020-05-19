@@ -22,13 +22,17 @@
 	text-align: center;
 }
 
-h1,h2,h3,h4,h5,h6, p, a, small, span, div {
+h1,h2,h3,h4,h5,h6, p, a, small, div, li {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: geometricPrecision;
+	backdrop-filter: blur(2);
 }
-
 // estilos de texto
+
+header{
+	color: $black;
+}
 
 h1{
 	&:before{
@@ -46,14 +50,12 @@ h1{
 p{
 	font-size: 1rem;
 	letter-spacing: 0.125rem;
+	color: $black;
 }
 
 a{
 	color: $black;
 }
-
-
-// text styles
 
 .underline{
 	text-decoration: underline;
