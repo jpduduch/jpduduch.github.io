@@ -1553,7 +1553,7 @@ window.addEventListener('keydown', e => {
         splatStack.push(parseInt(Math.random() * 20) + 5);
 });
 
-setInterval( function(){splatStack.push(parseInt(Math.random() * 1) + 5) }, 4000);
+setInterval( function(){splatStack.push(parseInt(Math.random() * 1) + 5) }, 7000);
 
 
 
