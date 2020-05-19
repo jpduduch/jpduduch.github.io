@@ -295,7 +295,7 @@ header, section {
 }
 /* line 15, ../../src/sass/portfolio/custom/_reminder.scss */
 .reminder.active {
-  transition-delay: 1s;
+  transition-delay: 2s;
   opacity: 1;
 }
 @media only screen and (min-width: 993px) {
