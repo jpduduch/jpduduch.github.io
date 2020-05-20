@@ -11,13 +11,17 @@ footer{
 		}
 
 		&.social-networks{
-			margin-top: 3rem;
+			margin-top: 0.75rem;
 			li{
 				display: inline-block;
 				a{
 					width: 1.5rem;
 					height: 1.5rem;
 				}
+			}
+
+			@media #{$medium-and-up}{
+				margin-bottom: 2rem;
 			}
 		}
 	}

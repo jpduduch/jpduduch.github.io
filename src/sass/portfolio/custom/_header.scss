@@ -18,6 +18,10 @@ header{
 	h1{
 		margin-left: -1.25rem;
 		// margin-top: 20vw;
+
+		@media #{$small-and-down}{
+			margin-top: -1.5rem;
+		}
 	}
 
 	ul{

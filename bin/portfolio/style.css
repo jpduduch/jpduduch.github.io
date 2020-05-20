@@ -248,11 +248,17 @@ header {
 header h1 {
   margin-left: -1.25rem;
 }
-/* line 23, ../../src/sass/portfolio/custom/_header.scss */
+@media only screen and (max-width: 600px) {
+  /* line 18, ../../src/sass/portfolio/custom/_header.scss */
+  header h1 {
+    margin-top: -1.5rem;
+  }
+}
+/* line 27, ../../src/sass/portfolio/custom/_header.scss */
 header ul {
   margin-top: 1rem;
 }
-/* line 26, ../../src/sass/portfolio/custom/_header.scss */
+/* line 30, ../../src/sass/portfolio/custom/_header.scss */
 header ul li {
   display: inline-block;
   font-family: Lato;
@@ -262,13 +268,13 @@ header ul li {
   margin: 0 0.5rem;
 }
 
-/* line 37, ../../src/sass/portfolio/custom/_header.scss */
+/* line 41, ../../src/sass/portfolio/custom/_header.scss */
 section {
   flex: 1;
   position: relative;
   width: 100%;
 }
-/* line 41, ../../src/sass/portfolio/custom/_header.scss */
+/* line 45, ../../src/sass/portfolio/custom/_header.scss */
 section p {
   position: absolute;
   top: 50%;
@@ -282,7 +288,7 @@ section p {
   padding: 0 4rem;
 }
 
-/* line 55, ../../src/sass/portfolio/custom/_header.scss */
+/* line 59, ../../src/sass/portfolio/custom/_header.scss */
 header, section {
   pointer-events: none;
   align-self: center;
@@ -325,7 +331,7 @@ footer ul li {
 }
 /* line 13, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul.social-networks {
-  margin-top: 3rem;
+  margin-top: 0.75rem;
 }
 /* line 15, ../../src/sass/portfolio/custom/_footer.scss */
 footer ul.social-networks li {
@@ -335,6 +341,12 @@ footer ul.social-networks li {
 footer ul.social-networks li a {
   width: 1.5rem;
   height: 1.5rem;
+}
+@media only screen and (min-width: 601px) {
+  /* line 13, ../../src/sass/portfolio/custom/_footer.scss */
+  footer ul.social-networks {
+    margin-bottom: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

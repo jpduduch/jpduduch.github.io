@@ -52,7 +52,7 @@ let config = {
     PRESSURE: 0.8,
     PRESSURE_ITERATIONS: 20,
     CURL: 0,
-    SPLAT_RADIUS: 6,
+    SPLAT_RADIUS: 0.125,
     SPLAT_FORCE: 8000,
     SHADING: true,
     COLORFUL: true,
@@ -96,34 +96,34 @@ let config = {
     // SUNRAYS_RESOLUTION: 196,
     // SUNRAYS_WEIGHT: 1.0,
 
-    // BACK_COLOR: {r: 0, g: 50, b: 128},
-    // BACK_COLOR: {r: 255, g: 213, b: 0},
-    BACK_COLOR: {r: 255, g: 255, b: 255},
+    // // BACK_COLOR: {r: 0, g: 50, b: 128},
+    // // BACK_COLOR: {r: 255, g: 213, b: 0},
+    // // BACK_COLOR: {r: 255, g: 255, b: 255},
     // BACK_COLOR: {r: 0, g: 0, b: 0},
-    BLOOM: true,
-    BLOOM_INTENSITY: 1.813352785883007,
-    BLOOM_ITERATIONS: 8,
-    BLOOM_RESOLUTION: 256,
-    BLOOM_SOFT_KNEE: 0.7,
-    BLOOM_THRESHOLD: 0.8839794358760594,
-    CAPTURE_RESOLUTION: 512,
-    COLORFUL: true,
-    COLOR_UPDATE_SPEED: 10,
-    CURL: 50,
-    DENSITY_DISSIPATION: 2,
-    DYE_RESOLUTION: "1024",
-    PAUSED: false,
-    PRESSURE: 0.5,
-    PRESSURE_ITERATIONS: 20,
-    SHADING: true,
-    SIM_RESOLUTION: "128",
-    SPLAT_FORCE: 6000,
-    SPLAT_RADIUS: 0.5,
-    SUNRAYS: true,
-    SUNRAYS_RESOLUTION: 196,
-    SUNRAYS_WEIGHT: 1,
-    TRANSPARENT: false,
-    VELOCITY_DISSIPATION: 0.13,
+    // BLOOM: true,
+    // BLOOM_INTENSITY: 1.813352785883007,
+    // BLOOM_ITERATIONS: 8,
+    // BLOOM_RESOLUTION: 256,
+    // BLOOM_SOFT_KNEE: 0.7,
+    // BLOOM_THRESHOLD: 0.8839794358760594,
+    // CAPTURE_RESOLUTION: 512,
+    // COLORFUL: true,
+    // COLOR_UPDATE_SPEED: 10,
+    // CURL: 50,
+    // DENSITY_DISSIPATION: 2,
+    // DYE_RESOLUTION: "1024",
+    // PAUSED: false,
+    // PRESSURE: 0.5,
+    // PRESSURE_ITERATIONS: 20,
+    // SHADING: true,
+    // SIM_RESOLUTION: "128",
+    // SPLAT_FORCE: 6000,
+    // SPLAT_RADIUS: 0.125,
+    // SUNRAYS: true,
+    // SUNRAYS_RESOLUTION: 196,
+    // SUNRAYS_WEIGHT: 1,
+    // TRANSPARENT: false,
+    // VELOCITY_DISSIPATION: 0.13,
 }
 
 function pointerPrototype () {
@@ -1187,6 +1187,9 @@ updateKeywords();
 initFramebuffers();
 multipleSplats(parseInt(Math.random() * 20) + 5);
 
+// setInterval( function(){splatStack.push(parseInt(Math.random() * 1) + 5) }, 7000);
+setInterval( function(){multipleSplats(parseInt(Math.random() * 20) + 5) }, 3000);
+
 let lastUpdateTime = Date.now();
 let colorUpdateTimer = 0.0;
 update();
@@ -1458,8 +1461,8 @@ function multipleSplats (amount) {
         color.r *= 10.0;
         color.g *= 10.0;
         color.b *= 10.0;
-        const x = Math.random();
-        const y = Math.random();
+        const x = 0.4;
+        const y = 0.5;
         const dx = 1000 * (Math.random() - 0.5);
         const dy = 1000 * (Math.random() - 0.5);
         splat(x, y, dx, dy, color);
@@ -1552,8 +1555,6 @@ window.addEventListener('keydown', e => {
     if (e.key === ' ')
         splatStack.push(parseInt(Math.random() * 20) + 5);
 });
-
-setInterval( function(){splatStack.push(parseInt(Math.random() * 1) + 5) }, 7000);
 
 
 
