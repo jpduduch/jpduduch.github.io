@@ -194,7 +194,7 @@ header {
 
 /* line 36, ../../src/sass/portfolio/custom/_typography.scss */
 h1 {
-  font-family: League Gothic;
+  font-family: 'League Gothic', sans-serif;
   font-size: 6.5rem;
   line-height: 5rem;
   text-transform: uppercase;
