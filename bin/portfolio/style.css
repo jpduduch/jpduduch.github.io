@@ -185,22 +185,21 @@ h1, h2, h3, h4, h5, h6, p, a, small, div, li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: geometricPrecision;
-  backdrop-filter: blur(2);
 }
 
-/* line 33, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 32, ../../src/sass/portfolio/custom/_typography.scss */
 header {
   color: #000000;
 }
 
-/* line 37, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 36, ../../src/sass/portfolio/custom/_typography.scss */
 h1 {
   font-family: League Gothic;
   font-size: 6.5rem;
   line-height: 5rem;
   text-transform: uppercase;
 }
-/* line 38, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 37, ../../src/sass/portfolio/custom/_typography.scss */
 h1:before {
   content: '';
   display: inline-block;
@@ -208,19 +207,19 @@ h1:before {
   height: 1rem;
 }
 
-/* line 50, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 49, ../../src/sass/portfolio/custom/_typography.scss */
 p {
   font-size: 1rem;
   letter-spacing: 0.125rem;
   color: #000000;
 }
 
-/* line 56, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 55, ../../src/sass/portfolio/custom/_typography.scss */
 a {
   color: #000000;
 }
 
-/* line 60, ../../src/sass/portfolio/custom/_typography.scss */
+/* line 59, ../../src/sass/portfolio/custom/_typography.scss */
 .underline {
   text-decoration: underline;
 }
@@ -244,21 +243,22 @@ body {
 header {
   flex: 0;
 }
-/* line 18, ../../src/sass/portfolio/custom/_header.scss */
+/* line 38, ../../src/sass/portfolio/custom/_header.scss */
 header h1 {
-  margin-left: -1.25rem;
+  margin-left: -2.25rem;
+  margin-top: -1rem;
 }
 @media only screen and (max-width: 600px) {
-  /* line 18, ../../src/sass/portfolio/custom/_header.scss */
+  /* line 38, ../../src/sass/portfolio/custom/_header.scss */
   header h1 {
     margin-top: -1.5rem;
   }
 }
-/* line 27, ../../src/sass/portfolio/custom/_header.scss */
+/* line 47, ../../src/sass/portfolio/custom/_header.scss */
 header ul {
   margin-top: 1rem;
 }
-/* line 30, ../../src/sass/portfolio/custom/_header.scss */
+/* line 50, ../../src/sass/portfolio/custom/_header.scss */
 header ul li {
   display: inline-block;
   font-family: Lato;
@@ -268,13 +268,13 @@ header ul li {
   margin: 0 0.5rem;
 }
 
-/* line 41, ../../src/sass/portfolio/custom/_header.scss */
+/* line 61, ../../src/sass/portfolio/custom/_header.scss */
 section {
   flex: 1;
   position: relative;
   width: 100%;
 }
-/* line 45, ../../src/sass/portfolio/custom/_header.scss */
+/* line 65, ../../src/sass/portfolio/custom/_header.scss */
 section p {
   position: absolute;
   top: 50%;
@@ -288,7 +288,7 @@ section p {
   padding: 0 4rem;
 }
 
-/* line 59, ../../src/sass/portfolio/custom/_header.scss */
+/* line 79, ../../src/sass/portfolio/custom/_header.scss */
 header, section {
   pointer-events: none;
   align-self: center;

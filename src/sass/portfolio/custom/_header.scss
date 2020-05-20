@@ -14,10 +14,30 @@ body{
 }
 
 header{
+	
+	// &:before, &:after{
+	// 	content: '';
+	// 	display: block;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	width: 20%;
+	// 	height: 100vh;
+	// 	backdrop-filter: blur(160px);
+	// }
+
+	// &:before{
+	// 	left: 0;
+	// }
+
+	// &:after{
+	// 	right: 0;
+	// }
+
+
 	flex: 0;
 	h1{
-		margin-left: -1.25rem;
-		// margin-top: 20vw;
+		margin-left: -2.25rem;
+		margin-top: -1rem;
 
 		@media #{$small-and-down}{
 			margin-top: -1.5rem;
