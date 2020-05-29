@@ -1,0 +1,26 @@
+//normalizers
+
+div, ul{
+	display: inline-block;
+}
+
+li{
+	display: inline;
+}
+
+body{
+	height: 100%;
+
+}
+
+
+
+//behaviors
+////////alignments
+
+#menu{
+	float: right;
+	a{
+		display: block;
+	}
+}

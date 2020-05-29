@@ -7,9 +7,9 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var watch = require('gulp-watch');
 
-var custom = './src/js/custom/*.js';
+var custom = './new/src/js/custom/*.js';
 var files = [
-	'./src/js/components/*.js',
+	'./new/src/js/components/*.js',
 	custom
 ];
 
@@ -22,10 +22,10 @@ function erros(retorna){
 
 function minifica(){
 	gulp.src(files)
-		.pipe(concat('./bin'))
+		.pipe(concat('./new/bin'))
 		.pipe(rename('script.js'))
 		.pipe(minify())
-		.pipe(gulp.dest('./bin'));
+		.pipe(gulp.dest('./new/bin'));
 };
 
 exports.default = function () {

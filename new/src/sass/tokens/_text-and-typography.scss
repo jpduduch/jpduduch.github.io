@@ -1,0 +1,60 @@
+//fonts
+$font-path: "../../src/fonts" !default;
+
+@font-face {
+	font-family: League Gothic;
+	src: url('#{$font-path}/League-Gothic/LeagueGothic-Regular.otf') format('truetype');
+	font-weight: 900;
+}
+@font-face {
+	font-family: League Gothic Condensed;
+	src: url('#{$font-path}/League-Gothic/LeagueGothic-CondensedRegular.otf') format('truetype');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: Karla;
+	src: url('#{$font-path}/Karla/Karla-Regular.ttf') format('truetype');
+	font-weight: 400;
+}
+@font-face {
+	font-family: Karla;
+	src: url('#{$font-path}/Karla/Karla-Bold.ttf') format('truetype');
+	font-weight: 700;
+}
+
+//normalizers
+
+a{
+	text-decoration: none;
+	color: $ultra-light;
+}
+
+
+//styles
+
+*, body, html{
+	font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+	font-weight: 400;
+}
+
+#menu, #about-me{
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+	color: $ultra-light;
+}
+
+.display{
+	font-family: 'League Gothic Condensed', Helvetica, Arial, Sans-serif;
+	font-weight: 900;
+	font-size: 8.5rem;
+	line-height: 6.5rem;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.underline{
+	text-decoration: underline;
+}
