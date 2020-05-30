@@ -122,22 +122,22 @@ html, body {
 }
 @font-face {
   font-family: League Gothic;
-  src: url("../../src/fonts/League-Gothic/LeagueGothic-Regular.otf") format("truetype");
+  src: url("../src/fonts/League-Gothic/LeagueGothic-Regular.otf") format("truetype");
   font-weight: 900;
 }
 @font-face {
   font-family: League Gothic Condensed;
-  src: url("../../src/fonts/League-Gothic/LeagueGothic-CondensedRegular.otf") format("truetype");
+  src: url("../src/fonts/League-Gothic/LeagueGothic-CondensedRegular.otf") format("truetype");
   font-weight: 900;
 }
 @font-face {
   font-family: Karla;
-  src: url("../../src/fonts/Karla/Karla-Regular.ttf") format("truetype");
+  src: url("../src/fonts/Karla/Karla-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: Karla;
-  src: url("../../src/fonts/Karla/Karla-Bold.ttf") format("truetype");
+  src: url("../src/fonts/Karla/Karla-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 /* line 28, ../src/sass/tokens/_text-and-typography.scss */
