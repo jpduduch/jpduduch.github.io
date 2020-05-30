@@ -30,6 +30,60 @@ a{
 	color: $ultra-light;
 }
 
+//typograpic scales
+
+%title{
+	font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+	font-weight: 400;
+
+	&-caption{
+		@extend %title;
+		font-size: 0.75rem;
+		line-height: 1.25rem;
+	}
+
+	&-body{
+		@extend %title;
+		font-size: 0.875rem;
+		line-height: 1.5rem;
+	}
+
+	&-subheading{
+		@extend %title;
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+	}
+
+	&-heading{
+		@extend %title;
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+}
+
+%text{
+	font-family: 'Literata', Times New Roman, Georgia, Serif;
+	font-weight: 400;
+
+	&-caption{
+		@extend %text;
+		font-size: 0.625rem;
+		line-height: 1.25rem;
+	}
+
+	&-body{
+		@extend %text;
+		font-size: 0.8125rem;
+		line-height: 1.5rem;
+	}
+
+	&-blockquote{
+		@extend %title;
+		font-size: 1.25rem;
+		line-height: 2rem;
+	}
+}
+
 
 //styles
 
