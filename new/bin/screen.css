@@ -68,17 +68,57 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 10, ../src/sass/screen.scss */
-html {
+*, html, body {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 1.5rem;
 }
 
-/* line 30, ../src/sass/tokens/_colors.scss */
-body {
-  background-image: -webkit-linear-gradient(0deg, #0000ff 0%, #D0204A 90%);
-  background-image: -o-linear-gradient(0deg, #0000ff 0%, #D0204A 90%);
-  background-image: linear-gradient(to 0deg, #0000ff 0%, #d0204a 90%);
+/* line 18, ../src/sass/screen.scss */
+html, body {
+  height: 100%;
+}
+
+/* custom */
+/* line 42, ../src/sass/tokens/_colors.scss */
+#hero {
+  background-image: -webkit-linear-gradient(90deg, #000000 10%, #3c3c3c 90%);
+  background-image: -o-linear-gradient(90deg, #000000 10%, #3c3c3c 90%);
+  background-image: linear-gradient(to 90deg, #000000 10%, #3c3c3c 90%);
+}
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
 }
 @font-face {
   font-family: League Gothic;
@@ -106,60 +146,106 @@ a {
   color: #fbfbfb;
 }
 
+/* line 35, ../src/sass/tokens/_text-and-typography.scss */
+#hero {
+  font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+  font-weight: 400;
+}
+/* line 39, ../src/sass/tokens/_text-and-typography.scss */
+#hero {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
 /* line 90, ../src/sass/tokens/_text-and-typography.scss */
 *, body, html {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
 }
 
-/* line 95, ../src/sass/tokens/_text-and-typography.scss */
-#menu, #about-me {
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-  color: #fbfbfb;
-}
-
-/* line 101, ../src/sass/tokens/_text-and-typography.scss */
-.display {
-  font-family: 'League Gothic Condensed', Helvetica, Arial, Sans-serif;
-  font-weight: 900;
-  font-size: 8.5rem;
-  line-height: 6.5rem;
-}
-
-/* line 108, ../src/sass/tokens/_text-and-typography.scss */
+/* line 96, ../src/sass/tokens/_text-and-typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 112, ../src/sass/tokens/_text-and-typography.scss */
+/* line 100, ../src/sass/tokens/_text-and-typography.scss */
 .underline {
   text-decoration: underline;
 }
 
-/* line 3, ../src/sass/tokens/_grid.scss */
-div, ul {
-  display: inline-block;
-}
-
-/* line 7, ../src/sass/tokens/_grid.scss */
-li {
-  display: inline;
-}
-
-/* line 11, ../src/sass/tokens/_grid.scss */
-body {
+/* line 4, ../src/sass/sections/_hero.scss */
+#hero {
   height: 100%;
+  /* section normalizer */
+  padding: 3.5rem;
+  color: #fbfbfb;
+  position: relative;
+  overflow: hidden;
 }
-
-/* line 2, ../src/sass/hero/_header.scss */
-nav a {
-  display: inline-block;
-}
-/* line 6, ../src/sass/hero/_header.scss */
-nav ul {
+/* line 15, ../src/sass/sections/_hero.scss */
+#hero nav #menu {
   float: right;
   text-align: right;
+  line-height: 1.5rem;
+}
+/* line 22, ../src/sass/sections/_hero.scss */
+#hero #about-me {
+  position: absolute;
+  bottom: 3.5rem;
+  z-index: 1;
+}
+/* line 27, ../src/sass/sections/_hero.scss */
+#hero #about-me #email {
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+/* line 40, ../src/sass/sections/_hero.scss */
+#hero #more-info {
+  display: none;
+}
+/* line 44, ../src/sass/sections/_hero.scss */
+#hero #contact {
+  position: absolute;
+  bottom: 3.5rem;
+  right: 3.5rem;
+}
+/* line 48, ../src/sass/sections/_hero.scss */
+#hero #contact li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+/* line 54, ../src/sass/sections/_hero.scss */
+#hero:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("../src/img/paper-pattern.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.25;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  transform: scale(0.25);
+}
+
+/* line 1, ../src/sass/sections/_display.scss */
+#display {
+  display: block;
+  perspective: 25rem;
+  margin-top: -3rem;
+  transform: scale(1.2);
+  z-index: -1;
+  filter: blur(0.5px);
+}
+/* line 9, ../src/sass/sections/_display.scss */
+#display img {
+  max-width: 100%;
+  height: 80vh;
+  display: block;
+  margin-left: 24%;
+  width: 66%;
+  transform-style: preserve-3d;
+  transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+  transform-origin: 11% 5%;
 }
 
 /*# sourceMappingURL=screen.css.map */

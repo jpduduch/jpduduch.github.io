@@ -11,9 +11,9 @@ $ultra-dark: #000000;
 //Gradients
 
 @mixin gradient($deg, $colorA, $colorB) {
-	background-image: -webkit-linear-gradient($deg + unquote('deg'), $colorA 0%, $colorB 90%);
-	background-image: -o-linear-gradient($deg + unquote('deg'), $colorA 0%, $colorB 90%);
-	background-image: linear-gradient($deg + unquote('deg'), $colorA 0%, $colorB 90%);
+	background-image: -webkit-linear-gradient($deg + unquote('deg'), $colorA 10%, $colorB 90%);
+	background-image: -o-linear-gradient($deg + unquote('deg'), $colorA 10%, $colorB 90%);
+	background-image: linear-gradient($deg + unquote('deg'), $colorA 10%, $colorB 90%);
 }
 
 %primary-gradient{

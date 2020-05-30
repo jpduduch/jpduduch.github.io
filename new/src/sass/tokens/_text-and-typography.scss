@@ -32,30 +32,30 @@ a{
 
 //typograpic scales
 
-%title{
+%main{
 	font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
 	font-weight: 400;
 
 	&-caption{
-		@extend %title;
+		@extend %main;
 		font-size: 0.75rem;
 		line-height: 1.25rem;
 	}
 
 	&-body{
-		@extend %title;
+		@extend %main;
 		font-size: 0.875rem;
 		line-height: 1.5rem;
 	}
 
 	&-subheading{
-		@extend %title;
+		@extend %main;
 		font-size: 1.125rem;
 		line-height: 1.75rem;
 	}
 
 	&-heading{
-		@extend %title;
+		@extend %main;
 		font-size: 2rem;
 		line-height: 2.5rem;
 	}
@@ -78,7 +78,7 @@ a{
 	}
 
 	&-blockquote{
-		@extend %title;
+		@extend %main;
 		font-size: 1.25rem;
 		line-height: 2rem;
 	}
@@ -92,18 +92,6 @@ a{
 	font-weight: 400;
 }
 
-#menu, #about-me{
-	font-size: 0.75rem;
-	line-height: 1.25rem;
-	color: $ultra-light;
-}
-
-.display{
-	font-family: 'League Gothic Condensed', Helvetica, Arial, Sans-serif;
-	font-weight: 900;
-	font-size: 8.5rem;
-	line-height: 6.5rem;
-}
 
 .uppercase{
 	text-transform: uppercase;

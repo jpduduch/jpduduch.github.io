@@ -7,15 +7,24 @@
 @import "compass/reset";
 @import "compass/css3";
 
-html {
+*, html, body {
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
 	box-sizing: border-box;
 	font-size: 16px;
 	line-height: 1.5rem;
 }
 
-@import "tokens/colors";
-@import "tokens/text-and-typography";
-@import "tokens/grid";
+html, body{
+	  height: 100%;
+}
 
-@import "hero/body";
-@import "hero/header";
+@import "tokens/media-queries";
+@import "tokens/colors";
+@import "tokens/animations";
+@import "tokens/text-and-typography";
+
+@import "sections/hero";
+@import "sections/display";
+
+
