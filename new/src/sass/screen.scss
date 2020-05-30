@@ -13,10 +13,9 @@ html {
 	line-height: 1.5rem;
 }
 
-@import "tokens/vars";
+@import "tokens/colors";
 @import "tokens/text-and-typography";
+@import "tokens/grid";
 
-@import "sections/body";
-@import "sections/header";
-@import "sections/main";
-@import "sections/footer";
+@import "hero/body";
+@import "hero/header";

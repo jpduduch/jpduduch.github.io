@@ -74,6 +74,12 @@ html {
   line-height: 1.5rem;
 }
 
+/* line 30, ../src/sass/tokens/_colors.scss */
+body {
+  background-image: -webkit-linear-gradient(0deg, #0000ff 0%, #D0204A 90%);
+  background-image: -o-linear-gradient(0deg, #0000ff 0%, #D0204A 90%);
+  background-image: linear-gradient(to 0deg, #0000ff 0%, #d0204a 90%);
+}
 @font-face {
   font-family: League Gothic;
   src: url("../../src/fonts/League-Gothic/LeagueGothic-Regular.otf") format("truetype");
@@ -100,20 +106,20 @@ a {
   color: #fbfbfb;
 }
 
-/* line 36, ../src/sass/tokens/_text-and-typography.scss */
+/* line 90, ../src/sass/tokens/_text-and-typography.scss */
 *, body, html {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
 }
 
-/* line 41, ../src/sass/tokens/_text-and-typography.scss */
+/* line 95, ../src/sass/tokens/_text-and-typography.scss */
 #menu, #about-me {
   font-size: 0.75rem;
   line-height: 1.25rem;
   color: #fbfbfb;
 }
 
-/* line 47, ../src/sass/tokens/_text-and-typography.scss */
+/* line 101, ../src/sass/tokens/_text-and-typography.scss */
 .display {
   font-family: 'League Gothic Condensed', Helvetica, Arial, Sans-serif;
   font-weight: 900;
@@ -121,46 +127,39 @@ a {
   line-height: 6.5rem;
 }
 
-/* line 54, ../src/sass/tokens/_text-and-typography.scss */
+/* line 108, ../src/sass/tokens/_text-and-typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 58, ../src/sass/tokens/_text-and-typography.scss */
+/* line 112, ../src/sass/tokens/_text-and-typography.scss */
 .underline {
   text-decoration: underline;
 }
 
-/* line 1, ../src/sass/sections/_body.scss */
-body {
-  background-image: linear-gradient(#d0204a 0%, #0000ff 90%);
-  height: calc(100vh - 8rem);
-  padding: 4rem;
+/* line 3, ../src/sass/tokens/_grid.scss */
+div, ul {
+  display: inline-block;
 }
 
-/* line 2, ../src/sass/sections/_header.scss */
+/* line 7, ../src/sass/tokens/_grid.scss */
+li {
+  display: inline;
+}
+
+/* line 11, ../src/sass/tokens/_grid.scss */
+body {
+  height: 100%;
+}
+
+/* line 2, ../src/sass/hero/_header.scss */
 nav a {
   display: inline-block;
 }
-/* line 6, ../src/sass/sections/_header.scss */
+/* line 6, ../src/sass/hero/_header.scss */
 nav ul {
   float: right;
   text-align: right;
-}
-
-/* line 2, ../src/sass/sections/_main.scss */
-main #about-me {
-  display: inline-block;
-}
-/* line 6, ../src/sass/sections/_main.scss */
-main #title {
-  display: inline-block;
-}
-
-/* line 1, ../src/sass/sections/_footer.scss */
-footer {
-  display: inline-block;
-  float: right;
 }
 
 /*# sourceMappingURL=screen.css.map */
