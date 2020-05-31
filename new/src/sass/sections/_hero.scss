@@ -12,6 +12,7 @@
 	overflow: hidden;
 	
 	nav{
+		z-index: 1;
 		#menu{
 			float: right;
 			text-align: right;
@@ -62,6 +63,6 @@
 		top: -110%;
 		width: 300%;
 		transform: scale(0.25);
-		// mix-blend-mode: multiply;
+		pointer-events: none;
 	}
 }

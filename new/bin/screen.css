@@ -172,6 +172,12 @@ a {
   text-decoration: underline;
 }
 
+/* line 61, ../src/sass/tokens/_utilities.scss */
+img,
+video {
+  height: auto;
+}
+
 /* line 4, ../src/sass/sections/_hero.scss */
 #hero {
   height: 100%;
@@ -181,39 +187,43 @@ a {
   position: relative;
   overflow: hidden;
 }
-/* line 15, ../src/sass/sections/_hero.scss */
+/* line 14, ../src/sass/sections/_hero.scss */
+#hero nav {
+  z-index: 1;
+}
+/* line 16, ../src/sass/sections/_hero.scss */
 #hero nav #menu {
   float: right;
   text-align: right;
   line-height: 1.5rem;
 }
-/* line 22, ../src/sass/sections/_hero.scss */
+/* line 23, ../src/sass/sections/_hero.scss */
 #hero #about-me {
   position: absolute;
   bottom: 3.5rem;
   z-index: 1;
 }
-/* line 27, ../src/sass/sections/_hero.scss */
+/* line 28, ../src/sass/sections/_hero.scss */
 #hero #about-me #email {
   margin-top: 1.5rem;
   font-weight: 700;
 }
-/* line 40, ../src/sass/sections/_hero.scss */
+/* line 41, ../src/sass/sections/_hero.scss */
 #hero #more-info {
   display: none;
 }
-/* line 44, ../src/sass/sections/_hero.scss */
+/* line 45, ../src/sass/sections/_hero.scss */
 #hero #contact {
   position: absolute;
   bottom: 3.5rem;
   right: 3.5rem;
 }
-/* line 48, ../src/sass/sections/_hero.scss */
+/* line 49, ../src/sass/sections/_hero.scss */
 #hero #contact li {
   display: inline-block;
   margin-left: 1rem;
 }
-/* line 54, ../src/sass/sections/_hero.scss */
+/* line 55, ../src/sass/sections/_hero.scss */
 #hero:after {
   animation: grain 8s steps(10) infinite;
   background-image: url("../src/img/paper-pattern.png");
@@ -225,6 +235,7 @@ a {
   top: -110%;
   width: 300%;
   transform: scale(0.25);
+  pointer-events: none;
 }
 
 /* line 1, ../src/sass/sections/_display.scss */
@@ -235,8 +246,9 @@ a {
   transform: scale(1.2);
   z-index: -1;
   filter: blur(0.5px);
+  pointer-events: none;
 }
-/* line 9, ../src/sass/sections/_display.scss */
+/* line 10, ../src/sass/sections/_display.scss */
 #display img {
   max-width: 100%;
   height: 80vh;

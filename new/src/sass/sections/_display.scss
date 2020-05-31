@@ -5,6 +5,7 @@
 	transform: scale(1.2);
 	z-index: -1;
 	filter:blur(0.5px);
+	pointer-events: none;
 
 	img{
 		max-width: 100%;
