@@ -3,9 +3,14 @@
 	perspective: 25rem;
 	margin-top: -3rem;
 	transform: scale(1.2);
-	z-index: -1;
+	z-index: 0;
 	filter:blur(0.5px);
 	pointer-events: none;
+
+	@media #{$medium-and-down} {
+		transform: scale(1.1);
+		margin-top: -1rem;
+	}
 
 	img{
 		max-width: 100%;
@@ -16,6 +21,20 @@
     	transform-style: preserve-3d;
     	// transform: rotate3d(4, 0, 14);	
 		transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
-    	transform-origin: 11% 5%;
+		transform-origin: 11% 5%;
+
+    	@media #{$medium-and-down} {
+			transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+			transform-origin: 11% 5%;
+		}
+	}
+
+	@media #{$small-and-down} {
+		margin-top: -4rem;
+		
+		img{
+			margin-left: 10%;
+			width: 90%;
+		}
 	}
 }

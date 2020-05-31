@@ -2,21 +2,86 @@
 @import "tokens/text-and-typography";
 
 #hero{
-	
+	@extend %no-select;
 	@extend %neutral-gradient-vertical-default;
 	@extend %main-caption;
+	
 	height: 100%; /* section normalizer */
 	padding: 3.5rem;
 	color: $ultra-light;
 	position: relative;
 	overflow: hidden;
+
+	#logo{
+		z-index: 1;
+		position: absolute;
+		left: 3.5rem;
+		top: 3.5rem;
+		@media #{$extra-large-and-up}{
+			img{
+				width: 150%;
+			}
+		}
+
+		@media #{$small-and-down} {
+			left: 1.5rem;
+			top: 1.5rem;
+
+			img{
+				width: 150%;
+			}
+		}
+	}
+
+	@media #{$extra-large-and-up}{
+		font-size: 1.125rem;
+		line-height: 2rem;
+
+		#menu .desktop{
+			line-height: 2rem !important;
+		}
+	}
 	
 	nav{
 		z-index: 1;
+		display: inline-block;
+		
 		#menu{
-			float: right;
-			text-align: right;
-			line-height: 1.5rem;
+			.desktop{
+				z-index: 1;
+				position: absolute;
+				right: 3.5rem;
+				top: 2.75rem;
+				text-align: right;
+				line-height: 1.5rem;
+
+				@media #{$small-and-down} {
+					display: none;
+				}
+			}
+
+			.mobile-menu-container{
+				@media #{$medium-and-up} {
+					display: none;
+				}
+				
+				z-index: 1;
+				position: absolute;
+				right: 1rem;
+				top: 0.75rem;
+
+				width: 3rem;
+				height: 3rem;
+				padding: 1rem 0.5rem;
+				
+				&:before, &:after, .menu-stripes{
+					display: block;
+					content: '';
+					height: 0.125rem;
+					margin-bottom: 0.25rem;
+					background-color: $ultra-light;
+				}
+			}
 		}
 	}
 
@@ -29,13 +94,27 @@
 			margin-top: 1.5rem;
 			font-weight: 700;
 		}
+
+		@media #{$small-and-down} {
+			bottom: 1.5rem;
+			left: 1.5rem;
+			max-width: 11rem;
+			
+			p{
+				display: inline;
+				margin-right: 0.125rem;
+				&#city, &#email{
+					display: block;
+				}
+			}
+		}
 	}
 
 	// #more-info{
 	// 	position: absolute;
 	// 	bottom: 3.5rem;
 	// 	left: 50%;
-	// 	transform: translateX(-50%);
+	// 	transform: translateX(-50%) scale(2);
 	// }
 
 	#more-info{
@@ -43,22 +122,42 @@
 	}
 
 	#contact{
+		z-index: 1;
 		position: absolute;
 		bottom: 3.5rem;
 		right: 3.5rem;
 		li{
 			display: inline-block;
 			margin-left: 1rem;
+
+			img{
+				vertical-align: top;
+			}
+		}
+
+		@media #{$small-and-down} {
+			bottom: 1.5rem;
+			right: 1.5rem;
+
+			li{
+				display: block;
+				margin-top: 1.5rem;
+
+				img{
+					width: 2rem;
+				}
+			}
 		}
 	}
 	
 	&:after{
 		animation: grain 8s steps(10) infinite;
-		background-image: url('../src/img/paper-pattern.png');
+		background-image: url('../src/img/colored-noise-pattern.png');
 		content: "";
 		height: 300%;
 		left: -50%;
-		opacity: 0.25;
+		opacity: 0.08;
+		// opacity: 0.25;
 		position: fixed;
 		top: -110%;
 		width: 300%;
