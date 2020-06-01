@@ -1,3 +1,5 @@
+@import "tokens/transitions";
+
 //fonts
 $font-path: "../src/fonts" !default;
 
@@ -17,6 +19,10 @@ $font-path: "../src/fonts" !default;
 a{
 	text-decoration: none;
 	color: $ultra-light;
+	@include transition(0.1, 0);
+	&:hover{
+		color: $secondary-default;
+	}
 }
 
 //typograpic scales

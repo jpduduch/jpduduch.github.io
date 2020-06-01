@@ -83,74 +83,74 @@ html, body {
 
 /* custom */
 /* custom */
-/* line 14, ../src/sass/tokens/_colors.scss */
+/* line 15, ../src/sass/tokens/_colors.scss */
 .primary-default {
   color: #0000ff;
 }
 
-/* line 15, ../src/sass/tokens/_colors.scss */
+/* line 16, ../src/sass/tokens/_colors.scss */
 .primary-alternative {
   color: #D0204A;
 }
 
-/* line 16, ../src/sass/tokens/_colors.scss */
+/* line 17, ../src/sass/tokens/_colors.scss */
 .ultra-light {
   color: #f0f0f0;
 }
 
-/* line 17, ../src/sass/tokens/_colors.scss */
+/* line 18, ../src/sass/tokens/_colors.scss */
 .mid-light {
   color: #e2e2e2;
 }
 
-/* line 18, ../src/sass/tokens/_colors.scss */
+/* line 19, ../src/sass/tokens/_colors.scss */
 .mid-dark {
   color: #3c3c3c;
 }
 
-/* line 19, ../src/sass/tokens/_colors.scss */
+/* line 20, ../src/sass/tokens/_colors.scss */
 .extra-dark {
   color: #242424;
 }
 
-/* line 20, ../src/sass/tokens/_colors.scss */
+/* line 21, ../src/sass/tokens/_colors.scss */
 .ultra-dark {
   color: #000000;
 }
 
-/* line 33, ../src/sass/tokens/_colors.scss */
+/* line 34, ../src/sass/tokens/_colors.scss */
 .light-gradient-vertical {
   background-image: -webkit-linear-gradient(0deg, #f0f0f0 10%, #e2e2e2 90%);
   background-image: -o-linear-gradient(0deg, #f0f0f0 10%, #e2e2e2 90%);
   background-image: linear-gradient(to 0deg, #f0f0f0 10%, #e2e2e2 90%);
 }
-/* line 36, ../src/sass/tokens/_colors.scss */
+/* line 37, ../src/sass/tokens/_colors.scss */
 .light-gradient-horizontal {
   background-image: -webkit-linear-gradient(0deg, #f0f0f0 10%, #e2e2e2 90%);
   background-image: -o-linear-gradient(0deg, #f0f0f0 10%, #e2e2e2 90%);
   background-image: linear-gradient(to 0deg, #f0f0f0 10%, #e2e2e2 90%);
 }
 
-/* line 42, ../src/sass/tokens/_colors.scss */
+/* line 43, ../src/sass/tokens/_colors.scss */
 .dark-gradient-vertical {
   background-image: -webkit-linear-gradient(90deg, black 10%, #3c3c3c 90%);
   background-image: -o-linear-gradient(90deg, black 10%, #3c3c3c 90%);
   background-image: linear-gradient(to 90deg, #000000 10%, #3c3c3c 90%);
 }
-/* line 45, ../src/sass/tokens/_colors.scss */
+/* line 46, ../src/sass/tokens/_colors.scss */
 .dark-gradient-horizontal {
   background-image: -webkit-linear-gradient(90deg, black 10%, #3c3c3c 90%);
   background-image: -o-linear-gradient(90deg, black 10%, #3c3c3c 90%);
   background-image: linear-gradient(to 90deg, #000000 10%, #3c3c3c 90%);
 }
 
-/* line 51, ../src/sass/tokens/_colors.scss */
+/* line 52, ../src/sass/tokens/_colors.scss */
 .primary-gradient-vertical {
   background-image: -webkit-linear-gradient(90deg, blue 10%, #d0204a 90%);
   background-image: -o-linear-gradient(90deg, blue 10%, #d0204a 90%);
   background-image: linear-gradient(to 90deg, #0000ff 10%, #d0204a 90%);
 }
-/* line 54, ../src/sass/tokens/_colors.scss */
+/* line 55, ../src/sass/tokens/_colors.scss */
 .primary-gradient-horizontal {
   background-image: -webkit-linear-gradient(90deg, blue 10%, #d0204a 90%);
   background-image: -o-linear-gradient(90deg, blue 10%, #d0204a 90%);
@@ -199,52 +199,63 @@ html, body {
   src: url("../src/fonts/Karla/Karla-Bold.ttf") format("truetype");
   font-weight: 700;
 }
-/* line 17, ../src/sass/tokens/_text-and-typography.scss */
+/* line 19, ../src/sass/tokens/_text-and-typography.scss */
 a {
   text-decoration: none;
   color: #f0f0f0;
+  -webkit-transition: 0.1s;
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  transition-delay: 0s;
+}
+/* line 23, ../src/sass/tokens/_text-and-typography.scss */
+a:hover {
+  color: #00ff5f;
 }
 
-/* line 26, ../src/sass/tokens/_text-and-typography.scss */
+/* line 32, ../src/sass/tokens/_text-and-typography.scss */
 *, body, html {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
 }
 
-/* line 32, ../src/sass/tokens/_text-and-typography.scss */
+/* line 38, ../src/sass/tokens/_text-and-typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 36, ../src/sass/tokens/_text-and-typography.scss */
+/* line 42, ../src/sass/tokens/_text-and-typography.scss */
 .underline {
   text-decoration: underline;
 }
 
-/* line 40, ../src/sass/tokens/_text-and-typography.scss */
+/* line 46, ../src/sass/tokens/_text-and-typography.scss */
 .bold {
   font-weight: 700 !important;
 }
 
-/* line 43, ../src/sass/tokens/_text-and-typography.scss */
+/* line 49, ../src/sass/tokens/_text-and-typography.scss */
 .txt-left {
   text-align: left;
 }
-/* line 44, ../src/sass/tokens/_text-and-typography.scss */
+/* line 50, ../src/sass/tokens/_text-and-typography.scss */
 .txt-center {
   text-align: center;
 }
-/* line 45, ../src/sass/tokens/_text-and-typography.scss */
+/* line 51, ../src/sass/tokens/_text-and-typography.scss */
 .txt-right {
   text-align: right;
 }
 
-/* line 73, ../src/sass/tokens/_text-and-typography.scss */
+/* line 79, ../src/sass/tokens/_text-and-typography.scss */
 .main, .text.blockquote, nav a {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
 }
-/* line 76, ../src/sass/tokens/_text-and-typography.scss */
+/* line 82, ../src/sass/tokens/_text-and-typography.scss */
 .main.caption, .caption.text.blockquote, nav a.blockquote.text, nav a {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
@@ -252,27 +263,27 @@ a {
   line-height: 1.25rem;
 }
 @media only screen and (max-width: 600px) {
-  /* line 80, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 86, ../src/sass/tokens/_text-and-typography.scss */
   .main.caption-sm, .caption-sm.text.blockquote, nav a.caption-sm {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
 }
 @media only screen and (min-width: 601px) {
-  /* line 81, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 87, ../src/sass/tokens/_text-and-typography.scss */
   .main.caption-md, .caption-md.text.blockquote, nav a.caption-md {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 82, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 88, ../src/sass/tokens/_text-and-typography.scss */
   .main.caption-lg, .caption-lg.text.blockquote, nav a.caption-lg {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
 }
-/* line 86, ../src/sass/tokens/_text-and-typography.scss */
+/* line 92, ../src/sass/tokens/_text-and-typography.scss */
 .main.body, .body.text.blockquote, nav a.body {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
@@ -280,27 +291,27 @@ a {
   line-height: 1.5rem;
 }
 @media only screen and (max-width: 600px) {
-  /* line 90, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 96, ../src/sass/tokens/_text-and-typography.scss */
   .main.body-sm, .body-sm.text.blockquote, nav a.body-sm {
     font-size: 0.875rem;
     line-height: 1.5rem;
   }
 }
 @media only screen and (min-width: 601px) {
-  /* line 91, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 97, ../src/sass/tokens/_text-and-typography.scss */
   .main.body-md, .body-md.text.blockquote, nav a.body-md {
     font-size: 0.875rem;
     line-height: 1.5rem;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 92, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 98, ../src/sass/tokens/_text-and-typography.scss */
   .main.body-lg, .body-lg.text.blockquote, nav a.body-lg {
     font-size: 0.875rem;
     line-height: 1.5rem;
   }
 }
-/* line 95, ../src/sass/tokens/_text-and-typography.scss */
+/* line 101, ../src/sass/tokens/_text-and-typography.scss */
 .main.subheading, .subheading.text.blockquote, nav a.subheading {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
@@ -308,27 +319,27 @@ a {
   line-height: 2rem;
 }
 @media only screen and (max-width: 600px) {
-  /* line 99, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 105, ../src/sass/tokens/_text-and-typography.scss */
   .main.subheading-sm, .subheading-sm.text.blockquote, nav a.subheading-sm {
     font-size: 1.125rem;
     line-height: 2rem;
   }
 }
 @media only screen and (min-width: 601px) {
-  /* line 100, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 106, ../src/sass/tokens/_text-and-typography.scss */
   .main.subheading-md, .subheading-md.text.blockquote, nav a.subheading-md {
     font-size: 1.125rem;
     line-height: 2rem;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 101, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 107, ../src/sass/tokens/_text-and-typography.scss */
   .main.subheading-lg, .subheading-lg.text.blockquote, nav a.subheading-lg {
     font-size: 1.125rem;
     line-height: 2rem;
   }
 }
-/* line 104, ../src/sass/tokens/_text-and-typography.scss */
+/* line 110, ../src/sass/tokens/_text-and-typography.scss */
 .main.heading, .heading.text.blockquote, nav a.heading {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
@@ -336,50 +347,50 @@ a {
   line-height: 2.5rem;
 }
 @media only screen and (max-width: 600px) {
-  /* line 104, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 110, ../src/sass/tokens/_text-and-typography.scss */
   .main.heading, .heading.text.blockquote, nav a.heading {
     font-size: 1.5rem;
     line-height: 2.25rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 113, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 119, ../src/sass/tokens/_text-and-typography.scss */
   .main.heading-sm, .heading-sm.text.blockquote, nav a.heading-sm {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 @media only screen and (min-width: 601px) {
-  /* line 114, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 120, ../src/sass/tokens/_text-and-typography.scss */
   .main.heading-md, .heading-md.text.blockquote, nav a.heading-md {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 115, ../src/sass/tokens/_text-and-typography.scss */
+  /* line 121, ../src/sass/tokens/_text-and-typography.scss */
   .main.heading-lg, .heading-lg.text.blockquote, nav a.heading-lg {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 
-/* line 119, ../src/sass/tokens/_text-and-typography.scss */
+/* line 125, ../src/sass/tokens/_text-and-typography.scss */
 .text, .text.caption, nav a.text, .text.body {
   font-family: 'Literata', Times New Roman, Georgia, Serif;
   font-weight: 400;
 }
-/* line 123, ../src/sass/tokens/_text-and-typography.scss */
+/* line 129, ../src/sass/tokens/_text-and-typography.scss */
 .text.caption, nav a.text, nav a.text.body {
   font-size: 0.625rem;
   line-height: 1.25rem;
 }
-/* line 129, ../src/sass/tokens/_text-and-typography.scss */
+/* line 135, ../src/sass/tokens/_text-and-typography.scss */
 .text.body {
   font-size: 0.8125rem;
   line-height: 1.5rem;
 }
-/* line 135, ../src/sass/tokens/_text-and-typography.scss */
+/* line 141, ../src/sass/tokens/_text-and-typography.scss */
 .text.blockquote {
   font-size: 1.25rem;
   line-height: 2rem;

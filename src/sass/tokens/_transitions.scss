@@ -1,9 +1,9 @@
 @mixin transition($time, $delay){
-	-webkit-transition: $time;
-	-webkit-transition: -webkit-transform $time ease-out;
-	-moz-transition: $time;
-	-ms-transition: $time;
-	-o-transition: $time;
-	transition: $time;
-	transition-delay: $delay;
+	-webkit-transition: unquote($time + 's');
+	-webkit-transition: -webkit-transform unquote($time + 's') ease-out;
+	-moz-transition: unquote($time + 's');
+	-ms-transition: unquote($time + 's');
+	-o-transition: unquote($time + 's');
+	transition: unquote($time + 's');
+	transition-delay: unquote($delay + 's');
 }
