@@ -1,0 +1,28 @@
+body{
+	height: 100%;
+
+	.full-bg{
+		height: 100%;
+	}
+
+	.noise{
+		&:after{
+			animation: grain 8s steps(10) infinite;
+			background-image: url('../src/img/colored-noise-pattern.png');
+			content: "";
+			height: 300%;
+			left: -50%;
+			opacity: 0.08;
+			// opacity: 0.25;
+			position: fixed;
+			top: -110%;
+			width: 300%;
+			transform: scale(0.25);
+			pointer-events: none;
+		}
+	}
+
+	.fixed-pos{
+		position: fixed;
+	}
+}

@@ -2,17 +2,6 @@
 $font-path: "../src/fonts" !default;
 
 @font-face {
-	font-family: League Gothic;
-	src: url('#{$font-path}/League-Gothic/LeagueGothic-Regular.otf') format('truetype');
-	font-weight: 900;
-}
-@font-face {
-	font-family: League Gothic Condensed;
-	src: url('#{$font-path}/League-Gothic/LeagueGothic-CondensedRegular.otf') format('truetype');
-	font-weight: 900;
-}
-
-@font-face {
 	font-family: Karla;
 	src: url('#{$font-path}/Karla/Karla-Regular.ttf') format('truetype');
 	font-weight: 400;
@@ -32,59 +21,6 @@ a{
 
 //typograpic scales
 
-%main{
-	font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
-	font-weight: 400;
-
-	&-caption{
-		@extend %main;
-		font-size: 0.75rem;
-		line-height: 1.25rem;
-	}
-
-	&-body{
-		@extend %main;
-		font-size: 0.875rem;
-		line-height: 1.5rem;
-	}
-
-	&-subheading{
-		@extend %main;
-		font-size: 1.125rem;
-		line-height: 2rem;
-	}
-
-	&-heading{
-		@extend %main;
-		font-size: 2rem;
-		line-height: 2.5rem;
-	}
-}
-
-%text{
-	font-family: 'Literata', Times New Roman, Georgia, Serif;
-	font-weight: 400;
-
-	&-caption{
-		@extend %text;
-		font-size: 0.625rem;
-		line-height: 1.25rem;
-	}
-
-	&-body{
-		@extend %text;
-		font-size: 0.8125rem;
-		line-height: 1.5rem;
-	}
-
-	&-blockquote{
-		@extend %main;
-		font-size: 1.25rem;
-		line-height: 2rem;
-	}
-}
-
-
 //styles
 
 *, body, html{
@@ -99,4 +35,106 @@ a{
 
 .underline{
 	text-decoration: underline;
+}
+
+.bold{ font-weight: 700 !important; }
+
+.txt{
+	&-left{ text-align: left; }
+	&-center{ text-align: center; }
+	&-right{ text-align: right; }
+}
+
+@mixin main{
+	font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+	font-weight: 400;
+}
+
+@mixin caption{
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+}
+
+@mixin body {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+@mixin subheading {
+	font-size: 1.125rem;
+	line-height: 2rem;
+}
+@mixin heading {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+
+
+.main{
+	@include main;
+
+	&.caption{
+		@include main;
+		@include caption;
+
+		&-sm{ @media #{$small-and-down} { @include caption; } }
+		&-md{ @media #{$medium-and-up} { @include caption; } }
+		&-lg{ @media #{$large-and-up} { @include caption; } }
+
+	}
+
+	&.body{
+		@include main;
+		@include body;
+
+		&-sm{ @media #{$small-and-down} { @include body; } }
+		&-md{ @media #{$medium-and-up} { @include body; } }
+		&-lg{ @media #{$large-and-up} { @include body; } }
+	}
+
+	&.subheading{
+		@include main;
+		@include subheading;
+
+		&-sm{ @media #{$small-and-down} { @include subheading; } }
+		&-md{ @media #{$medium-and-up} { @include subheading; } }
+		&-lg{ @media #{$large-and-up} { @include subheading; } }
+	}
+
+	&.heading{
+		@include main;
+		@include heading;
+
+		@media #{$small-and-down} {
+			font-size: 1.5rem;
+			line-height: 2.25rem;
+		}
+
+		&-sm{ @media #{$small-and-down} { @include heading; } }
+		&-md{ @media #{$medium-and-up} { @include heading; } }
+		&-lg{ @media #{$large-and-up} { @include heading; } }
+	}
+}
+
+.text{
+	font-family: 'Literata', Times New Roman, Georgia, Serif;
+	font-weight: 400;
+
+	&.caption{
+		@extend .text;
+		font-size: 0.625rem;
+		line-height: 1.25rem;
+	}
+
+	&.body{
+		@extend .text;
+		font-size: 0.8125rem;
+		line-height: 1.5rem;
+	}
+
+	&.blockquote{
+		@extend .main;
+		font-size: 1.25rem;
+		line-height: 2rem;
+	}
 }

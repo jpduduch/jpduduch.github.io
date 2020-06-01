@@ -34,7 +34,7 @@
 }
 
 // colocar reticencias ao final da linha de texto
-%truncate {
+.truncate {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -58,8 +58,8 @@
 }
 
 // Images
-img,
-video {
-  // max-width: 100%;
-  height: auto;
-}
+// img,
+// video {
+//   // max-width: 100%;
+//   height: auto;
+// }

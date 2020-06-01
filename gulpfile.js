@@ -7,14 +7,14 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var watch = require('gulp-watch');
 
-var custom = './new/src/js/custom/*.js';
+var behaviors = './src/js/behaviors/*.js';
 var files = [
-	'./new/src/js/components/*.js',
-	custom
+	'./src/js/modules/*.js',
+	behaviors
 ];
 
 function erros(retorna){
-	gulp.src(custom)
+	gulp.src(behaviors)
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'));
 		retorna();
@@ -22,10 +22,10 @@ function erros(retorna){
 
 function minifica(){
 	gulp.src(files)
-		.pipe(concat('./new/bin'))
+		.pipe(concat('./bin'))
 		.pipe(rename('script.js'))
 		.pipe(minify())
-		.pipe(gulp.dest('./new/bin'));
+		.pipe(gulp.dest('./bin'));
 };
 
 exports.default = function () {

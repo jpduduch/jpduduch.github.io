@@ -24,11 +24,19 @@ html, body{
 @import "tokens/animations";
 @import "tokens/text-and-typography";
 @import "tokens/utilities";
+@import "tokens/spacings";
+@import "tokens/alignments";
 
-@import "sections/hero";
-@import "sections/display";
-@import "sections/works";
-
+@import "components/display";
+@import "components/backgrounds";
 @import "components/menu";
+@import "components/anchor-arrow";
+@import "components/reminder";
+
+// @import "sections/hero";
+// @import "sections/display";
+// @import "sections/works";
+
+// @import "components/menu";
 
 

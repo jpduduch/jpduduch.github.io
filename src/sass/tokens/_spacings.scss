@@ -1,0 +1,38 @@
+@import "tokens/names";
+
+.spacing{
+	&-inset{
+		&-lg{
+			padding: 3.75rem;
+			@media #{$small-and-down} {
+				padding: 1.5em;
+			}
+		}
+	}
+
+	&-stack{
+		@for $i from 1 to length($small-sizes) + 1{
+			&-#{unquote(nth($small-sizes, $i))}{
+				margin-bottom: unquote($i + "rem");
+			}
+		}
+		@for $i from 1 to length($big-sizes) + 1{
+			&-#{unquote(nth($big-sizes, $i))}{
+				margin-bottom: unquote(($i + 1) * 2.5 + "rem");
+			}
+		}
+	}
+
+	&-inline{
+		@for $i from 1 to length($small-sizes) + 1{
+			&-#{unquote(nth($small-sizes, $i))}{
+				margin-left: unquote($i + "rem");
+			}
+		}
+		@for $i from 1 to length($big-sizes) + 1{
+			&-#{unquote(nth($big-sizes, $i))}{
+				margin-left: unquote(($i + 1) * 2.5 + "rem");
+			}
+		}
+	}
+}

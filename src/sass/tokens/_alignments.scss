@@ -1,0 +1,10 @@
+.bottom-align-content{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-webkit-align-items: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}

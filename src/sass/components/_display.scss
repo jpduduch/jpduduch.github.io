@@ -1,0 +1,43 @@
+#display{
+	position: absolute;
+	top: -2rem;
+	left: 0;
+	width: 100%;
+	display: block;
+	perspective: 25rem;
+	// transform: scale(1.2);
+	filter:blur(0.5px);
+	pointer-events: none;
+	z-index: 0;
+
+	// @media #{$medium-and-down} {
+	// 	transform: scale(1.1);
+	// 	margin-top: -1rem;
+	// }
+
+	img{
+		max-width: 100%;
+		height: 80vh;
+		display: block;
+		margin-left: 20%;
+   		width: 66%;
+    	transform-style: preserve-3d;
+    	// transform: rotate3d(4, 0, 14);	
+		transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+		transform-origin: 11% 5%;
+
+    	@media #{$medium-and-down} {
+			transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+			transform-origin: 11% 5%;
+		}
+	}
+
+	// @media #{$small-and-down} {
+	// 	margin-top: -6rem;
+		
+	// 	img{
+	// 		margin-left: 10%;
+	// 		width: 90%;
+	// 	}
+	// }
+}

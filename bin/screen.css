@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -83,18 +83,80 @@ html, body {
 
 /* custom */
 /* custom */
-/* line 44, ../src/sass/tokens/_colors.scss */
-#hero {
-  background-image: -webkit-linear-gradient(90deg, #000000 10%, #3c3c3c 90%);
-  background-image: -o-linear-gradient(90deg, #000000 10%, #3c3c3c 90%);
+/* line 14, ../src/sass/tokens/_colors.scss */
+.primary-default {
+  color: #0000ff;
+}
+
+/* line 15, ../src/sass/tokens/_colors.scss */
+.primary-alternative {
+  color: #D0204A;
+}
+
+/* line 16, ../src/sass/tokens/_colors.scss */
+.ultra-light {
+  color: #f0f0f0;
+}
+
+/* line 17, ../src/sass/tokens/_colors.scss */
+.mid-light {
+  color: #e2e2e2;
+}
+
+/* line 18, ../src/sass/tokens/_colors.scss */
+.mid-dark {
+  color: #3c3c3c;
+}
+
+/* line 19, ../src/sass/tokens/_colors.scss */
+.extra-dark {
+  color: #242424;
+}
+
+/* line 20, ../src/sass/tokens/_colors.scss */
+.ultra-dark {
+  color: #000000;
+}
+
+/* line 33, ../src/sass/tokens/_colors.scss */
+.light-gradient-vertical {
+  background-image: -webkit-linear-gradient(0deg, #f0f0f0 10%, #e2e2e2 90%);
+  background-image: -o-linear-gradient(0deg, #f0f0f0 10%, #e2e2e2 90%);
+  background-image: linear-gradient(to 0deg, #f0f0f0 10%, #e2e2e2 90%);
+}
+/* line 36, ../src/sass/tokens/_colors.scss */
+.light-gradient-horizontal {
+  background-image: -webkit-linear-gradient(0deg, #f0f0f0 10%, #e2e2e2 90%);
+  background-image: -o-linear-gradient(0deg, #f0f0f0 10%, #e2e2e2 90%);
+  background-image: linear-gradient(to 0deg, #f0f0f0 10%, #e2e2e2 90%);
+}
+
+/* line 42, ../src/sass/tokens/_colors.scss */
+.dark-gradient-vertical {
+  background-image: -webkit-linear-gradient(90deg, black 10%, #3c3c3c 90%);
+  background-image: -o-linear-gradient(90deg, black 10%, #3c3c3c 90%);
   background-image: linear-gradient(to 90deg, #000000 10%, #3c3c3c 90%);
 }
-/* line 65, ../src/sass/tokens/_colors.scss */
-#works {
-  background-image: -webkit-linear-gradient(90deg, #f0f0f0 10%, #e2e2e2 90%);
-  background-image: -o-linear-gradient(90deg, #f0f0f0 10%, #e2e2e2 90%);
-  background-image: linear-gradient(to 90deg, #f0f0f0 10%, #e2e2e2 90%);
+/* line 45, ../src/sass/tokens/_colors.scss */
+.dark-gradient-horizontal {
+  background-image: -webkit-linear-gradient(90deg, black 10%, #3c3c3c 90%);
+  background-image: -o-linear-gradient(90deg, black 10%, #3c3c3c 90%);
+  background-image: linear-gradient(to 90deg, #000000 10%, #3c3c3c 90%);
 }
+
+/* line 51, ../src/sass/tokens/_colors.scss */
+.primary-gradient-vertical {
+  background-image: -webkit-linear-gradient(90deg, blue 10%, #d0204a 90%);
+  background-image: -o-linear-gradient(90deg, blue 10%, #d0204a 90%);
+  background-image: linear-gradient(to 90deg, #0000ff 10%, #d0204a 90%);
+}
+/* line 54, ../src/sass/tokens/_colors.scss */
+.primary-gradient-horizontal {
+  background-image: -webkit-linear-gradient(90deg, blue 10%, #d0204a 90%);
+  background-image: -o-linear-gradient(90deg, blue 10%, #d0204a 90%);
+  background-image: linear-gradient(to 90deg, #0000ff 10%, #d0204a 90%);
+}
+
 @keyframes grain {
   0%, 100% {
     transform: translate(0, 0);
@@ -128,16 +190,6 @@ html, body {
   }
 }
 @font-face {
-  font-family: League Gothic;
-  src: url("../src/fonts/League-Gothic/LeagueGothic-Regular.otf") format("truetype");
-  font-weight: 900;
-}
-@font-face {
-  font-family: League Gothic Condensed;
-  src: url("../src/fonts/League-Gothic/LeagueGothic-CondensedRegular.otf") format("truetype");
-  font-weight: 900;
-}
-@font-face {
   font-family: Karla;
   src: url("../src/fonts/Karla/Karla-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -147,216 +199,368 @@ html, body {
   src: url("../src/fonts/Karla/Karla-Bold.ttf") format("truetype");
   font-weight: 700;
 }
-/* line 28, ../src/sass/tokens/_text-and-typography.scss */
+/* line 17, ../src/sass/tokens/_text-and-typography.scss */
 a {
   text-decoration: none;
   color: #f0f0f0;
 }
 
-/* line 35, ../src/sass/tokens/_text-and-typography.scss */
-#hero, #works #hit-me-up h3, #works #hit-me-up h1 {
-  font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
-  font-weight: 400;
-}
-/* line 39, ../src/sass/tokens/_text-and-typography.scss */
-#hero {
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-}
-/* line 51, ../src/sass/tokens/_text-and-typography.scss */
-#works #hit-me-up h3 {
-  font-size: 1.125rem;
-  line-height: 2rem;
-}
-/* line 57, ../src/sass/tokens/_text-and-typography.scss */
-#works #hit-me-up h1 {
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
-
-/* line 90, ../src/sass/tokens/_text-and-typography.scss */
+/* line 26, ../src/sass/tokens/_text-and-typography.scss */
 *, body, html {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
 }
 
-/* line 96, ../src/sass/tokens/_text-and-typography.scss */
+/* line 32, ../src/sass/tokens/_text-and-typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 100, ../src/sass/tokens/_text-and-typography.scss */
+/* line 36, ../src/sass/tokens/_text-and-typography.scss */
 .underline {
   text-decoration: underline;
 }
 
-/* line 26, ../src/sass/tokens/_utilities.scss */
-#hero {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
+/* line 40, ../src/sass/tokens/_text-and-typography.scss */
+.bold {
+  font-weight: 700 !important;
 }
 
-/* line 61, ../src/sass/tokens/_utilities.scss */
-img,
-video {
-  height: auto;
+/* line 43, ../src/sass/tokens/_text-and-typography.scss */
+.txt-left {
+  text-align: left;
+}
+/* line 44, ../src/sass/tokens/_text-and-typography.scss */
+.txt-center {
+  text-align: center;
+}
+/* line 45, ../src/sass/tokens/_text-and-typography.scss */
+.txt-right {
+  text-align: right;
 }
 
-/* line 4, ../src/sass/sections/_hero.scss */
-#hero {
-  height: 100%;
-  /* section normalizer */
-  padding: 3.5rem;
-  color: #f0f0f0;
-  position: relative;
-  overflow: hidden;
+/* line 73, ../src/sass/tokens/_text-and-typography.scss */
+.main, .text.blockquote, nav a {
+  font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+  font-weight: 400;
 }
-/* line 15, ../src/sass/sections/_hero.scss */
-#hero #logo {
-  z-index: 1;
-  position: absolute;
-  left: 3.5rem;
-  top: 3.5rem;
-}
-@media only screen and (min-width: 1441px) {
-  /* line 21, ../src/sass/sections/_hero.scss */
-  #hero #logo img {
-    width: 150%;
-  }
+/* line 76, ../src/sass/tokens/_text-and-typography.scss */
+.main.caption, .caption.text.blockquote, nav a.blockquote.text, nav a {
+  font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
 }
 @media only screen and (max-width: 600px) {
-  /* line 15, ../src/sass/sections/_hero.scss */
-  #hero #logo {
-    left: 1.5rem;
-    top: 1.5rem;
-  }
-  /* line 30, ../src/sass/sections/_hero.scss */
-  #hero #logo img {
-    width: 150%;
+  /* line 80, ../src/sass/tokens/_text-and-typography.scss */
+  .main.caption-sm, .caption-sm.text.blockquote, nav a.caption-sm {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
   }
 }
-@media only screen and (min-width: 1441px) {
-  /* line 4, ../src/sass/sections/_hero.scss */
-  #hero {
-    font-size: 1.125rem;
-    line-height: 2rem;
-  }
-  /* line 40, ../src/sass/sections/_hero.scss */
-  #hero #menu .desktop {
-    line-height: 2rem !important;
+@media only screen and (min-width: 601px) {
+  /* line 81, ../src/sass/tokens/_text-and-typography.scss */
+  .main.caption-md, .caption-md.text.blockquote, nav a.caption-md {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
   }
 }
-/* line 45, ../src/sass/sections/_hero.scss */
-#hero nav {
-  z-index: 1;
-  display: inline-block;
+@media only screen and (min-width: 993px) {
+  /* line 82, ../src/sass/tokens/_text-and-typography.scss */
+  .main.caption-lg, .caption-lg.text.blockquote, nav a.caption-lg {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
 }
-/* line 50, ../src/sass/sections/_hero.scss */
-#hero nav #menu .desktop {
-  z-index: 1;
-  position: absolute;
-  right: 3.5rem;
-  top: 2.75rem;
-  text-align: right;
+/* line 86, ../src/sass/tokens/_text-and-typography.scss */
+.main.body, .body.text.blockquote, nav a.body {
+  font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+  font-weight: 400;
+  font-size: 0.875rem;
   line-height: 1.5rem;
 }
 @media only screen and (max-width: 600px) {
-  /* line 50, ../src/sass/sections/_hero.scss */
-  #hero nav #menu .desktop {
-    display: none;
+  /* line 90, ../src/sass/tokens/_text-and-typography.scss */
+  .main.body-sm, .body-sm.text.blockquote, nav a.body-sm {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
   }
-}
-/* line 63, ../src/sass/sections/_hero.scss */
-#hero nav #menu .mobile-menu-container {
-  z-index: 1;
-  position: absolute;
-  right: 1rem;
-  top: 0.75rem;
-  width: 3rem;
-  height: 3rem;
-  padding: 1rem 0.5rem;
 }
 @media only screen and (min-width: 601px) {
-  /* line 63, ../src/sass/sections/_hero.scss */
-  #hero nav #menu .mobile-menu-container {
-    display: none;
+  /* line 91, ../src/sass/tokens/_text-and-typography.scss */
+  .main.body-md, .body-md.text.blockquote, nav a.body-md {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
   }
 }
-/* line 77, ../src/sass/sections/_hero.scss */
-#hero nav #menu .mobile-menu-container:before, #hero nav #menu .mobile-menu-container:after, #hero nav #menu .mobile-menu-container .menu-stripes {
-  display: block;
-  content: '';
-  height: 0.125rem;
-  margin-bottom: 0.25rem;
-  background-color: #f0f0f0;
+@media only screen and (min-width: 993px) {
+  /* line 92, ../src/sass/tokens/_text-and-typography.scss */
+  .main.body-lg, .body-lg.text.blockquote, nav a.body-lg {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
 }
-/* line 88, ../src/sass/sections/_hero.scss */
-#hero #about-me {
-  position: absolute;
-  bottom: 3.5rem;
-  z-index: 1;
-}
-/* line 93, ../src/sass/sections/_hero.scss */
-#hero #about-me #email {
-  margin-top: 1.5rem;
-  font-weight: 700;
+/* line 95, ../src/sass/tokens/_text-and-typography.scss */
+.main.subheading, .subheading.text.blockquote, nav a.subheading {
+  font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
 }
 @media only screen and (max-width: 600px) {
-  /* line 88, ../src/sass/sections/_hero.scss */
-  #hero #about-me {
-    bottom: 1.5rem;
-    left: 1.5rem;
-    max-width: 11rem;
-  }
-  /* line 103, ../src/sass/sections/_hero.scss */
-  #hero #about-me p {
-    display: inline;
-    margin-right: 0.125rem;
-  }
-  /* line 106, ../src/sass/sections/_hero.scss */
-  #hero #about-me p#city, #hero #about-me p#email {
-    display: block;
+  /* line 99, ../src/sass/tokens/_text-and-typography.scss */
+  .main.subheading-sm, .subheading-sm.text.blockquote, nav a.subheading-sm {
+    font-size: 1.125rem;
+    line-height: 2rem;
   }
 }
-/* line 120, ../src/sass/sections/_hero.scss */
-#hero #more-info {
-  display: none;
+@media only screen and (min-width: 601px) {
+  /* line 100, ../src/sass/tokens/_text-and-typography.scss */
+  .main.subheading-md, .subheading-md.text.blockquote, nav a.subheading-md {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
 }
-/* line 124, ../src/sass/sections/_hero.scss */
-#hero #contact {
-  z-index: 1;
-  position: absolute;
-  bottom: 3.5rem;
-  right: 3.5rem;
+@media only screen and (min-width: 993px) {
+  /* line 101, ../src/sass/tokens/_text-and-typography.scss */
+  .main.subheading-lg, .subheading-lg.text.blockquote, nav a.subheading-lg {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
 }
-/* line 129, ../src/sass/sections/_hero.scss */
-#hero #contact li {
-  display: inline-block;
+/* line 104, ../src/sass/tokens/_text-and-typography.scss */
+.main.heading, .heading.text.blockquote, nav a.heading {
+  font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+@media only screen and (max-width: 600px) {
+  /* line 104, ../src/sass/tokens/_text-and-typography.scss */
+  .main.heading, .heading.text.blockquote, nav a.heading {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 113, ../src/sass/tokens/_text-and-typography.scss */
+  .main.heading-sm, .heading-sm.text.blockquote, nav a.heading-sm {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 601px) {
+  /* line 114, ../src/sass/tokens/_text-and-typography.scss */
+  .main.heading-md, .heading-md.text.blockquote, nav a.heading-md {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 115, ../src/sass/tokens/_text-and-typography.scss */
+  .main.heading-lg, .heading-lg.text.blockquote, nav a.heading-lg {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* line 119, ../src/sass/tokens/_text-and-typography.scss */
+.text, .text.caption, nav a.text, .text.body {
+  font-family: 'Literata', Times New Roman, Georgia, Serif;
+  font-weight: 400;
+}
+/* line 123, ../src/sass/tokens/_text-and-typography.scss */
+.text.caption, nav a.text, nav a.text.body {
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+}
+/* line 129, ../src/sass/tokens/_text-and-typography.scss */
+.text.body {
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+}
+/* line 135, ../src/sass/tokens/_text-and-typography.scss */
+.text.blockquote {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+/* line 37, ../src/sass/tokens/_utilities.scss */
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 5, ../src/sass/tokens/_spacings.scss */
+.spacing-inset-lg {
+  padding: 3.75rem;
+}
+@media only screen and (max-width: 600px) {
+  /* line 5, ../src/sass/tokens/_spacings.scss */
+  .spacing-inset-lg {
+    padding: 1.5em;
+  }
+}
+/* line 15, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-quark {
+  margin-bottom: 1rem;
+}
+/* line 15, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-nano {
+  margin-bottom: 2rem;
+}
+/* line 15, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-xxxs {
+  margin-bottom: 3rem;
+}
+/* line 15, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-xxs {
+  margin-bottom: 4rem;
+}
+/* line 15, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-xs {
+  margin-bottom: 5rem;
+}
+/* line 15, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-sm {
+  margin-bottom: 6rem;
+}
+/* line 15, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-md {
+  margin-bottom: 7rem;
+}
+/* line 15, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-lg {
+  margin-bottom: 8rem;
+}
+/* line 15, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-xl {
+  margin-bottom: 9rem;
+}
+/* line 20, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-xxl {
+  margin-bottom: 5rem;
+}
+/* line 20, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-xxxl {
+  margin-bottom: 7.5rem;
+}
+/* line 20, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-huge {
+  margin-bottom: 10rem;
+}
+/* line 20, ../src/sass/tokens/_spacings.scss */
+.spacing-stack-giant {
+  margin-bottom: 12.5rem;
+}
+/* line 28, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-quark {
   margin-left: 1rem;
 }
-/* line 133, ../src/sass/sections/_hero.scss */
-#hero #contact li img {
-  vertical-align: top;
+/* line 28, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-nano {
+  margin-left: 2rem;
 }
-@media only screen and (max-width: 600px) {
-  /* line 124, ../src/sass/sections/_hero.scss */
-  #hero #contact {
-    bottom: 1.5rem;
-    right: 1.5rem;
-  }
-  /* line 142, ../src/sass/sections/_hero.scss */
-  #hero #contact li {
-    display: block;
-    margin-top: 1.5rem;
+/* line 28, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-xxxs {
+  margin-left: 3rem;
+}
+/* line 28, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-xxs {
+  margin-left: 4rem;
+}
+/* line 28, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-xs {
+  margin-left: 5rem;
+}
+/* line 28, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-sm {
+  margin-left: 6rem;
+}
+/* line 28, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-md {
+  margin-left: 7rem;
+}
+/* line 28, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-lg {
+  margin-left: 8rem;
+}
+/* line 28, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-xl {
+  margin-left: 9rem;
+}
+/* line 33, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-xxl {
+  margin-left: 5rem;
+}
+/* line 33, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-xxxl {
+  margin-left: 7.5rem;
+}
+/* line 33, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-huge {
+  margin-left: 10rem;
+}
+/* line 33, ../src/sass/tokens/_spacings.scss */
+.spacing-inline-giant {
+  margin-left: 12.5rem;
+}
+
+/* line 1, ../src/sass/tokens/_alignments.scss */
+.bottom-align-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+/* line 1, ../src/sass/components/_display.scss */
+#display {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 100%;
+  display: block;
+  perspective: 25rem;
+  filter: blur(0.5px);
+  pointer-events: none;
+  z-index: 0;
+}
+/* line 18, ../src/sass/components/_display.scss */
+#display img {
+  max-width: 100%;
+  height: 80vh;
+  display: block;
+  margin-left: 20%;
+  width: 66%;
+  transform-style: preserve-3d;
+  transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+  transform-origin: 11% 5%;
+}
+@media only screen and (max-width: 992px) {
+  /* line 18, ../src/sass/components/_display.scss */
+  #display img {
+    transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+    transform-origin: 11% 5%;
   }
 }
-/* line 153, ../src/sass/sections/_hero.scss */
-#hero:after {
+
+/* line 1, ../src/sass/components/_backgrounds.scss */
+body {
+  height: 100%;
+}
+/* line 4, ../src/sass/components/_backgrounds.scss */
+body .full-bg {
+  height: 100%;
+}
+/* line 9, ../src/sass/components/_backgrounds.scss */
+body .noise:after {
   animation: grain 8s steps(10) infinite;
   background-image: url("../src/img/colored-noise-pattern.png");
   content: "";
@@ -369,110 +573,76 @@ video {
   transform: scale(0.25);
   pointer-events: none;
 }
-
-/* line 1, ../src/sass/sections/_display.scss */
-#display {
-  display: block;
-  perspective: 25rem;
-  margin-top: -3rem;
-  transform: scale(1.2);
-  z-index: 0;
-  filter: blur(0.5px);
-  pointer-events: none;
-}
-@media only screen and (max-width: 992px) {
-  /* line 1, ../src/sass/sections/_display.scss */
-  #display {
-    transform: scale(1.1);
-    margin-top: -1rem;
-  }
-}
-/* line 15, ../src/sass/sections/_display.scss */
-#display img {
-  max-width: 100%;
-  height: 80vh;
-  display: block;
-  margin-left: 24%;
-  width: 66%;
-  transform-style: preserve-3d;
-  transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
-  transform-origin: 11% 5%;
-}
-@media only screen and (max-width: 992px) {
-  /* line 15, ../src/sass/sections/_display.scss */
-  #display img {
-    transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
-    transform-origin: 11% 5%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  /* line 1, ../src/sass/sections/_display.scss */
-  #display {
-    margin-top: -6rem;
-  }
-  /* line 35, ../src/sass/sections/_display.scss */
-  #display img {
-    margin-left: 10%;
-    width: 90%;
-  }
-}
-
-/* line 1, ../src/sass/sections/_works.scss */
-#works {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  z-index: -1;
-}
-/* line 11, ../src/sass/sections/_works.scss */
-#works #hit-me-up {
+/* line 25, ../src/sass/components/_backgrounds.scss */
+body .fixed-pos {
   position: fixed;
-  left: 3.5rem;
-  bottom: 3.5rem;
-  width: 90%;
-}
-@media only screen and (max-width: 600px) {
-  /* line 11, ../src/sass/sections/_works.scss */
-  #works #hit-me-up {
-    bottom: 1.5rem;
-    left: 1.5rem;
-    width: 17rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  /* line 24, ../src/sass/sections/_works.scss */
-  #works #hit-me-up h3 {
-    font-size: 0.75rem;
-    line-height: 1.5rem;
-  }
-}
-/* line 32, ../src/sass/sections/_works.scss */
-#works #hit-me-up h1 {
-  font-weight: 700;
-}
-/* line 35, ../src/sass/sections/_works.scss */
-#works #hit-me-up h1 a {
-  color: #000000;
-}
-@media only screen and (max-width: 600px) {
-  /* line 32, ../src/sass/sections/_works.scss */
-  #works #hit-me-up h1 {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    margin-bottom: 2rem;
-  }
 }
 
 /* line 1, ../src/sass/components/_menu.scss */
 nav {
-  opacity: 0;
-  pointer-events: none;
+  float: right;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 8, ../src/sass/components/_menu.scss */
+nav #menu {
+  display: inline-block;
+  flex-grow: 1;
+  margin-top: -0.5rem;
+}
+/* line 16, ../src/sass/components/_menu.scss */
+nav ul.black, nav ul.white {
+  display: inline-block;
+  align-self: flex-end;
+  flex-grow: 0;
+  margin-bottom: -0.5rem;
+}
+/* line 22, ../src/sass/components/_menu.scss */
+nav ul.black li, nav ul.white li {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+/* line 28, ../src/sass/components/_menu.scss */
+nav ul.black {
+  display: none;
+}
+
+/* line 1, ../src/sass/components/_anchor-arrow.scss */
+.anchor-arrow {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 13, ../src/sass/components/_anchor-arrow.scss */
+.anchor-arrow img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+/* line 1, ../src/sass/components/_reminder.scss */
+.reminder {
+  position: fixed;
+  z-index: -1;
+  bottom: 3.5rem;
+  left: 3.5rem;
+  width: calc(100% - 7rem);
 }
 @media only screen and (max-width: 600px) {
-  /* line 1, ../src/sass/components/_menu.scss */
-  nav {
-    display: none;
+  /* line 1, ../src/sass/components/_reminder.scss */
+  .reminder {
+    left: 1.5rem;
+    bottom: 1.5rem;
+    width: calc(100% - 3rem);
   }
 }
 

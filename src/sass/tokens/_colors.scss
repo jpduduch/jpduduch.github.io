@@ -9,79 +9,52 @@ $mid-dark: #3c3c3c;
 $extra-dark: #242424;
 $ultra-dark: #000000;
 
+// colors
+
+.primary-default { color: $primary-default; }
+.primary-alternative { color: $primary-alternative; }
+.ultra-light { color: $ultra-light; }
+.mid-light { color: $mid-light; }
+.mid-dark { color: $mid-dark; }
+.extra-dark { color: $extra-dark; }
+.ultra-dark { color: $ultra-dark; }
+
+
+
 //Gradients
 
-@mixin gradient($deg, $colorA, $colorB) {
-	background-image: -webkit-linear-gradient($deg + unquote('deg'), $colorA 10%, $colorB 90%);
-	background-image: -o-linear-gradient($deg + unquote('deg'), $colorA 10%, $colorB 90%);
-	background-image: linear-gradient($deg + unquote('deg'), $colorA 10%, $colorB 90%);
+@mixin linear-gradient($deg, $colorA, $opacityA, $colorB, $opacityB) {
+	background-image: -webkit-linear-gradient($deg + unquote('deg'), rgba($colorA, $opacityA) 10%, rgba($colorB, $opacityB) 90%);
+	background-image: -o-linear-gradient($deg + unquote('deg'), rgba($colorA, $opacityA) 10%, rgba($colorB, $opacityB) 90%);
+	background-image: linear-gradient($deg + unquote('deg'), rgba($colorA, $opacityA) 10%, rgba($colorB, $opacityB) 90%);
 }
 
-%primary-gradient{
+.light-gradient{
 	&-vertical{
-		&-default{
-			@include gradient(90, $primary-default, $primary-alternative);
-		}
-
-		&-reverse{
-			@include gradient(90, $primary-alternative, $primary-default);
-		}
+		@include linear-gradient(0, $ultra-light, 1, $mid-light, 1);
 	}
 	&-horizontal{
-		&-default{
-			@include gradient(0, $primary-default, $primary-alternative);
-		}
-
-		&-reverse{
-			@include gradient(0, $primary-alternative, $primary-default);
-		}
+		@include linear-gradient(0, $ultra-light, 1, $mid-light, 1);
 	}
 }
 
-%neutral-gradient{
-	&-dark{
-		&-vertical{
-			&-default{
-				@include gradient(90, $ultra-dark, $mid-dark);
-			}
-
-			&-reverse{
-				@include gradient(90, $mid-dark, $ultra-dark);
-			}
-		}
-		&-horizontal{
-			&-default{
-				@include gradient(180, $ultra-dark, $mid-dark);
-			}
-
-			&-reverse{
-				@include gradient(180, $mid-dark, $ultra-dark);
-			}
-		}
+.dark-gradient{
+	&-vertical{
+		@include linear-gradient(90, $ultra-dark, 1, $mid-dark, 1);
 	}
-
-	&-light{
-		&-vertical{
-			&-default{
-				@include gradient(90, $ultra-light, $mid-light);
-			}
-
-			&-reverse{
-				@include gradient(90, $mid-light, $ultra-light);
-			}
-		}
-		&-horizontal{
-			&-default{
-				@include gradient(180, $ultra-light, $mid-light);
-			}
-
-			&-reverse{
-				@include gradient(180, $mid-light, $ultra-light);
-			}
-		}
+	&-horizontal{
+		@include linear-gradient(90, $ultra-dark, 1, $mid-dark, 1);
 	}
 }
 
+.primary-gradient{
+	&-vertical{
+		@include linear-gradient(90, $primary-default, 1, $primary-alternative, 1);
+	}
+	&-horizontal{
+		@include linear-gradient(90, $primary-default, 1, $primary-alternative, 1);
+	}
+}
 
 
 
