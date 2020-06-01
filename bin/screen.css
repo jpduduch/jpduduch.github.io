@@ -1,0 +1,479 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../src/sass/screen.scss */
+*, html, body {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+/* line 18, ../src/sass/screen.scss */
+html, body {
+  height: 100%;
+}
+
+/* custom */
+/* custom */
+/* line 44, ../src/sass/tokens/_colors.scss */
+#hero {
+  background-image: -webkit-linear-gradient(90deg, #000000 10%, #3c3c3c 90%);
+  background-image: -o-linear-gradient(90deg, #000000 10%, #3c3c3c 90%);
+  background-image: linear-gradient(to 90deg, #000000 10%, #3c3c3c 90%);
+}
+/* line 65, ../src/sass/tokens/_colors.scss */
+#works {
+  background-image: -webkit-linear-gradient(90deg, #f0f0f0 10%, #e2e2e2 90%);
+  background-image: -o-linear-gradient(90deg, #f0f0f0 10%, #e2e2e2 90%);
+  background-image: linear-gradient(to 90deg, #f0f0f0 10%, #e2e2e2 90%);
+}
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+@font-face {
+  font-family: League Gothic;
+  src: url("../src/fonts/League-Gothic/LeagueGothic-Regular.otf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: League Gothic Condensed;
+  src: url("../src/fonts/League-Gothic/LeagueGothic-CondensedRegular.otf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Karla;
+  src: url("../src/fonts/Karla/Karla-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Karla;
+  src: url("../src/fonts/Karla/Karla-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+/* line 28, ../src/sass/tokens/_text-and-typography.scss */
+a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+/* line 35, ../src/sass/tokens/_text-and-typography.scss */
+#hero, #works #hit-me-up h3, #works #hit-me-up h1 {
+  font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+  font-weight: 400;
+}
+/* line 39, ../src/sass/tokens/_text-and-typography.scss */
+#hero {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+/* line 51, ../src/sass/tokens/_text-and-typography.scss */
+#works #hit-me-up h3 {
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+/* line 57, ../src/sass/tokens/_text-and-typography.scss */
+#works #hit-me-up h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* line 90, ../src/sass/tokens/_text-and-typography.scss */
+*, body, html {
+  font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
+  font-weight: 400;
+}
+
+/* line 96, ../src/sass/tokens/_text-and-typography.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 100, ../src/sass/tokens/_text-and-typography.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 26, ../src/sass/tokens/_utilities.scss */
+#hero {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+/* line 61, ../src/sass/tokens/_utilities.scss */
+img,
+video {
+  height: auto;
+}
+
+/* line 4, ../src/sass/sections/_hero.scss */
+#hero {
+  height: 100%;
+  /* section normalizer */
+  padding: 3.5rem;
+  color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 15, ../src/sass/sections/_hero.scss */
+#hero #logo {
+  z-index: 1;
+  position: absolute;
+  left: 3.5rem;
+  top: 3.5rem;
+}
+@media only screen and (min-width: 1441px) {
+  /* line 21, ../src/sass/sections/_hero.scss */
+  #hero #logo img {
+    width: 150%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 15, ../src/sass/sections/_hero.scss */
+  #hero #logo {
+    left: 1.5rem;
+    top: 1.5rem;
+  }
+  /* line 30, ../src/sass/sections/_hero.scss */
+  #hero #logo img {
+    width: 150%;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  /* line 4, ../src/sass/sections/_hero.scss */
+  #hero {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+  /* line 40, ../src/sass/sections/_hero.scss */
+  #hero #menu .desktop {
+    line-height: 2rem !important;
+  }
+}
+/* line 45, ../src/sass/sections/_hero.scss */
+#hero nav {
+  z-index: 1;
+  display: inline-block;
+}
+/* line 50, ../src/sass/sections/_hero.scss */
+#hero nav #menu .desktop {
+  z-index: 1;
+  position: absolute;
+  right: 3.5rem;
+  top: 2.75rem;
+  text-align: right;
+  line-height: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  /* line 50, ../src/sass/sections/_hero.scss */
+  #hero nav #menu .desktop {
+    display: none;
+  }
+}
+/* line 63, ../src/sass/sections/_hero.scss */
+#hero nav #menu .mobile-menu-container {
+  z-index: 1;
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem 0.5rem;
+}
+@media only screen and (min-width: 601px) {
+  /* line 63, ../src/sass/sections/_hero.scss */
+  #hero nav #menu .mobile-menu-container {
+    display: none;
+  }
+}
+/* line 77, ../src/sass/sections/_hero.scss */
+#hero nav #menu .mobile-menu-container:before, #hero nav #menu .mobile-menu-container:after, #hero nav #menu .mobile-menu-container .menu-stripes {
+  display: block;
+  content: '';
+  height: 0.125rem;
+  margin-bottom: 0.25rem;
+  background-color: #f0f0f0;
+}
+/* line 88, ../src/sass/sections/_hero.scss */
+#hero #about-me {
+  position: absolute;
+  bottom: 3.5rem;
+  z-index: 1;
+}
+/* line 93, ../src/sass/sections/_hero.scss */
+#hero #about-me #email {
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+  /* line 88, ../src/sass/sections/_hero.scss */
+  #hero #about-me {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    max-width: 11rem;
+  }
+  /* line 103, ../src/sass/sections/_hero.scss */
+  #hero #about-me p {
+    display: inline;
+    margin-right: 0.125rem;
+  }
+  /* line 106, ../src/sass/sections/_hero.scss */
+  #hero #about-me p#city, #hero #about-me p#email {
+    display: block;
+  }
+}
+/* line 120, ../src/sass/sections/_hero.scss */
+#hero #more-info {
+  display: none;
+}
+/* line 124, ../src/sass/sections/_hero.scss */
+#hero #contact {
+  z-index: 1;
+  position: absolute;
+  bottom: 3.5rem;
+  right: 3.5rem;
+}
+/* line 129, ../src/sass/sections/_hero.scss */
+#hero #contact li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+/* line 133, ../src/sass/sections/_hero.scss */
+#hero #contact li img {
+  vertical-align: top;
+}
+@media only screen and (max-width: 600px) {
+  /* line 124, ../src/sass/sections/_hero.scss */
+  #hero #contact {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+  /* line 142, ../src/sass/sections/_hero.scss */
+  #hero #contact li {
+    display: block;
+    margin-top: 1.5rem;
+  }
+}
+/* line 153, ../src/sass/sections/_hero.scss */
+#hero:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("../src/img/colored-noise-pattern.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.08;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  transform: scale(0.25);
+  pointer-events: none;
+}
+
+/* line 1, ../src/sass/sections/_display.scss */
+#display {
+  display: block;
+  perspective: 25rem;
+  margin-top: -3rem;
+  transform: scale(1.2);
+  z-index: 0;
+  filter: blur(0.5px);
+  pointer-events: none;
+}
+@media only screen and (max-width: 992px) {
+  /* line 1, ../src/sass/sections/_display.scss */
+  #display {
+    transform: scale(1.1);
+    margin-top: -1rem;
+  }
+}
+/* line 15, ../src/sass/sections/_display.scss */
+#display img {
+  max-width: 100%;
+  height: 80vh;
+  display: block;
+  margin-left: 24%;
+  width: 66%;
+  transform-style: preserve-3d;
+  transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+  transform-origin: 11% 5%;
+}
+@media only screen and (max-width: 992px) {
+  /* line 15, ../src/sass/sections/_display.scss */
+  #display img {
+    transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+    transform-origin: 11% 5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 1, ../src/sass/sections/_display.scss */
+  #display {
+    margin-top: -6rem;
+  }
+  /* line 35, ../src/sass/sections/_display.scss */
+  #display img {
+    margin-left: 10%;
+    width: 90%;
+  }
+}
+
+/* line 1, ../src/sass/sections/_works.scss */
+#works {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+/* line 11, ../src/sass/sections/_works.scss */
+#works #hit-me-up {
+  position: fixed;
+  left: 3.5rem;
+  bottom: 3.5rem;
+  width: 90%;
+}
+@media only screen and (max-width: 600px) {
+  /* line 11, ../src/sass/sections/_works.scss */
+  #works #hit-me-up {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 17rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 24, ../src/sass/sections/_works.scss */
+  #works #hit-me-up h3 {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+}
+/* line 32, ../src/sass/sections/_works.scss */
+#works #hit-me-up h1 {
+  font-weight: 700;
+}
+/* line 35, ../src/sass/sections/_works.scss */
+#works #hit-me-up h1 a {
+  color: #000000;
+}
+@media only screen and (max-width: 600px) {
+  /* line 32, ../src/sass/sections/_works.scss */
+  #works #hit-me-up h1 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* line 1, ../src/sass/components/_menu.scss */
+nav {
+  opacity: 0;
+  pointer-events: none;
+}
+@media only screen and (max-width: 600px) {
+  /* line 1, ../src/sass/components/_menu.scss */
+  nav {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=screen.css.map */

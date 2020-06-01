@@ -1,0 +1,65 @@
+
+
+%hide {
+  display: none !important;
+}
+
+// Text Align
+%left-align {
+  text-align: left;
+}
+%right-align {
+  text-align: right
+}
+%center, %center-align {
+  text-align: center;
+}
+
+%left {
+  float: left !important;
+}
+%right {
+  float: right !important;
+}
+
+// No Text Select
+%no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+// colocar reticencias ao final da linha de texto
+%truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// centraliza elementos verticalmente
+%center-v{
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// centraliza na tela. não funcionará se tiver propriedades do tipo max-width: auto e afins.
+%center-v-h{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Images
+img,
+video {
+  // max-width: 100%;
+  height: auto;
+}
