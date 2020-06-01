@@ -3,7 +3,8 @@
 $primary-default: #0000ff;
 $primary-alternative: #D0204A;
 
-$ultra-light: #fbfbfb;
+$ultra-light: #f0f0f0;
+$mid-light: #e2e2e2;
 $mid-dark: #3c3c3c;
 $extra-dark: #242424;
 $ultra-dark: #000000;
@@ -38,22 +39,45 @@ $ultra-dark: #000000;
 }
 
 %neutral-gradient{
-	&-vertical{
-		&-default{
-			@include gradient(90, $ultra-dark, $mid-dark);
-		}
+	&-dark{
+		&-vertical{
+			&-default{
+				@include gradient(90, $ultra-dark, $mid-dark);
+			}
 
-		&-reverse{
-			@include gradient(90, $mid-dark, $ultra-dark);
+			&-reverse{
+				@include gradient(90, $mid-dark, $ultra-dark);
+			}
+		}
+		&-horizontal{
+			&-default{
+				@include gradient(180, $ultra-dark, $mid-dark);
+			}
+
+			&-reverse{
+				@include gradient(180, $mid-dark, $ultra-dark);
+			}
 		}
 	}
-	&-horizontal{
-		&-default{
-			@include gradient(180, $ultra-dark, $mid-dark);
-		}
 
-		&-reverse{
-			@include gradient(180, $mid-dark, $ultra-dark);
+	&-light{
+		&-vertical{
+			&-default{
+				@include gradient(90, $ultra-light, $mid-light);
+			}
+
+			&-reverse{
+				@include gradient(90, $mid-light, $ultra-light);
+			}
+		}
+		&-horizontal{
+			&-default{
+				@include gradient(180, $ultra-light, $mid-light);
+			}
+
+			&-reverse{
+				@include gradient(180, $mid-light, $ultra-light);
+			}
 		}
 	}
 }

@@ -83,11 +83,17 @@ html, body {
 
 /* custom */
 /* custom */
-/* line 42, ../src/sass/tokens/_colors.scss */
+/* line 44, ../src/sass/tokens/_colors.scss */
 #hero {
   background-image: -webkit-linear-gradient(90deg, #000000 10%, #3c3c3c 90%);
   background-image: -o-linear-gradient(90deg, #000000 10%, #3c3c3c 90%);
   background-image: linear-gradient(to 90deg, #000000 10%, #3c3c3c 90%);
+}
+/* line 65, ../src/sass/tokens/_colors.scss */
+#works {
+  background-image: -webkit-linear-gradient(90deg, #f0f0f0 10%, #e2e2e2 90%);
+  background-image: -o-linear-gradient(90deg, #f0f0f0 10%, #e2e2e2 90%);
+  background-image: linear-gradient(to 90deg, #f0f0f0 10%, #e2e2e2 90%);
 }
 @keyframes grain {
   0%, 100% {
@@ -144,11 +150,11 @@ html, body {
 /* line 28, ../src/sass/tokens/_text-and-typography.scss */
 a {
   text-decoration: none;
-  color: #fbfbfb;
+  color: #f0f0f0;
 }
 
 /* line 35, ../src/sass/tokens/_text-and-typography.scss */
-#hero {
+#hero, #works #hit-me-up h3, #works #hit-me-up h1 {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
   font-weight: 400;
 }
@@ -157,6 +163,17 @@ a {
   font-size: 0.75rem;
   line-height: 1.25rem;
 }
+/* line 51, ../src/sass/tokens/_text-and-typography.scss */
+#works #hit-me-up h3 {
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+/* line 57, ../src/sass/tokens/_text-and-typography.scss */
+#works #hit-me-up h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
 /* line 90, ../src/sass/tokens/_text-and-typography.scss */
 *, body, html {
   font-family: 'Karla', Courier, Courier New, Lucida Console, Monospace;
@@ -195,7 +212,7 @@ video {
   height: 100%;
   /* section normalizer */
   padding: 3.5rem;
-  color: #fbfbfb;
+  color: #f0f0f0;
   position: relative;
   overflow: hidden;
 }
@@ -276,7 +293,7 @@ video {
   content: '';
   height: 0.125rem;
   margin-bottom: 0.25rem;
-  background-color: #fbfbfb;
+  background-color: #f0f0f0;
 }
 /* line 88, ../src/sass/sections/_hero.scss */
 #hero #about-me {
@@ -337,10 +354,6 @@ video {
     display: block;
     margin-top: 1.5rem;
   }
-  /* line 146, ../src/sass/sections/_hero.scss */
-  #hero #contact li img {
-    width: 2rem;
-  }
 }
 /* line 153, ../src/sass/sections/_hero.scss */
 #hero:after {
@@ -395,12 +408,71 @@ video {
 @media only screen and (max-width: 600px) {
   /* line 1, ../src/sass/sections/_display.scss */
   #display {
-    margin-top: -4rem;
+    margin-top: -6rem;
   }
   /* line 35, ../src/sass/sections/_display.scss */
   #display img {
     margin-left: 10%;
     width: 90%;
+  }
+}
+
+/* line 1, ../src/sass/sections/_works.scss */
+#works {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+/* line 11, ../src/sass/sections/_works.scss */
+#works #hit-me-up {
+  position: fixed;
+  left: 3.5rem;
+  bottom: 3.5rem;
+  width: 90%;
+}
+@media only screen and (max-width: 600px) {
+  /* line 11, ../src/sass/sections/_works.scss */
+  #works #hit-me-up {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 17rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 24, ../src/sass/sections/_works.scss */
+  #works #hit-me-up h3 {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+}
+/* line 32, ../src/sass/sections/_works.scss */
+#works #hit-me-up h1 {
+  font-weight: 700;
+}
+/* line 35, ../src/sass/sections/_works.scss */
+#works #hit-me-up h1 a {
+  color: #000000;
+}
+@media only screen and (max-width: 600px) {
+  /* line 32, ../src/sass/sections/_works.scss */
+  #works #hit-me-up h1 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* line 1, ../src/sass/components/_menu.scss */
+nav {
+  opacity: 0;
+  pointer-events: none;
+}
+@media only screen and (max-width: 600px) {
+  /* line 1, ../src/sass/components/_menu.scss */
+  nav {
+    display: none;
   }
 }
 

@@ -1,0 +1,8 @@
+nav{
+	opacity: 0;
+	pointer-events: none;
+
+	@media #{$small-and-down} {
+		display: none;
+	}
+}

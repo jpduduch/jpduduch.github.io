@@ -3,7 +3,7 @@
 
 #hero{
 	@extend %no-select;
-	@extend %neutral-gradient-vertical-default;
+	@extend %neutral-gradient-dark-vertical-default;
 	@extend %main-caption;
 	
 	height: 100%; /* section normalizer */
@@ -143,9 +143,9 @@
 				display: block;
 				margin-top: 1.5rem;
 
-				img{
-					width: 2rem;
-				}
+				// img{
+				// 	width: 2rem;
+				// }
 			}
 		}
 	}
