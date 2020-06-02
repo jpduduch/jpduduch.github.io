@@ -1,10 +1,23 @@
-.bottom-align-content{
+.align-content-to-edges{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: end;
-	-webkit-align-items: end;
-	-ms-flex-align: end;
-	align-items: flex-end;
+	flex-direction: column;
+	width: fit-content;
+	@media #{$small-and-down}{
+		width: initial;
+	}
+	// -webkit-box-align: end;
+	// -webkit-align-items: end;
+	// -ms-flex-align: end;
+	// align-items: flex-end;
+
+	.top-left{
+		flex: 1;
+	}
+
+	.bottom-left{
+		flex: 0;
+	}
 }

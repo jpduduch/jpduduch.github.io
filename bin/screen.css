@@ -83,6 +83,41 @@ html, body {
 
 /* custom */
 /* custom */
+@media only screen and (min-width: 601px) {
+  /* line 18, ../src/sass/tokens/_media-queries.scss */
+  .small-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  /* line 19, ../src/sass/tokens/_media-queries.scss */
+  .medium-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 21, ../src/sass/tokens/_media-queries.scss */
+  .large-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 22, ../src/sass/tokens/_media-queries.scss */
+  .medium-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /* line 24, ../src/sass/tokens/_media-queries.scss */
+  .medium-only {
+    display: none !important;
+  }
+}
+
 /* line 15, ../src/sass/tokens/_colors.scss */
 .primary-default {
   color: #0000ff;
@@ -416,39 +451,39 @@ a:hover {
 }
 /* line 15, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-quark {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 /* line 15, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-nano {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 /* line 15, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-xxxs {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 /* line 15, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-xxs {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 /* line 15, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-xs {
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 /* line 15, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-sm {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 /* line 15, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-md {
-  margin-bottom: 7rem;
+  margin-bottom: 3.5rem;
 }
 /* line 15, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-lg {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 /* line 15, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-xl {
-  margin-bottom: 9rem;
+  margin-bottom: 4.5rem;
 }
 /* line 20, ../src/sass/tokens/_spacings.scss */
 .spacing-stack-xxl {
@@ -520,15 +555,27 @@ a:hover {
 }
 
 /* line 1, ../src/sass/tokens/_alignments.scss */
-.bottom-align-content {
+.align-content-to-edges {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  flex-direction: column;
+  width: fit-content;
+}
+@media only screen and (max-width: 600px) {
+  /* line 1, ../src/sass/tokens/_alignments.scss */
+  .align-content-to-edges {
+    width: initial;
+  }
+}
+/* line 16, ../src/sass/tokens/_alignments.scss */
+.align-content-to-edges .top-left {
+  flex: 1;
+}
+/* line 20, ../src/sass/tokens/_alignments.scss */
+.align-content-to-edges .bottom-left {
+  flex: 0;
 }
 
 /* line 1, ../src/sass/components/_display.scss */
@@ -543,22 +590,36 @@ a:hover {
   pointer-events: none;
   z-index: 0;
 }
-/* line 18, ../src/sass/components/_display.scss */
+@media only screen and (max-width: 600px) {
+  /* line 1, ../src/sass/components/_display.scss */
+  #display {
+    max-height: 30%;
+    top: 0rem;
+  }
+}
+/* line 23, ../src/sass/components/_display.scss */
 #display img {
   max-width: 100%;
   height: 80vh;
   display: block;
-  margin-left: 20%;
+  margin-left: 22%;
   width: 66%;
   transform-style: preserve-3d;
   transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
   transform-origin: 11% 5%;
 }
 @media only screen and (max-width: 992px) {
-  /* line 18, ../src/sass/components/_display.scss */
+  /* line 23, ../src/sass/components/_display.scss */
   #display img {
     transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
     transform-origin: 11% 5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 23, ../src/sass/components/_display.scss */
+  #display img {
+    margin-top: 15vw;
+    height: 50vh;
   }
 }
 
@@ -573,7 +634,7 @@ body .full-bg {
 /* line 9, ../src/sass/components/_backgrounds.scss */
 body .noise:after {
   animation: grain 8s steps(10) infinite;
-  background-image: url("../src/img/colored-noise-pattern.png");
+  background-image: url("../src/img/colored-noise-pattern.gif");
   content: "";
   height: 300%;
   left: -50%;
@@ -602,22 +663,6 @@ nav #menu {
   display: inline-block;
   flex-grow: 1;
   margin-top: -0.5rem;
-}
-/* line 16, ../src/sass/components/_menu.scss */
-nav ul.black, nav ul.white {
-  display: inline-block;
-  align-self: flex-end;
-  flex-grow: 0;
-  margin-bottom: -0.5rem;
-}
-/* line 22, ../src/sass/components/_menu.scss */
-nav ul.black li, nav ul.white li {
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-/* line 28, ../src/sass/components/_menu.scss */
-nav ul.black {
-  display: none;
 }
 
 /* line 1, ../src/sass/components/_anchor-arrow.scss */
@@ -652,9 +697,56 @@ nav ul.black {
   /* line 1, ../src/sass/components/_reminder.scss */
   .reminder {
     left: 1.5rem;
-    bottom: 1.5rem;
+    bottom: 2.5rem;
     width: calc(100% - 3rem);
+    max-width: 18rem;
   }
+}
+
+/* line 2, ../src/sass/components/_social-icons.scss */
+.social-icons.primary, .social-icons.secondary {
+  display: inline-block;
+  align-self: flex-end;
+  flex-grow: 0;
+  margin-bottom: -0.5rem;
+}
+/* line 8, ../src/sass/components/_social-icons.scss */
+.social-icons.primary li, .social-icons.secondary li {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+@media only screen and (max-width: 600px) {
+  /* line 8, ../src/sass/components/_social-icons.scss */
+  .social-icons.primary li, .social-icons.secondary li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+/* line 20, ../src/sass/components/_social-icons.scss */
+.social-icons.secondary li {
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+@media only screen and (max-width: 600px) {
+  /* line 19, ../src/sass/components/_social-icons.scss */
+  .social-icons.secondary {
+    display: none;
+  }
+}
+
+/* line 1, ../src/sass/components/_uncategorized.scss */
+#about-me {
+  width: 60%;
+}
+@media only screen and (max-width: 600px) {
+  /* line 3, ../src/sass/components/_uncategorized.scss */
+  #about-me p {
+    display: inline;
+  }
+}
+/* line 9, ../src/sass/components/_uncategorized.scss */
+#about-me #email, #about-me .spacing-stack-nano {
+  display: block;
 }
 
 /*# sourceMappingURL=screen.css.map */

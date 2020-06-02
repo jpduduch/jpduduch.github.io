@@ -8,9 +8,10 @@
 
 	@media #{$small-and-down} {
 		left: 1.5rem;
-		bottom: 1.5rem;
+		bottom: 2.5rem;
 
 		width: calc(100% - 3rem);
+		max-width: 18rem;
 
 	}
 

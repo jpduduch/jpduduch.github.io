@@ -13,20 +13,6 @@ nav{
 
 	a { @extend .main, .caption;}
 	
-	ul.black, ul.white{
-		display: inline-block;
-		align-self: flex-end;
-		flex-grow: 0;
-		margin-bottom: -0.5rem;
-		
-		li{
-			display: inline-block;
-			margin-left: 0.5rem;
-		}
-	}
-
-	ul.black{ display: none; }
-
 	//////// menu icon (mobile) ////////
 
 

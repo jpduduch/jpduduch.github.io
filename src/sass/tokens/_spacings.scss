@@ -13,7 +13,7 @@
 	&-stack{
 		@for $i from 1 to length($small-sizes) + 1{
 			&-#{unquote(nth($small-sizes, $i))}{
-				margin-bottom: unquote($i + "rem");
+				margin-bottom: unquote($i * 0.5 + "rem");
 			}
 		}
 		@for $i from 1 to length($big-sizes) + 1{

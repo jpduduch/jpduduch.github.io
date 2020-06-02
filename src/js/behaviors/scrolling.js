@@ -29,10 +29,10 @@ $('a[href*="#"]')
 // fim scroll suave
 
 $(document).scroll(function(){
-	if ($(window).scrollTop() >= 100) {
+	if ($(window).scrollTop() >= 188) {
 		$('.reminder').css('z-index', '1');
 	}
 	else{
 		$('.reminder').css('z-index', '-1');
 	}
-})
+});

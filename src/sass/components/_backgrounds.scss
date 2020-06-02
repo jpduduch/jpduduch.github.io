@@ -8,7 +8,7 @@ body{
 	.noise{
 		&:after{
 			animation: grain 8s steps(10) infinite;
-			background-image: url('../src/img/colored-noise-pattern.png');
+			background-image: url('../src/img/colored-noise-pattern.gif');
 			content: "";
 			height: 300%;
 			left: -50%;

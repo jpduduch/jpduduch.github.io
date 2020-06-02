@@ -14,3 +14,11 @@ $extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !defaul
 $small-and-down: "only screen and (max-width : #{$small-screen})" !default;
 $medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+.small-and-down{@media #{$medium-and-up}{ display: none !important; } }
+.medium-and-down{@media #{$large-and-up}{ display: none !important; } }
+
+.large-and-up{@media #{$medium-and-down}{ display: none !important; } }
+.medium-and-up{@media #{$small-and-down}{ display: none !important; } }
+
+.medium-only{@media #{$medium-only}{ display: none !important; } }

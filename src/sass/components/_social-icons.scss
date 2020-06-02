@@ -1,0 +1,26 @@
+.social-icons{
+	&.primary, &.secondary{
+		display: inline-block;
+		align-self: flex-end;
+		flex-grow: 0;
+		margin-bottom: -0.5rem;
+		
+		li{
+			display: inline-block;
+			margin-left: 0.5rem;
+
+			@media #{$small-and-down} {
+				display: block;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	&.secondary{
+		li{ margin-right: 0.5rem; margin-left: 0; }
+
+		@media #{$small-and-down}{display: none;}
+	}
+}
+
+// .social-icons.mobile-menu

@@ -1,0 +1,12 @@
+#about-me{
+	width: 60%;
+	p{
+		@media #{$small-and-down} {
+			display: inline;
+		}
+	}
+
+	#email, .spacing-stack-nano{
+		display: block;
+	}
+}
