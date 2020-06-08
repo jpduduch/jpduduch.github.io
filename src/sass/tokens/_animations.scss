@@ -12,3 +12,11 @@
 	80% { transform:translate(3%, 35%) }
 	90% { transform:translate(-10%, 10%) }
 }
+
+.translate-z{
+	-webkit-transform: translateZ(-4rem) !important;
+	   -moz-transform: translateZ(-4rem) !important;
+	    -ms-transform: translateZ(-4rem) !important;
+	     -o-transform: translateZ(-4rem) !important;
+	        transform: translateZ(-4rem) !important;
+}

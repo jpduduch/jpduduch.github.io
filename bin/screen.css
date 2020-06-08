@@ -224,6 +224,15 @@ html, body {
     transform: translate(-10%, 10%);
   }
 }
+/* line 16, ../src/sass/tokens/_animations.scss */
+.translate-z {
+  -webkit-transform: translateZ(-4rem) !important;
+  -moz-transform: translateZ(-4rem) !important;
+  -ms-transform: translateZ(-4rem) !important;
+  -o-transform: translateZ(-4rem) !important;
+  transform: translateZ(-4rem) !important;
+}
+
 @font-face {
   font-family: Karla;
   src: url("../src/fonts/Karla/Karla-Regular.ttf") format("truetype");
