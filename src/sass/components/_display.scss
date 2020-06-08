@@ -27,8 +27,11 @@
 		margin-left: 22%;
    		width: 66%;
     	transform-style: preserve-3d;
-    	// transform: rotate3d(4, 0, 14);	
-		transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+    	-webkit-transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+    	   -moz-transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+    	    -ms-transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+    	     -o-transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
+    	        transform: rotateX(4deg) rotateY(14deg) rotateZ(0deg) skewY(3deg);
 		transform-origin: 11% 5%;
 
     	@media #{$medium-and-down} {
