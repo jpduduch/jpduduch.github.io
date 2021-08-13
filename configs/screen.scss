@@ -1,0 +1,44 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@charset "UTF-8";
+@import 'scss-reset/_reset.scss';
+
+*, html, body {
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.5rem;
+	scroll-behavior: smooth;
+}
+
+html, body{
+	  height: 100%;
+}
+
+@import "tokens/media-queries";
+@import "tokens/colors";
+@import "tokens/animations";
+@import "tokens/text-and-typography";
+@import "tokens/utilities";
+@import "tokens/spacings";
+@import "tokens/alignments";
+
+@import "components/display";
+@import "components/backgrounds";
+@import "components/menu";
+@import "components/anchor-arrow";
+@import "components/reminder";
+@import "components/social-icons";
+@import "components/uncategorized";
+
+// @import "sections/hero";
+// @import "sections/display";
+// @import "sections/works";
+
+// @import "components/menu";
+
+
