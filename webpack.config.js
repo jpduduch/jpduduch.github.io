@@ -7,6 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') /* Puxa todos os estilos css de um js e compila num arquivo css, evitando o problema css in js */
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
+const TerserPlugin = require("terser-webpack-plugin")
 
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 
@@ -132,7 +133,8 @@ module.exports = {
     optimization: {
         minimize: true,
         minimizer: [
-            new CssMinimizerPlugin() //minimizar somente em produção
+            new CssMinimizerPlugin(), //minimizar somente em produção
+            new TerserPlugin()
         ]
     }
 }
