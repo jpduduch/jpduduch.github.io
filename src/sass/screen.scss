@@ -4,8 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @charset "UTF-8";
-@import "compass/reset";
-@import "compass/css3";
+@import 'scss-reset/_reset.scss';
 
 *, html, body {
 	-moz-box-sizing: border-box; 
@@ -13,6 +12,7 @@
 	box-sizing: border-box;
 	font-size: 16px;
 	line-height: 1.5rem;
+	scroll-behavior: smooth;
 }
 
 html, body{

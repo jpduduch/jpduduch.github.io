@@ -2,12 +2,10 @@
   "name": "jpduduch.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
-  "bin": {
-    "jpduduch.github.io": "script-min.js"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack serve --progress --config webpack.config.development.js",
+    "build": "webpack --progress --config webpack.config.build.js"
   },
   "repository": {
     "type": "git",
@@ -15,19 +13,49 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jpduduch/jpduduch.github.io/issues"
-  },
-  "homepage": "https://github.com/jpduduch/jpduduch.github.io#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-jshint": "^2.1.0",
-    "gulp-minify": "^3.1.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-watch": "^5.0.1",
-    "jquery": "^3.5.1",
-    "jshint": "^2.11.1"
+    "@babel/core": "^7.14.3",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "eslint": "^7.28.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-webpack-plugin": "^3.0.1",
+    "file-loader": "^6.2.0",
+    "glslify-loader": "^2.0.0",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin": "^8.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^1.6.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^5.3.0",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.37.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "css3": "0.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "jquery": "^3.6.0",
+    "normalize-css": "^2.3.1",
+    "normalize-scss": "^7.0.1",
+    "pug": "^3.0.2",
+    "reset-scss": "^1.0.0",
+    "scss-reset": "^1.2.0",
+    "smooth-scroll": "^16.1.3"
+  }
 }

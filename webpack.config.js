@@ -38,6 +38,16 @@ module.exports = {
         ]
     },
 
+    devServer: {
+        before: function (app, server) {
+            server._watch('./bin/**/*.html')
+        },
+        contentBase: path.join(__dirname),
+        hot: true,
+        port: 3000,
+        host: '0.0.0.0'
+    },
+
     plugins: [
         new Webpack.DefinePlugin({
             IS_DEVELOPMENT
@@ -126,3 +136,5 @@ module.exports = {
         ]
     }
 }
+
+

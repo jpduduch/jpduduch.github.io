@@ -41,16 +41,16 @@ $ultra-dark: #000000;
 
 .dark-gradient{
 	&-vertical{
-		@include linear-gradient(90, $ultra-dark, 1, $mid-dark, 1);
+		@include linear-gradient(0, $ultra-dark, 1, $mid-dark, 1);
 	}
 	&-horizontal{
-		@include linear-gradient(90, $ultra-dark, 1, $mid-dark, 1);
+		@include linear-gradient(0, $ultra-dark, 1, $mid-dark, 1);
 	}
 }
 
 .primary-gradient{
 	&-vertical{
-		@include linear-gradient(90, $primary-default, 1, $primary-alternative, 1);
+		@include linear-gradient(0, $primary-default, 1, $primary-alternative, 1);
 	}
 	&-horizontal{
 		@include linear-gradient(90, $primary-default, 1, $primary-alternative, 1);
